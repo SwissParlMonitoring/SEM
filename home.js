@@ -204,10 +204,10 @@ function showSessionAnimation(session) {
     const btnDebates = document.getElementById('btnViewDebates');
     
     if (btnObjects) {
-        btnObjects.href = `objects.html?filter_year=${year}`;
+        btnObjects.href = isDE ? `objects_de.html?filter_year=${year}` : `objects.html?filter_year=${year}`;
     }
     if (btnDebates) {
-        btnDebates.href = `debates.html?filter_year=${year}&filter_session=${sessionType}`;
+        btnDebates.href = isDE ? `debates_de.html?filter_year=${year}&filter_session=${sessionType}` : `debates.html?filter_year=${year}&filter_session=${sessionType}`;
     }
     
     initSessionAnimations();
@@ -738,12 +738,14 @@ function displayDebatesSummary(debatesData, currentSession) {
         const fourDaysAgo = new Date(now.getTime() - 4 * 24 * 60 * 60 * 1000);
         
         for (const debate of latestDebates) {
-            const councilLabel = debate.council === 'N' ? 'Conseil national' : 'Conseil des États';
+            const councilLabel = isDE
+                ? (debate.council === 'N' ? 'Nationalrat' : 'Ständerat')
+                : (debate.council === 'N' ? 'Conseil national' : 'Conseil des États');
             const party = translateParty(debate.party);
             const partyColor = partyColors[party] || partyColors[debate.party] || '#6B7280';
-            const title = debate.business_title_fr || 'Débat parlementaire';
+            const title = isDE ? (debate.business_title_de || debate.business_title_fr || 'Parlamentsdebatte') : (debate.business_title_fr || 'Débat parlementaire');
             const businessNumber = debate.business_number || '';
-            const debateUrl = `debates.html?search=${encodeURIComponent(debate.speaker)}`;
+            const debateUrl = isDE ? `debates_de.html?search=${encodeURIComponent(debate.speaker)}` : `debates.html?search=${encodeURIComponent(debate.speaker)}`;
             
             const debateDate = new Date(`${String(debate.date).substring(0,4)}-${String(debate.date).substring(4,6)}-${String(debate.date).substring(6,8)}`);
             const isNew = debateDate >= fourDaysAgo;
