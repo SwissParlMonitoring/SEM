@@ -52,7 +52,7 @@ FICHIER_EXCEL <- "Objets_parlementaires_SEM_Migration.xlsx"
 FICHIER_JSON <- "sem_migration_data.json"
 FICHIER_NEW_IDS <- "new_ids_tracking.json"  # Suivi des nouveautés avec dates
 JOURS_NOUVEAUTE <- 4  # Durée d'affichage des marques vertes
-GITHUB_RAW_URL <- "https://raw.githubusercontent.com/ArnaudBon20/SwissParlMonitoring/main/sem_migration_data.json"
+GITHUB_RAW_URL <- "https://raw.githubusercontent.com/SwissParlMonitoring/SEM/main/sem_migration_data.json"
 
 # Objets à exclure (faux positifs)
 faux_positifs <- c()
