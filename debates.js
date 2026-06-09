@@ -1,5 +1,6 @@
 const INITIAL_ITEMS = 5;
 const ITEMS_PER_LOAD = 5;
+const isDE = (window.LANG === 'de');
 
 let allData = [];
 let filteredData = [];
@@ -16,13 +17,27 @@ const lastUpdate = document.getElementById('lastUpdate');
 const resetFilters = document.getElementById('resetFilters');
 const showNewUpdatesBtn = document.getElementById('showNewUpdates');
 
-const councilLabels = {
+const councilLabels = isDE ? {
+    'N': 'Nationalrat',
+    'S': 'Ständerat',
+    'V': 'Vereinigte Bundesversammlung'
+} : {
     'N': 'Conseil national',
     'S': 'Conseil des États',
     'V': 'Assemblée fédérale'
 };
 
-const partyLabels = {
+const partyLabels = isDE ? {
+    'V': 'SVP',
+    'S': 'SP',
+    'RL': 'FDP',
+    'M-E': 'Die Mitte',
+    'CE': 'Die Mitte',
+    'C': 'Die Mitte',
+    'BD': 'Die Mitte',
+    'G': 'GRÜNE',
+    'GL': 'GLP'
+} : {
     'V': 'UDC',
     'S': 'PS',
     'RL': 'PLR',
@@ -99,7 +114,7 @@ function searchWholeWord(text, term) {
 
 function getPartyDisplay(item) {
     if (!item.party || item.party === 'undefined' || item.party === '') {
-        return 'Conseil fédéral';
+        return isDE ? 'Bundesrat' : 'Conseil fédéral';
     }
     return partyLabels[item.party] || item.party;
 }
@@ -131,7 +146,7 @@ async function init() {
         
         if (data.meta) {
             const updated = new Date(data.meta.updated);
-            lastUpdate.textContent = `Mise à jour: ${updated.toLocaleDateString('fr-CH')}`;
+            lastUpdate.textContent = isDE ? `Aktualisierung: ${updated.toLocaleDateString('de-CH')}` : `Mise à jour: ${updated.toLocaleDateString('fr-CH')}`;
         }
         
         populateYearFilter();
@@ -168,7 +183,7 @@ async function init() {
         setupEventListeners();
     } catch (error) {
         console.error('Error loading data:', error);
-        resultsContainer.innerHTML = '<p class="error">Erreur de chargement des données</p>';
+        resultsContainer.innerHTML = `<p class="error">${isDE ? 'Fehler beim Laden der Daten' : 'Erreur de chargement des données'}</p>`;
     }
 }
 
@@ -478,7 +493,7 @@ function toggleSortOrder() {
     sortDescending = !sortDescending;
     const btn = document.getElementById('sortOrderBtn');
     if (btn) {
-        btn.textContent = sortDescending ? '↓ Récent' : '↑ Ancien';
+        btn.textContent = sortDescending ? (isDE ? '↓ Neuste' : '↓ Récent') : (isDE ? '↑ Älteste' : '↑ Ancien');
     }
     applyFilters();
 }
@@ -682,22 +697,23 @@ function createCard(item, searchTerm = '') {
     
     // Lien vers l'intervention
     const votumAnchor = item.sort_order ? `#votum${item.sort_order}` : '';
+    const parlLang = isDE ? 'de' : 'fr';
     const bulletinUrl = item.id_subject 
-        ? `https://www.parlament.ch/fr/ratsbetrieb/amtliches-bulletin/amtliches-bulletin-die-verhandlungen?SubjectId=${item.id_subject}${votumAnchor}`
+        ? `https://www.parlament.ch/${parlLang}/ratsbetrieb/amtliches-bulletin/amtliches-bulletin-die-verhandlungen?SubjectId=${item.id_subject}${votumAnchor}`
         : null;
     
     // Lien vers l'objet parlementaire
     const curiaVistaUrl = item.affair_id 
-        ? `https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=${item.affair_id}`
+        ? `https://www.parlament.ch/${parlLang}/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=${item.affair_id}`
         : null;
     
     const businessNumberLink = (item.business_number && curiaVistaUrl)
-        ? `<a href="${curiaVistaUrl}" target="_blank" class="card-id" title="Voir l'objet sur Curia Vista">${item.business_number}</a>`
+        ? `<a href="${curiaVistaUrl}" target="_blank" class="card-id" title="${isDE ? 'Geschäft auf Curia Vista anzeigen' : 'Voir l\'objet sur Curia Vista'}">${item.business_number}</a>`
         : `<span class="card-id">${item.business_number || ''}</span>`;
     
-    const businessTitle = item.business_title_fr || item.business_title || '';
+    const businessTitle = isDE ? (item.business_title_de || item.business_title_fr || item.business_title || '') : (item.business_title_fr || item.business_title || '');
     const businessTitleLink = (businessTitle && bulletinUrl)
-        ? `<a href="${bulletinUrl}" target="_blank" title="Voir l'intervention complète">${businessTitle}</a>`
+        ? `<a href="${bulletinUrl}" target="_blank" title="${isDE ? 'Vollständige Intervention anzeigen' : 'Voir l\'intervention complète'}">${businessTitle}</a>`
         : businessTitle;
     
     const speakerText = `${item.speaker} (${partyDisplay}, ${item.canton || ''})`;
@@ -720,15 +736,17 @@ function createCard(item, searchTerm = '') {
     if (item.text.length > 400) {
         const expandBtn = document.createElement('button');
         expandBtn.className = 'btn-expand';
-        expandBtn.textContent = 'Voir plus';
+        expandBtn.textContent = isDE ? 'Mehr anzeigen' : 'Voir plus';
         expandBtn.addEventListener('click', () => {
             const textDiv = card.querySelector('.card-text');
-            if (expandBtn.textContent === 'Voir plus') {
+            const showMoreLabel = isDE ? 'Mehr anzeigen' : 'Voir plus';
+            const showLessLabel = isDE ? 'Weniger anzeigen' : 'Voir moins';
+            if (expandBtn.textContent === showMoreLabel) {
                 textDiv.innerHTML = highlightKeywords(item.text, searchTerm);
-                expandBtn.textContent = 'Voir moins';
+                expandBtn.textContent = showLessLabel;
             } else {
                 textDiv.innerHTML = highlightKeywords(textPreview, searchTerm);
-                expandBtn.textContent = 'Voir plus';
+                expandBtn.textContent = showMoreLabel;
             }
         });
         card.appendChild(expandBtn);
@@ -738,13 +756,15 @@ function createCard(item, searchTerm = '') {
 }
 
 function renderResults(loadMore = false) {
-    resultsCount.textContent = `${filteredData.length} intervention${filteredData.length !== 1 ? 's' : ''} trouvée${filteredData.length !== 1 ? 's' : ''}`;
+    resultsCount.textContent = isDE
+        ? `${filteredData.length} Intervention${filteredData.length !== 1 ? 'en' : ''} gefunden`
+        : `${filteredData.length} intervention${filteredData.length !== 1 ? 's' : ''} trouvée${filteredData.length !== 1 ? 's' : ''}`;
     
     if (filteredData.length === 0) {
         resultsContainer.innerHTML = `
             <div class="empty-state">
-                <h3>Aucun résultat</h3>
-                <p>Essayez de modifier vos critères de recherche</p>
+                <h3>${isDE ? 'Keine Ergebnisse' : 'Aucun résultat'}</h3>
+                <p>${isDE ? 'Versuchen Sie, Ihre Suchkriterien zu ändern' : 'Essayez de modifier vos critères de recherche'}</p>
             </div>
         `;
         displayedCount = 0;
@@ -772,7 +792,7 @@ function renderResults(loadMore = false) {
         const remaining = filteredData.length - displayedCount;
         const container = document.createElement('div');
         container.className = 'show-more-container';
-        container.innerHTML = `<button id="showMoreBtn" class="btn-show-more">Afficher plus (${remaining} restant${remaining > 1 ? 's' : ''})</button>`;
+        container.innerHTML = `<button id="showMoreBtn" class="btn-show-more">${isDE ? `Mehr anzeigen (${remaining} weitere)` : `Afficher plus (${remaining} restant${remaining > 1 ? 's' : ''})`}</button>`;
         resultsContainer.appendChild(container);
         document.getElementById('showMoreBtn').addEventListener('click', () => renderResults(true));
     }

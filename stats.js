@@ -1,3 +1,5 @@
+const isDE = (window.LANG === 'de');
+
 let allData = [];
 let filteredData = [];
 let debatesData = [];
@@ -21,10 +23,14 @@ function downloadChart(canvasId, filename) {
 
 const partyColors = {
     'UDC': '#009F4D',
+    'SVP': '#009F4D',
     'PSS': '#E53935',
     'PS': '#E53935',
+    'SP': '#E53935',
     'PLR': '#0066CC',
+    'FDP': '#0066CC',
     'Le Centre': '#FF9800',
+    'Die Mitte': '#FF9800',
     'Centre': '#FF9800',
     'M-E': '#FF9800',
     'PDC': '#FF9800',
@@ -33,14 +39,40 @@ const partyColors = {
     'CVP': '#FF9800',
     'BDP': '#FF9800',
     'VERT-E-S': '#8BC34A',
+    'GRÜNE': '#8BC34A',
     'Les Vert-e-s': '#8BC34A',
     'Al': '#8BC34A',
     'Vert\'libéraux': '#CDDC39',
+    'GLP': '#CDDC39',
     'pvl': '#CDDC39',
     'PVL': '#CDDC39'
 };
 
-const partyLabels = {
+const partyLabels = isDE ? {
+    'UDC': 'SVP',
+    'PSS': 'SP',
+    'PS': 'SP',
+    'PLR': 'FDP',
+    'Le Centre': 'Die Mitte',
+    'Die Mitte': 'Die Mitte',
+    'Centre': 'Die Mitte',
+    'M-E': 'Die Mitte',
+    'PDC': 'Die Mitte',
+    'PBD': 'Die Mitte',
+    'CSPO': 'Die Mitte',
+    'CVP': 'Die Mitte',
+    'BDP': 'Die Mitte',
+    'VERT-E-S': 'GRÜNE',
+    'Les Vert-e-s': 'GRÜNE',
+    'Al': 'GRÜNE',
+    'pvl': 'GLP',
+    'PVL': 'GLP',
+    'SVP': 'SVP',
+    'SP': 'SP',
+    'FDP': 'FDP',
+    'GRÜNE': 'GRÜNE',
+    'GLP': 'GLP'
+} : {
     'UDC': 'UDC',
     'PSS': 'PS',
     'PS': 'PS',
@@ -60,7 +92,16 @@ const partyLabels = {
     'PVL': 'Vert\'libéraux'
 };
 
-const typeLabels = {
+const typeLabels = isDE ? {
+    'Mo.': 'Motion',
+    'Po.': 'Postulat',
+    'Ip.': 'Interpellation',
+    'Fra.': 'Fragestunde',
+    'A.': 'Anfrage',
+    'Pa. Iv.': 'Pa. Iv.',
+    'D.Ip.': 'D. Interpellation',
+    'BRG': 'Geschäft BR'
+} : {
     'Mo.': 'Motion',
     'Po.': 'Postulat',
     'Ip.': 'Interpellation',
@@ -72,6 +113,7 @@ const typeLabels = {
 };
 
 function translateDept(deptDE) {
+    if (isDE) return deptDE;
     const translations = {
         'EFD': 'DFF',
         'EDI': 'DFI',
@@ -382,7 +424,8 @@ function buildObjectsUrl(additionalFilter = {}) {
     if (additionalFilter.session) params.set('filter_session', additionalFilter.session);
     
     const queryString = params.toString();
-    return `objects.html${queryString ? '?' + queryString : ''}`;
+    const objectsPage = isDE ? 'objects_de.html' : 'objects.html';
+    return `${objectsPage}${queryString ? '?' + queryString : ''}`;
 }
 
 function renderAllObjectCharts() {
@@ -420,11 +463,12 @@ function populateDebateFilters() {
     });
     
     const partyMenu = document.getElementById('debatePartyMenu');
+    const cfLabel = isDE ? 'Bundesrat' : 'Conseil fédéral';
     const parties = [...new Set(debatesData.map(d => {
-        if (!d.party) return 'Conseil fédéral';
+        if (!d.party) return cfLabel;
         return debatePartyLabels[d.party] || d.party;
     }))];
-    parties.sort((a, b) => a.localeCompare(b, 'fr'));
+    parties.sort((a, b) => a.localeCompare(b, isDE ? 'de' : 'fr'));
     parties.forEach(party => {
         const label = document.createElement('label');
         label.innerHTML = `<input type="checkbox" value="${party}"> ${party}`;
@@ -560,7 +604,7 @@ function applyDebateFilters() {
         }
         if (councilFilters.length > 0 && !councilFilters.includes(item.council)) return false;
         if (partyFilters.length > 0) {
-            const itemParty = item.party ? (debatePartyLabels[item.party] || item.party) : 'Conseil fédéral';
+            const itemParty = item.party ? (debatePartyLabels[item.party] || item.party) : (isDE ? 'Bundesrat' : 'Conseil fédéral');
             if (!partyFilters.includes(itemParty)) return false;
         }
         if (deptFilters.length > 0) {
@@ -607,7 +651,8 @@ function buildDebatesUrl(additionalFilter = {}) {
     if (additionalFilter.party) params.set('filter_party', additionalFilter.party);
     
     const queryString = params.toString();
-    return `debates.html${queryString ? '?' + queryString : ''}`;
+    const debatesPage = isDE ? 'debates_de.html' : 'debates.html';
+    return `${debatesPage}${queryString ? '?' + queryString : ''}`;
 }
 
 function renderAllDebateCharts() {
@@ -997,7 +1042,7 @@ function renderTopAuthors() {
     const container = document.getElementById('topAuthors');
     
     if (topAuthors.length === 0) {
-        container.innerHTML = '<p>Aucune donnée disponible</p>';
+        container.innerHTML = `<p>${isDE ? 'Keine Daten verfügbar' : 'Aucune donnée disponible'}</p>`;
         return;
     }
     
@@ -1005,7 +1050,8 @@ function renderTopAuthors() {
     topAuthors.forEach(([author, count], index) => {
         const party = authorParties[author] || '';
         const medalClass = index === 0 ? 'gold' : index === 1 ? 'silver' : index === 2 ? 'bronze' : '';
-        const searchUrl = `objects.html?search=${encodeURIComponent(author)}`;
+        const objectsPage = isDE ? 'objects_de.html' : 'objects.html';
+        const searchUrl = `${objectsPage}?search=${encodeURIComponent(author)}`;
         html += `
             <a href="${searchUrl}" class="author-row ${medalClass}">
                 <div class="author-rank">${index + 1}</div>
@@ -1023,7 +1069,18 @@ function renderTopAuthors() {
 
 // ========== STATISTIQUES DÉBATS ==========
 
-const debatePartyLabels = {
+const debatePartyLabels = isDE ? {
+    'V': 'SVP',
+    'S': 'SP',
+    'RL': 'FDP',
+    'M-E': 'Die Mitte',
+    'CE': 'Die Mitte',
+    'C': 'Die Mitte',
+    'BD': 'Die Mitte',
+    'G': 'GRÜNE',
+    'GL': 'GLP',
+    '': 'Bundesrat'
+} : {
     'V': 'UDC',
     'S': 'PS',
     'RL': 'PLR',
@@ -1036,13 +1093,21 @@ const debatePartyLabels = {
     '': 'Conseil fédéral'
 };
 
-const councilLabels = {
+const councilLabels = isDE ? {
+    'N': 'Nationalrat',
+    'S': 'Ständerat',
+    'V': 'Vereinigte Bundesversammlung'
+} : {
     'N': 'Conseil national',
     'S': 'Conseil des États',
     'V': 'Assemblée fédérale'
 };
 
-const councilCodes = {
+const councilCodes = isDE ? {
+    'Nationalrat': 'N',
+    'Ständerat': 'S',
+    'Vereinigte Bundesversammlung': 'V'
+} : {
     'Conseil national': 'N',
     'Conseil des États': 'S',
     'Assemblée fédérale': 'V'
@@ -1053,7 +1118,7 @@ function renderDebatePartyChart() {
     
     const partyCounts = {};
     filteredDebatesData.forEach(item => {
-        const party = debatePartyLabels[item.party] || item.party || 'Conseil fédéral';
+        const party = debatePartyLabels[item.party] || item.party || (isDE ? 'Bundesrat' : 'Conseil fédéral');
         partyCounts[party] = (partyCounts[party] || 0) + 1;
     });
     
@@ -1174,9 +1239,9 @@ function renderTopSpeakers() {
             speakerNames[key] = speaker;
             
             if (isCF) {
-                speakerParties[key] = 'Conseil fédéral';
+                speakerParties[key] = isDE ? 'Bundesrat' : 'Conseil fédéral';
             } else if (isChancellery) {
-                speakerParties[key] = 'Chancellerie fédérale';
+                speakerParties[key] = isDE ? 'Bundeskanzlei' : 'Chancellerie fédérale';
             } else if (item.party) {
                 speakerParties[key] = debatePartyLabels[item.party] || item.party;
             } else {
@@ -1189,7 +1254,7 @@ function renderTopSpeakers() {
     const container = document.getElementById('topSpeakers');
     
     if (topSpeakers.length === 0) {
-        container.innerHTML = '<p>Aucune donnée disponible</p>';
+        container.innerHTML = `<p>${isDE ? 'Keine Daten verfügbar' : 'Aucune donnée disponible'}</p>`;
         return;
     }
     
@@ -1198,7 +1263,8 @@ function renderTopSpeakers() {
         const speaker = speakerNames[key];
         const party = speakerParties[key] || '';
         const medalClass = index === 0 ? 'gold' : index === 1 ? 'silver' : index === 2 ? 'bronze' : '';
-        const searchUrl = `debates.html?search=${encodeURIComponent(speaker)}`;
+        const debatesPage = isDE ? 'debates_de.html' : 'debates.html';
+        const searchUrl = `${debatesPage}?search=${encodeURIComponent(speaker)}`;
         html += `
             <a href="${searchUrl}" class="author-row ${medalClass}">
                 <div class="author-rank">${index + 1}</div>
@@ -1230,7 +1296,7 @@ function renderTopSpeakersNoCF() {
     const container = document.getElementById('topSpeakersNoCF');
     
     if (topSpeakers.length === 0) {
-        container.innerHTML = '<p>Aucune donnée disponible</p>';
+        container.innerHTML = `<p>${isDE ? 'Keine Daten verfügbar' : 'Aucune donnée disponible'}</p>`;
         return;
     }
     
@@ -1238,7 +1304,8 @@ function renderTopSpeakersNoCF() {
     topSpeakers.forEach(([speaker, count], index) => {
         const party = speakerParties[speaker] || '';
         const medalClass = index === 0 ? 'gold' : index === 1 ? 'silver' : index === 2 ? 'bronze' : '';
-        const searchUrl = `debates.html?search=${encodeURIComponent(speaker)}`;
+        const debatesPage = isDE ? 'debates_de.html' : 'debates.html';
+        const searchUrl = `${debatesPage}?search=${encodeURIComponent(speaker)}`;
         html += `
             <a href="${searchUrl}" class="author-row ${medalClass}">
                 <div class="author-rank">${index + 1}</div>

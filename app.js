@@ -3,6 +3,7 @@ const DATA_URL = 'sem_migration_data.json';
 const EXCEL_URL = 'Objets_parlementaires_SEM_Migration.xlsx';
 const INITIAL_ITEMS = 10;
 const ITEMS_PER_LOAD = 10;
+const isDE = (window.LANG === 'de');
 
 // State
 let allData = [];
@@ -47,7 +48,7 @@ async function init() {
         // Display last update
         if (json.meta && json.meta.updated) {
             const date = new Date(json.meta.updated);
-            lastUpdate.textContent = `Mise à jour: ${date.toLocaleDateString('fr-CH')}`;
+            lastUpdate.textContent = isDE ? `Aktualisierung: ${date.toLocaleDateString('de-CH')}` : `Mise à jour: ${date.toLocaleDateString('fr-CH')}`;
         }
         
         // Display session summary if available
@@ -171,6 +172,28 @@ function getSessionTypeFromDate(dateStr) {
 }
 
 function translateParty(party) {
+    if (isDE) {
+        const translations = {
+            'Al': 'GRÜNE',
+            'PSS': 'SP',
+            'PS': 'SP',
+            'M-E': 'Die Mitte',
+            'PDC': 'Die Mitte',
+            'PBD': 'Die Mitte',
+            'CSPO': 'Die Mitte',
+            'CVP': 'Die Mitte',
+            'BDP': 'Die Mitte',
+            'AI': 'GRÜNE',
+            'UDC': 'SVP',
+            'PLR': 'FDP',
+            'Le Centre': 'Die Mitte',
+            'VERT-E-S': 'GRÜNE',
+            'Vert\'libéraux': 'GLP',
+            'pvl': 'GLP',
+            'Indépendant': 'Parteilos'
+        };
+        return translations[party] || party;
+    }
     const translations = {
         'Al': 'VERT-E-S',
         'PSS': 'PS',
@@ -639,19 +662,21 @@ function toggleSortOrder() {
     sortDescending = !sortDescending;
     const btn = document.getElementById('sortOrderBtn');
     if (btn) {
-        btn.textContent = sortDescending ? '↓ Récent' : '↑ Ancien';
+        btn.textContent = sortDescending ? (isDE ? '↓ Neuste' : '↓ Récent') : (isDE ? '↑ Älteste' : '↑ Ancien');
     }
     applyFilters();
 }
 
 function renderResults(loadMore = false) {
-    resultsCount.textContent = `${filteredData.length} objet${filteredData.length !== 1 ? 's' : ''} trouvé${filteredData.length !== 1 ? 's' : ''}`;
+    resultsCount.textContent = isDE
+        ? `${filteredData.length} Vorstoss${filteredData.length !== 1 ? '̈e' : ''} gefunden`
+        : `${filteredData.length} objet${filteredData.length !== 1 ? 's' : ''} trouvé${filteredData.length !== 1 ? 's' : ''}`;
     
     if (filteredData.length === 0) {
         resultsContainer.innerHTML = `
             <div class="empty-state">
-                <h3>Aucun résultat</h3>
-                <p>Essayez de modifier vos critères de recherche</p>
+                <h3>${isDE ? 'Keine Ergebnisse' : 'Aucun résultat'}</h3>
+                <p>${isDE ? 'Versuchen Sie, Ihre Suchkriterien zu ändern' : 'Essayez de modifier vos critères de recherche'}</p>
             </div>
         `;
         displayedCount = 0;
@@ -676,7 +701,7 @@ function renderResults(loadMore = false) {
         const remaining = filteredData.length - displayedCount;
         resultsContainer.innerHTML += `
             <div class="show-more-container">
-                <button id="showMoreBtn" class="btn-show-more">Afficher plus (${remaining} restant${remaining > 1 ? 's' : ''})</button>
+                <button id="showMoreBtn" class="btn-show-more">${isDE ? `Mehr anzeigen (${remaining} weitere)` : `Afficher plus (${remaining} restant${remaining > 1 ? 's' : ''})`}</button>
             </div>
         `;
         document.getElementById('showMoreBtn').addEventListener('click', () => renderResults(true));
@@ -684,6 +709,35 @@ function renderResults(loadMore = false) {
 }
 
 function translateType(type) {
+    if (isDE) {
+        const translations = {
+            'Interpellation': 'Interpellation',
+            'Ip.': 'Ip.',
+            'Dringliche Interpellation': 'Dringliche Interpellation',
+            'D.Ip.': 'D.Ip.',
+            'Motion': 'Motion',
+            'Mo.': 'Mo.',
+            'Fragestunde': 'Fragestunde',
+            'Fra.': 'Fragestunde',
+            'Geschäft des Bundesrates': 'Geschäft des Bundesrates',
+            'Postulat': 'Postulat',
+            'Po.': 'Po.',
+            'Anfrage': 'Anfrage',
+            'A.': 'Anfrage',
+            'Parlamentarische Initiative': 'Parlamentarische Initiative',
+            'Pa.Iv.': 'Pa. Iv.',
+            'Pa. Iv.': 'Pa. Iv.',
+            'Iv. pa.': 'Pa. Iv.',
+            'Iv. ct.': 'Kt. Iv.',
+            'Geschäft des Parlaments': 'Geschäft des Parlaments',
+            'Heure des questions': 'Fragestunde',
+            'Question': 'Anfrage',
+            'Interpellation urgente': 'Dringliche Interpellation',
+            'Initiative parlementaire': 'Parlamentarische Initiative',
+            'Objet du Conseil fédéral': 'Geschäft des Bundesrates'
+        };
+        return translations[type] || type;
+    }
     const translations = {
         'Interpellation': 'Interpellation',
         'Ip.': 'Ip.',
@@ -707,16 +761,16 @@ function translateType(type) {
 }
 
 function getMentionEmojis(mention) {
-    if (!mention) return { emojis: '👤', tooltip: "L'auteur cite le thème" };
+    if (!mention) return { emojis: '👤', tooltip: isDE ? 'Der Autor zitiert das Thema' : "L'auteur cite le thème" };
     const hasElu = mention.includes('Élu');
     const hasCF = mention.includes('Conseil fédéral');
     
     if (hasElu && hasCF) {
-        return { emojis: '👤 🏛️', tooltip: "L'auteur et le Conseil fédéral citent le thème" };
+        return { emojis: '👤 🏛️', tooltip: isDE ? 'Autor und Bundesrat zitieren das Thema' : "L'auteur et le Conseil fédéral citent le thème" };
     } else if (hasCF) {
-        return { emojis: '🏛️', tooltip: "Le Conseil fédéral cite le thème" };
+        return { emojis: '🏛️', tooltip: isDE ? 'Der Bundesrat zitiert das Thema' : "Le Conseil fédéral cite le thème" };
     } else {
-        return { emojis: '👤', tooltip: "L'auteur cite le thème" };
+        return { emojis: '👤', tooltip: isDE ? 'Der Autor zitiert das Thema' : "L'auteur cite le thème" };
     }
 }
 
@@ -728,9 +782,14 @@ function isTitleMissing(title) {
 
 function createCard(item, searchTerm) {
     const frMissing = isTitleMissing(item.title);
-    const displayTitle = frMissing && item.title_de ? item.title_de : (item.title || item.title_de);
+    const deMissing = isTitleMissing(item.title_de);
+    const displayTitle = isDE
+        ? (deMissing && !frMissing ? item.title : (item.title_de || item.title || ''))
+        : (frMissing && item.title_de ? item.title_de : (item.title || item.title_de || ''));
     const title = highlightText(displayTitle, searchTerm);
-    const langWarning = frMissing && item.title_de ? '<span class="lang-warning">🌐 Uniquement en allemand</span>' : '';
+    const langWarning = isDE
+        ? (deMissing && !frMissing ? '<span class="lang-warning">🌐 Nur auf Französisch</span>' : '')
+        : (frMissing && item.title_de ? '<span class="lang-warning">🌐 Uniquement en allemand</span>' : '');
     
     const authorName = translateAuthor(item.author || '');
     const partyFR = translateParty(item.party || '');
@@ -750,7 +809,7 @@ function createCard(item, searchTerm) {
     const date = item.date ? new Date(item.date).toLocaleDateString('fr-CH') : '';
     const dateMaj = item.date_maj ? new Date(item.date_maj).toLocaleDateString('fr-CH') : '';
     const showDateMaj = dateMaj && dateMaj !== date;
-    const url = item.url_fr || item.url_de;
+    const url = isDE ? (item.url_de || item.url_fr) : (item.url_fr || item.url_de);
     const mentionData = getMentionEmojis(item.mention);
     
     let statusClass = 'badge-status';
@@ -838,7 +897,7 @@ function getStatusFR(status) {
 
 function downloadFilteredData() {
     if (filteredData.length === 0) {
-        alert('Aucune donnée à exporter');
+        alert(isDE ? 'Keine Daten zum Exportieren' : 'Aucune donnée à exporter');
         return;
     }
     
@@ -856,7 +915,7 @@ function downloadFilteredData() {
             councilMap[item.council] || item.council || '',
             item.date || '',
             getStatusFR(item.status),
-            item.url_fr || ''
+            isDE ? (item.url_de || item.url_fr || '') : (item.url_fr || '')
         ];
     });
     
