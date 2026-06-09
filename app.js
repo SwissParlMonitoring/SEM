@@ -87,6 +87,9 @@ async function init() {
         if (filterLegislature) applyFilterFromUrl('legislatureDropdown', filterLegislature);
         if (filterTags) applyFilterFromUrl('tagsDropdown', filterTags);
         
+        const filterMention = urlParams.get('filter_mention');
+        if (filterMention) applyFilterFromUrl('mentionDropdown', filterMention);
+        
         // Store session filter for use in applyFilters
         window.sessionFilter = filterSession || null;
         
@@ -499,6 +502,7 @@ function applyFilters() {
     const departmentValues = getCheckedValues('departmentDropdown');
     const tagsValues = getCheckedValues('tagsDropdown');
     const legislatureValues = getCheckedValues('legislatureDropdown');
+    const mentionValues = getCheckedValues('mentionDropdown');
     
     filteredData = allData.filter(item => {
         // Text search
@@ -560,6 +564,18 @@ function applyFilters() {
         if (legislatureValues.length > 0) {
             const itemLegislature = getLegislature(item.date);
             if (!legislatureValues.includes(itemLegislature)) return false;
+        }
+        
+        // Mention filter (qui cite le thème)
+        if (mentionValues.length > 0) {
+            const mentionMap = {
+                'elu': 'Élu',
+                'cf': 'Conseil fédéral',
+                'both': 'Élu & Conseil fédéral'
+            };
+            const itemMention = item.mention || '';
+            const matchesMention = mentionValues.some(v => mentionMap[v] === itemMention);
+            if (!matchesMention) return false;
         }
         
         return true;
@@ -690,6 +706,20 @@ function translateType(type) {
     return translations[type] || type;
 }
 
+function getMentionEmojis(mention) {
+    if (!mention) return { emojis: '👤', tooltip: "L'auteur cite le thème" };
+    const hasElu = mention.includes('Élu');
+    const hasCF = mention.includes('Conseil fédéral');
+    
+    if (hasElu && hasCF) {
+        return { emojis: '👤 🏛️', tooltip: "L'auteur et le Conseil fédéral citent le thème" };
+    } else if (hasCF) {
+        return { emojis: '🏛️', tooltip: "Le Conseil fédéral cite le thème" };
+    } else {
+        return { emojis: '👤', tooltip: "L'auteur cite le thème" };
+    }
+}
+
 function isTitleMissing(title) {
     if (!title) return true;
     const missing = ['titre suit', 'titel folgt', 'titolo segue', ''];
@@ -721,6 +751,7 @@ function createCard(item, searchTerm) {
     const dateMaj = item.date_maj ? new Date(item.date_maj).toLocaleDateString('fr-CH') : '';
     const showDateMaj = dateMaj && dateMaj !== date;
     const url = item.url_fr || item.url_de;
+    const mentionData = getMentionEmojis(item.mention);
     
     let statusClass = 'badge-status';
     if (item.status?.includes('Erledigt') || item.status?.includes('Liquidé')) {
@@ -734,6 +765,7 @@ function createCard(item, searchTerm) {
                 <div class="card-badges">
                     <span class="badge badge-type">${translateType(item.type)}</span>
                     <span class="badge badge-council">${item.council === 'NR' ? 'CN' : 'CE'}</span>
+                    <span class="badge badge-mention" title="${mentionData.tooltip}">${mentionData.emojis}</span>
                 </div>
             </div>
             <h3 class="card-title">

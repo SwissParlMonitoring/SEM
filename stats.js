@@ -262,11 +262,12 @@ function populateObjectFilters() {
     setupDropdown('objectPartyDropdown');
     setupDropdown('objectDeptDropdown');
     setupDropdown('objectTagsDropdown');
+    setupDropdown('objectMentionDropdown');
     setupDropdown('objectLegislatureDropdown');
 }
 
 function setupObjectFilterListeners() {
-    ['objectYearDropdown', 'objectCouncilDropdown', 'objectPartyDropdown', 'objectDeptDropdown', 'objectTagsDropdown', 'objectLegislatureDropdown'].forEach(id => {
+    ['objectYearDropdown', 'objectCouncilDropdown', 'objectPartyDropdown', 'objectDeptDropdown', 'objectTagsDropdown', 'objectMentionDropdown', 'objectLegislatureDropdown'].forEach(id => {
         const el = document.getElementById(id);
         if (el) el.addEventListener('change', applyObjectFilters);
     });
@@ -274,7 +275,7 @@ function setupObjectFilterListeners() {
 }
 
 function resetObjectFilters() {
-    ['objectYearDropdown', 'objectCouncilDropdown', 'objectPartyDropdown', 'objectDeptDropdown', 'objectTagsDropdown', 'objectLegislatureDropdown'].forEach(id => {
+    ['objectYearDropdown', 'objectCouncilDropdown', 'objectPartyDropdown', 'objectDeptDropdown', 'objectTagsDropdown', 'objectMentionDropdown', 'objectLegislatureDropdown'].forEach(id => {
         const dropdown = document.getElementById(id);
         if (!dropdown) return;
         const selectAll = dropdown.querySelector('[data-select-all]');
@@ -310,6 +311,7 @@ function applyObjectFilters() {
     const partyFilters = getCheckedValues('objectPartyDropdown');
     const deptFilters = getCheckedValues('objectDeptDropdown');
     const tagsFilters = getCheckedValues('objectTagsDropdown');
+    const mentionFilters = getCheckedValues('objectMentionDropdown');
     const legislatureFilters = getCheckedValues('objectLegislatureDropdown');
     
     filteredData = allData.filter(item => {
@@ -335,6 +337,16 @@ function applyObjectFilters() {
             const hasMatchingTag = itemTags.some(tag => tagsFilters.includes(tag));
             if (!hasMatchingTag) return false;
         }
+        if (mentionFilters.length > 0) {
+            const mentionMap = {
+                'elu': 'Élu',
+                'cf': 'Conseil fédéral',
+                'both': 'Élu & Conseil fédéral'
+            };
+            const itemMention = item.mention || '';
+            const matchesMention = mentionFilters.some(v => mentionMap[v] === itemMention);
+            if (!matchesMention) return false;
+        }
         if (legislatureFilters.length > 0) {
             const itemLegislature = getLegislature(item.date);
             if (!legislatureFilters.includes(itemLegislature)) return false;
@@ -352,6 +364,7 @@ function buildObjectsUrl(additionalFilter = {}) {
     const partyFilters = getCheckedValues('objectPartyDropdown');
     const deptFilters = getCheckedValues('objectDeptDropdown');
     const tagsFilters = getCheckedValues('objectTagsDropdown');
+    const mentionFilters = getCheckedValues('objectMentionDropdown');
     const legislatureFilters = getCheckedValues('objectLegislatureDropdown');
     
     if (yearFilters.length > 0) params.set('filter_year', yearFilters.join(','));
@@ -359,6 +372,7 @@ function buildObjectsUrl(additionalFilter = {}) {
     if (partyFilters.length > 0) params.set('filter_party', partyFilters.join(','));
     if (deptFilters.length > 0) params.set('filter_dept', deptFilters.join(','));
     if (tagsFilters.length > 0) params.set('filter_tags', tagsFilters.join(','));
+    if (mentionFilters.length > 0) params.set('filter_mention', mentionFilters.join(','));
     if (legislatureFilters.length > 0) params.set('filter_legislature', legislatureFilters.join(','));
     
     if (additionalFilter.year) params.set('filter_year', additionalFilter.year);
@@ -610,6 +624,25 @@ function updateGlobalSummary() {
     const periodEl = document.getElementById('globalPeriod');
     
     if (objectsCountEl) objectsCountEl.textContent = filteredData.length;
+    
+    // Calculer les % de qui cite le thème (inclusif : "les deux" compte pour chacun)
+    const pctEluEl = document.getElementById('pctElu');
+    const pctCFEl = document.getElementById('pctCF');
+    const bothNoteEl = document.getElementById('mentionBothNote');
+    
+    if (pctEluEl && pctCFEl && filteredData.length > 0) {
+        const both = filteredData.filter(item => item.mention === 'Élu & Conseil fédéral').length;
+        const eluInclusive = filteredData.filter(item => item.mention === 'Élu' || item.mention === 'Élu & Conseil fédéral').length;
+        const cfInclusive = filteredData.filter(item => item.mention === 'Conseil fédéral' || item.mention === 'Élu & Conseil fédéral').length;
+        
+        pctEluEl.textContent = eluInclusive;
+        pctCFEl.textContent = cfInclusive;
+        
+        if (bothNoteEl && both > 0) {
+            bothNoteEl.textContent = `dont ${both} par les deux`;
+        }
+    }
+    
     if (debatesCountEl) debatesCountEl.textContent = filteredDebatesData.length;
     
     // Sous-infos débats : répartition CN / CE / AF

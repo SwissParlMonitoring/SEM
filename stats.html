@@ -36,6 +36,17 @@
                 <div class="summary-card">
                     <span class="summary-number" id="globalObjectsCount">-</span>
                     <span class="summary-label">Objets parlementaires</span>
+                    <div class="mention-breakdown" id="mentionBreakdown">
+                        <a href="objects.html?filter_mention=elu" class="mention-stat" title="L'auteur cite le thème (y.c. quand les deux citent)">
+                            <span class="mention-icon">👤</span>
+                            <span class="mention-pct" id="pctElu">-</span>
+                        </a>
+                        <a href="objects.html?filter_mention=cf" class="mention-stat" title="Le Conseil fédéral cite le thème (y.c. quand les deux citent)">
+                            <span class="mention-icon">🏛️</span>
+                            <span class="mention-pct" id="pctCF">-</span>
+                        </a>
+                    </div>
+                    <div class="mention-both-note" id="mentionBothNote"></div>
                 </div>
                 <div class="summary-card">
                     <span class="summary-number" id="globalDebatesCount">-</span>
@@ -116,6 +127,15 @@
                     <button class="filter-btn" type="button">Thématiques <span class="filter-count"></span></button>
                     <div class="filter-menu" id="objectTagsMenu">
                         <label class="select-all"><input type="checkbox" data-select-all checked> Toutes</label>
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="objectMentionDropdown">
+                    <button class="filter-btn" type="button">Qui cite <span class="filter-count"></span></button>
+                    <div class="filter-menu" id="objectMentionMenu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Tous</label>
+                        <label><input type="checkbox" value="elu"> 👤 Élu</label>
+                        <label><input type="checkbox" value="cf"> 🏛️ Conseil fédéral</label>
+                        <label><input type="checkbox" value="both"> 👤🏛️ Les deux</label>
                     </div>
                 </div>
                 <button class="filter-reset" id="resetObjectFilters" title="Réinitialiser">↻</button>
