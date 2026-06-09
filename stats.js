@@ -436,20 +436,26 @@ function renderAllObjectCharts() {
     updateGlobalSummary();
 }
 
+const _w = isDE ? 'Winter' : 'Hiver';
+const _sp = isDE ? 'Frühling' : 'Printemps';
+const _spe = isDE ? 'Sondersession' : 'Spéciale';
+const _su = isDE ? 'Sommer' : 'Été';
+const _au = isDE ? 'Herbst' : 'Automne';
+
 const sessionTypes = {
-    '5001': 'Hiver', '5002': 'Printemps', '5003': 'Spéciale', '5004': 'Été', '5005': 'Automne',
-    '5006': 'Hiver', '5007': 'Printemps', '5008': 'Spéciale', '5009': 'Été', '5010': 'Automne',
-    '5011': 'Hiver', '5012': 'Printemps', '5013': 'Été', '5014': 'Automne',
-    '5015': 'Hiver', '5016': 'Printemps', '5017': 'Spéciale', '5018': 'Été', '5019': 'Automne',
-    '5101': 'Hiver', '5102': 'Printemps', '5103': 'Spéciale', '5104': 'Été', '5105': 'Automne',
-    '5106': 'Spéciale', '5107': 'Hiver', '5108': 'Printemps', '5109': 'Spéciale', '5110': 'Été',
-    '5111': 'Automne', '5112': 'Hiver', '5113': 'Printemps', '5114': 'Spéciale', '5115': 'Été',
-    '5116': 'Automne', '5117': 'Hiver', '5118': 'Printemps', '5119': 'Spéciale', '5120': 'Spéciale',
-    '5121': 'Été', '5122': 'Automne',
-    '5201': 'Hiver', '5202': 'Printemps', '5203': 'Spéciale', '5204': 'Été', '5205': 'Automne',
-    '5206': 'Hiver', '5207': 'Printemps', '5208': 'Spéciale', '5209': 'Été', '5210': 'Automne',
-    '5211': 'Hiver', '5212': 'Printemps', '5213': 'Spéciale', '5214': 'Été', '5215': 'Automne',
-    '5216': 'Hiver', '5217': 'Printemps', '5218': 'Spéciale'
+    '5001': _w, '5002': _sp, '5003': _spe, '5004': _su, '5005': _au,
+    '5006': _w, '5007': _sp, '5008': _spe, '5009': _su, '5010': _au,
+    '5011': _w, '5012': _sp, '5013': _su, '5014': _au,
+    '5015': _w, '5016': _sp, '5017': _spe, '5018': _su, '5019': _au,
+    '5101': _w, '5102': _sp, '5103': _spe, '5104': _su, '5105': _au,
+    '5106': _spe, '5107': _w, '5108': _sp, '5109': _spe, '5110': _su,
+    '5111': _au, '5112': _w, '5113': _sp, '5114': _spe, '5115': _su,
+    '5116': _au, '5117': _w, '5118': _sp, '5119': _spe, '5120': _spe,
+    '5121': _su, '5122': _au,
+    '5201': _w, '5202': _sp, '5203': _spe, '5204': _su, '5205': _au,
+    '5206': _w, '5207': _sp, '5208': _spe, '5209': _su, '5210': _au,
+    '5211': _w, '5212': _sp, '5213': _spe, '5214': _su, '5215': _au,
+    '5216': _w, '5217': _sp, '5218': _spe
 };
 
 function populateDebateFilters() {
@@ -994,9 +1000,16 @@ function showSessionDetail(year) {
         }
     });
     
-    titleEl.textContent = `Détail ${year} par session`;
+    titleEl.textContent = isDE ? `Detail ${year} nach Session` : `Détail ${year} par session`;
     
-    const sessionLabels = {
+    const sessionLabels = isDE ? {
+        'printemps': 'Frühlingssession',
+        'speciale': 'Sondersession',
+        'ete': 'Sommersession',
+        'automne': 'Herbstsession',
+        'hiver': 'Wintersession',
+        'autre': 'Ausserhalb Session'
+    } : {
         'printemps': 'Session de printemps',
         'speciale': 'Session spéciale',
         'ete': 'Session d\'été',
