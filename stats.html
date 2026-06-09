@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Migration & Asile - Statistiques</title>
+    <meta name="theme-color" content="#2D6A8F">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="header-main">
+                <h1><a href="home.html" style="color: inherit; text-decoration: none;">🏛️ Migration & Asile au Parlement</a></h1>
+                <nav>
+                    <a href="home.html">Accueil</a>
+                    <a href="objects.html">Objets</a>
+                    <a href="debates.html">Débats</a>
+                    <a href="stats.html" class="active">Statistiques</a>
+                </nav>
+            </div>
+            <div class="lang-switcher">
+                <a href="stats.html" class="active">FR</a>
+                <span>|</span>
+                <a href="stats_de.html">DE</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="global-summary">
+            <h2>📊 Vue d'ensemble</h2>
+            <div class="summary-cards">
+                <div class="summary-card">
+                    <span class="summary-number" id="globalObjectsCount">-</span>
+                    <span class="summary-label">Objets parlementaires</span>
+                </div>
+                <div class="summary-card">
+                    <span class="summary-number" id="globalDebatesCount">-</span>
+                    <span class="summary-label">Débats</span>
+                    <div class="mention-breakdown" id="debatesBreakdown">
+                        <span class="mention-stat clickable-stat" title="Conseil national" onclick="filterDebatesByCouncil('N')">
+                            <span class="mention-icon">CN</span>
+                            <span class="mention-pct" id="debatesCN">-</span>
+                        </span>
+                        <span class="mention-stat clickable-stat" title="Conseil des États" onclick="filterDebatesByCouncil('S')">
+                            <span class="mention-icon">CE</span>
+                            <span class="mention-pct" id="debatesCE">-</span>
+                        </span>
+                        <span class="mention-stat clickable-stat" title="Assemblée fédérale" onclick="filterDebatesByCouncil('V')">
+                            <span class="mention-icon">AF</span>
+                            <span class="mention-pct" id="debatesAF">-</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <span class="summary-period" id="globalPeriod">2015 - 2026</span>
+                    <span class="summary-label">Période analysée</span>
+                    <div class="mention-breakdown" id="legislaturesBreakdown">
+                        <span class="mention-stat legislature-stat clickable-stat" id="leg50" title="50ème législature (2015-2019)" onclick="filterByLegislature('50')">
+                            <span class="mention-icon">50<sup>e</sup></span>
+                        </span>
+                        <span class="mention-stat legislature-stat clickable-stat" id="leg51" title="51ème législature (2019-2023)" onclick="filterByLegislature('51')">
+                            <span class="mention-icon">51<sup>e</sup></span>
+                        </span>
+                        <span class="mention-stat legislature-stat clickable-stat" id="leg52" title="52ème législature (2023-)" onclick="filterByLegislature('52')">
+                            <span class="mention-icon">52<sup>e</sup></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <h2>📊 Statistiques des interventions</h2>
+            
+            <div class="stats-filters">
+                <div class="filter-dropdown" id="objectLegislatureDropdown">
+                    <button class="filter-btn" type="button">Législature <span class="filter-count"></span></button>
+                    <div class="filter-menu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Toutes</label>
+                        <label><input type="checkbox" value="52"> 52ème (dès déc. 2023)</label>
+                        <label><input type="checkbox" value="51"> 51ème (déc. 2019 - sept. 2023)</label>
+                        <label><input type="checkbox" value="50"> 50ème (déc. 2015 - sept. 2019)</label>
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="objectYearDropdown">
+                    <button class="filter-btn" type="button">Année <span class="filter-count"></span></button>
+                    <div class="filter-menu" id="objectYearMenu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Toutes</label>
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="objectCouncilDropdown">
+                    <button class="filter-btn" type="button">Conseil <span class="filter-count"></span></button>
+                    <div class="filter-menu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Tous</label>
+                        <label><input type="checkbox" value="N"> Conseil national</label>
+                        <label><input type="checkbox" value="S"> Conseil des États</label>
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="objectPartyDropdown">
+                    <button class="filter-btn" type="button">Parti <span class="filter-count"></span></button>
+                    <div class="filter-menu" id="objectPartyMenu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Tous</label>
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="objectDeptDropdown">
+                    <button class="filter-btn" type="button">Autorité <span class="filter-count"></span></button>
+                    <div class="filter-menu" id="objectDeptMenu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Tous</label>
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="objectTagsDropdown">
+                    <button class="filter-btn" type="button">Thématiques <span class="filter-count"></span></button>
+                    <div class="filter-menu" id="objectTagsMenu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Toutes</label>
+                    </div>
+                </div>
+                <button class="filter-reset" id="resetObjectFilters" title="Réinitialiser">↻</button>
+            </div>
+            
+            <div class="stats-row">
+                <div class="stat-card">
+                    <h3>Interventions par parti <button class="chart-screenshot-btn" onclick="downloadChart('partyChart', 'objets-par-parti')" title="Télécharger l'image">📷</button></h3>
+                    <div class="chart-container">
+                        <canvas id="partyChart"></canvas>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <h3>Interventions par type <button class="chart-screenshot-btn" onclick="downloadChart('typeChart', 'objets-par-type')" title="Télécharger l'image">📷</button></h3>
+                    <div class="chart-container">
+                        <canvas id="typeChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stats-row">
+                <div class="stat-card">
+                    <h3>📈 Évolution par année <button class="chart-screenshot-btn" onclick="downloadChart('yearChart', 'objets-par-annee')" title="Télécharger l'image">📷</button></h3>
+                    <div class="chart-container-wide">
+                        <canvas id="yearChart"></canvas>
+                    </div>
+                    <div id="sessionDetail" class="session-detail" style="display: none;">
+                        <h4 id="sessionDetailTitle"></h4>
+                        <div id="sessionDetailContent"></div>
+                    </div>
+                </div>
+                
+                <div class="stat-card top-card">
+                    <h3>🗣️ Parlementaires les plus actifs</h3>
+                    <div id="topAuthors" class="top-authors-list">
+                        <p>Chargement...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="stats-section" id="debatesSection">
+            <h2>💬 Statistiques des débats</h2>
+            
+            <div class="stats-filters">
+                <div class="filter-dropdown" id="debateLegislatureDropdown">
+                    <button class="filter-btn" type="button">Législature <span class="filter-count"></span></button>
+                    <div class="filter-menu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Toutes</label>
+                        <label><input type="checkbox" value="52"> 52ème (dès déc. 2023)</label>
+                        <label><input type="checkbox" value="51"> 51ème (déc. 2019 - sept. 2023)</label>
+                        <label><input type="checkbox" value="50"> 50ème (déc. 2015 - sept. 2019)</label>
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="debateYearDropdown">
+                    <button class="filter-btn" type="button">Année <span class="filter-count"></span></button>
+                    <div class="filter-menu" id="debateYearMenu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Toutes</label>
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="debateSessionDropdown">
+                    <button class="filter-btn" type="button">Session <span class="filter-count"></span></button>
+                    <div class="filter-menu" id="debateSessionMenu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Toutes</label>
+                        <label><input type="checkbox" value="Printemps"> Printemps</label>
+                        <label><input type="checkbox" value="Été"> Été</label>
+                        <label><input type="checkbox" value="Automne"> Automne</label>
+                        <label><input type="checkbox" value="Hiver"> Hiver</label>
+                        <label><input type="checkbox" value="Spéciale"> Spéciale</label>
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="debateCouncilDropdown">
+                    <button class="filter-btn" type="button">Conseil <span class="filter-count"></span></button>
+                    <div class="filter-menu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Tous</label>
+                        <label><input type="checkbox" value="N"> Conseil national</label>
+                        <label><input type="checkbox" value="S"> Conseil des États</label>
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="debatePartyDropdown">
+                    <button class="filter-btn" type="button">Parti <span class="filter-count"></span></button>
+                    <div class="filter-menu" id="debatePartyMenu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Tous</label>
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="debateDeptDropdown">
+                    <button class="filter-btn" type="button">Autorité <span class="filter-count"></span></button>
+                    <div class="filter-menu" id="debateDeptMenu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Tous</label>
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="debateTagsDropdown">
+                    <button class="filter-btn" type="button">Thématiques <span class="filter-count"></span></button>
+                    <div class="filter-menu" id="debateTagsMenu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Toutes</label>
+                    </div>
+                </div>
+                <button class="filter-reset" id="resetDebateFilters" title="Réinitialiser">↻</button>
+            </div>
+            
+            <div class="stats-row">
+                <div class="stat-card">
+                    <h3>Interventions par acteur <button class="chart-screenshot-btn" onclick="downloadChart('debatePartyChart', 'debats-par-acteur')" title="Télécharger l'image">📷</button></h3>
+                    <div class="chart-container">
+                        <canvas id="debatePartyChart"></canvas>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <h3>Interventions par conseil <button class="chart-screenshot-btn" onclick="downloadChart('debateCouncilChart', 'debats-par-conseil')" title="Télécharger l'image">📷</button></h3>
+                    <div class="chart-container">
+                        <canvas id="debateCouncilChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stats-row">
+                <div class="stat-card top-card">
+                    <h3>📢 Orateurs</h3>
+                    <div id="topSpeakers" class="top-authors-list">
+                        <p>Chargement...</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card top-card">
+                    <h3>📢 Orateurs (hors CF)</h3>
+                    <div id="topSpeakersNoCF" class="top-authors-list">
+                        <p>Chargement...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Données: <a href="https://ws-old.parlament.ch/" target="_blank">API du Parlement suisse</a> · 
+               <a href="https://github.com/ArnaudBon20/SwissParlMonitoring" target="_blank">Code source</a></p>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" class="scroll-top-btn" title="Retour en haut">↑</button>
+    <script src="stats.js"></script>
+    <script>
+        const scrollBtn = document.getElementById('scrollTopBtn');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollBtn.classList.add('visible');
+            } else {
+                scrollBtn.classList.remove('visible');
+            }
+        });
+        scrollBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
