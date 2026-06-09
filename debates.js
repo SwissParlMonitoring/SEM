@@ -208,20 +208,26 @@ function applyUrlFilter(menuId, filterValue) {
 }
 
 // Mapping des types de sessions
+const _winter = isDE ? 'Winter' : 'Hiver';
+const _spring = isDE ? 'Frühling' : 'Printemps';
+const _special = isDE ? 'Sondersession' : 'Spéciale';
+const _summer = isDE ? 'Sommer' : 'Été';
+const _autumn = isDE ? 'Herbst' : 'Automne';
+
 const sessionTypes = {
-    '5001': 'Hiver', '5002': 'Printemps', '5003': 'Spéciale', '5004': 'Été', '5005': 'Automne',
-    '5006': 'Hiver', '5007': 'Printemps', '5008': 'Spéciale', '5009': 'Été', '5010': 'Automne',
-    '5011': 'Hiver', '5012': 'Printemps', '5013': 'Été', '5014': 'Automne',
-    '5015': 'Hiver', '5016': 'Printemps', '5017': 'Spéciale', '5018': 'Été', '5019': 'Automne',
-    '5101': 'Hiver', '5102': 'Printemps', '5103': 'Spéciale', '5104': 'Été', '5105': 'Automne',
-    '5106': 'Spéciale', '5107': 'Hiver', '5108': 'Printemps', '5109': 'Spéciale', '5110': 'Été',
-    '5111': 'Automne', '5112': 'Hiver', '5113': 'Printemps', '5114': 'Spéciale', '5115': 'Été',
-    '5116': 'Automne', '5117': 'Hiver', '5118': 'Printemps', '5119': 'Spéciale', '5120': 'Spéciale',
-    '5121': 'Été', '5122': 'Automne',
-    '5201': 'Hiver', '5202': 'Printemps', '5203': 'Spéciale', '5204': 'Été', '5205': 'Automne',
-    '5206': 'Hiver', '5207': 'Printemps', '5208': 'Spéciale', '5209': 'Été', '5210': 'Automne',
-    '5211': 'Hiver', '5212': 'Printemps', '5213': 'Spéciale', '5214': 'Été', '5215': 'Automne',
-    '5216': 'Hiver', '5217': 'Printemps', '5218': 'Spéciale'
+    '5001': _winter, '5002': _spring, '5003': _special, '5004': _summer, '5005': _autumn,
+    '5006': _winter, '5007': _spring, '5008': _special, '5009': _summer, '5010': _autumn,
+    '5011': _winter, '5012': _spring, '5013': _summer, '5014': _autumn,
+    '5015': _winter, '5016': _spring, '5017': _special, '5018': _summer, '5019': _autumn,
+    '5101': _winter, '5102': _spring, '5103': _special, '5104': _summer, '5105': _autumn,
+    '5106': _special, '5107': _winter, '5108': _spring, '5109': _special, '5110': _summer,
+    '5111': _autumn, '5112': _winter, '5113': _spring, '5114': _special, '5115': _summer,
+    '5116': _autumn, '5117': _winter, '5118': _spring, '5119': _special, '5120': _special,
+    '5121': _summer, '5122': _autumn,
+    '5201': _winter, '5202': _spring, '5203': _special, '5204': _summer, '5205': _autumn,
+    '5206': _winter, '5207': _spring, '5208': _special, '5209': _summer, '5210': _autumn,
+    '5211': _winter, '5212': _spring, '5213': _special, '5214': _summer, '5215': _autumn,
+    '5216': _winter, '5217': _spring, '5218': _special
 };
 
 function populateYearFilter() {
@@ -231,7 +237,7 @@ function populateYearFilter() {
     
     const allLabel = document.createElement('label');
     allLabel.className = 'select-all';
-    allLabel.innerHTML = `<input type="checkbox" data-select-all checked> Toutes`;
+    allLabel.innerHTML = `<input type="checkbox" data-select-all checked> ${isDE ? 'Alle' : 'Toutes'}`;
     yearMenu.appendChild(allLabel);
     
     years.forEach(year => {
@@ -243,11 +249,13 @@ function populateYearFilter() {
 
 function populateSessionFilter() {
     const sessionMenu = document.getElementById('sessionMenu');
-    const sessionTypesList = ['Hiver', 'Printemps', 'Été', 'Automne', 'Spéciale'];
+    const sessionTypesList = isDE
+        ? ['Winter', 'Frühling', 'Sommer', 'Herbst', 'Sondersession']
+        : ['Hiver', 'Printemps', 'Été', 'Automne', 'Spéciale'];
     
     const allLabel = document.createElement('label');
     allLabel.className = 'select-all';
-    allLabel.innerHTML = `<input type="checkbox" data-select-all checked> Toutes`;
+    allLabel.innerHTML = `<input type="checkbox" data-select-all checked> ${isDE ? 'Alle' : 'Toutes'}`;
     sessionMenu.appendChild(allLabel);
     
     sessionTypesList.forEach(sessionType => {
@@ -260,7 +268,11 @@ function populateSessionFilter() {
 function populateCouncilFilter() {
     const councilMenu = document.getElementById('councilMenu');
     
-    const councilOptions = [
+    const councilOptions = isDE ? [
+        { value: 'N', label: 'Nationalrat' },
+        { value: 'S', label: 'Ständerat' },
+        { value: 'V', label: 'Vereinigte Bundesversammlung' }
+    ] : [
         { value: 'N', label: 'Conseil national' },
         { value: 'S', label: 'Conseil des États' },
         { value: 'V', label: 'Assemblée fédérale' }
@@ -268,7 +280,7 @@ function populateCouncilFilter() {
     
     const allLabel = document.createElement('label');
     allLabel.className = 'select-all';
-    allLabel.innerHTML = `<input type="checkbox" data-select-all checked> Tous`;
+    allLabel.innerHTML = `<input type="checkbox" data-select-all checked> ${isDE ? 'Alle' : 'Tous'}`;
     councilMenu.appendChild(allLabel);
     
     councilOptions.forEach(option => {
@@ -301,12 +313,13 @@ function populatePartyFilter() {
     
     const allLabel = document.createElement('label');
     allLabel.className = 'select-all';
-    allLabel.innerHTML = `<input type="checkbox" data-select-all checked> Tous`;
+    allLabel.innerHTML = `<input type="checkbox" data-select-all checked> ${isDE ? 'Alle' : 'Tous'}`;
     partyMenu.appendChild(allLabel);
     
     if (hasFederalCouncil) {
+        const cfLabelText = isDE ? 'Bundesrat' : 'Conseil fédéral';
         const cfLabel = document.createElement('label');
-        cfLabel.innerHTML = `<input type="checkbox" value="Conseil fédéral"> Conseil fédéral`;
+        cfLabel.innerHTML = `<input type="checkbox" value="${cfLabelText}"> ${cfLabelText}`;
         partyMenu.appendChild(cfLabel);
     }
     
@@ -319,6 +332,7 @@ function populatePartyFilter() {
 }
 
 function translateDepartment(deptDE) {
+    if (isDE) return deptDE;
     const translations = {
         'EFD': 'DFF',
         'EDI': 'DFI',
@@ -344,7 +358,7 @@ function populateDepartmentFilter() {
     
     const allLabel = document.createElement('label');
     allLabel.className = 'select-all';
-    allLabel.innerHTML = `<input type="checkbox" data-select-all checked> Tous`;
+    allLabel.innerHTML = `<input type="checkbox" data-select-all checked> ${isDE ? 'Alle' : 'Tous'}`;
     deptMenu.appendChild(allLabel);
     
     departments.forEach(dept => {
@@ -376,7 +390,7 @@ function populateTagsFilter() {
     
     const allLabel = document.createElement('label');
     allLabel.className = 'select-all';
-    allLabel.innerHTML = `<input type="checkbox" data-select-all checked> Tous`;
+    allLabel.innerHTML = `<input type="checkbox" data-select-all checked> ${isDE ? 'Alle' : 'Tous'}`;
     tagsMenu.appendChild(allLabel);
     
     tagsArray.forEach(tag => {
@@ -571,7 +585,7 @@ function applyFilters() {
         if (partyValues) {
             const allPartyValues = partyValues.flatMap(v => v.split(','));
             const isFederalCouncil = !item.party;
-            const matchesFederalCouncil = allPartyValues.includes('Conseil fédéral') && isFederalCouncil;
+            const matchesFederalCouncil = allPartyValues.includes(isDE ? 'Bundesrat' : 'Conseil fédéral') && isFederalCouncil;
             const matchesParty = item.party && allPartyValues.includes(item.party);
             if (!matchesFederalCouncil && !matchesParty) return false;
         }
@@ -661,7 +675,11 @@ function highlightKeywords(text, searchTerm = '') {
     ];
     
     migrationTerms.forEach(term => {
-        const regex = new RegExp(`(${term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+        const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        // Utiliser \b pour les termes courts afin d'éviter les faux positifs (ex: SEM dans enSEMble)
+        const regex = term.length <= 4
+            ? new RegExp(`\\b(${escaped})\\b`, 'g')
+            : new RegExp(`(${escaped})`, 'gi');
         result = result.replace(regex, '<mark class="highlight">$1</mark>');
     });
     

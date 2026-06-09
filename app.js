@@ -123,8 +123,11 @@ function displaySessionSummary(summary) {
     
     if (!container || !titleEl || !textEl || !listEl) return;
     
-    titleEl.textContent = summary.title_fr;
-    textEl.innerHTML = summary.text_fr + (summary.themes_fr ? '<br><br><strong>Thèmes abordés :</strong> ' + escapeHtml(summary.themes_fr) : '');
+    titleEl.textContent = isDE ? (summary.title_de || summary.title_fr) : summary.title_fr;
+    const themesLabel = isDE ? 'Behandelte Themen:' : 'Thèmes abordés :';
+    const summaryText = isDE ? (summary.text_de || summary.text_fr) : summary.text_fr;
+    const summaryThemes = isDE ? (summary.themes_de || summary.themes_fr) : summary.themes_fr;
+    textEl.innerHTML = summaryText + (summaryThemes ? `<br><br><strong>${themesLabel}</strong> ` + escapeHtml(summaryThemes) : '');
     
     if (summary.interventions && summary.interventions.shortId) {
         const items = summary.interventions.shortId.map((id, i) => {
@@ -132,7 +135,7 @@ function displaySessionSummary(summary) {
             const author = summary.interventions.author[i] || '';
             const party = translateParty(summary.interventions.party[i] || '');
             const type = summary.interventions.type[i] || '';
-            const url = summary.interventions.url_fr[i] || '#';
+            const url = isDE ? (summary.interventions.url_de?.[i] || summary.interventions.url_fr[i] || '#') : (summary.interventions.url_fr[i] || '#');
             const authorWithParty = party ? `${author} (${party})` : author;
             return `<li><a href="${url}" target="_blank">${id}</a> – ${type} – ${escapeHtml(title.substring(0, 60))}${title.length > 60 ? '...' : ''} – <em>${escapeHtml(authorWithParty)}</em></li>`;
         });
@@ -210,6 +213,7 @@ function translateParty(party) {
 
 function translateAuthor(author) {
     if (!author) return '';
+    if (isDE) return author;
     const translations = {
         'Sicherheitspolitische Kommission Nationalrat-Nationalrat': 'Commission de la politique de sécurité du Conseil national',
         'Sicherheitspolitische Kommission Nationalrat': 'Commission de la politique de sécurité du Conseil national',
@@ -296,7 +300,7 @@ function populateYearFilter() {
     
     const allLabel = document.createElement('label');
     allLabel.className = 'select-all';
-    allLabel.innerHTML = `<input type="checkbox" data-select-all checked> Tous`;
+    allLabel.innerHTML = `<input type="checkbox" data-select-all checked> ${isDE ? 'Alle' : 'Tous'}`;
     yearMenu.appendChild(allLabel);
     
     years.forEach(year => {
@@ -313,7 +317,7 @@ function populatePartyFilter() {
     
     const allLabel = document.createElement('label');
     allLabel.className = 'select-all';
-    allLabel.innerHTML = `<input type="checkbox" data-select-all checked> Tous`;
+    allLabel.innerHTML = `<input type="checkbox" data-select-all checked> ${isDE ? 'Alle' : 'Tous'}`;
     partyMenu.appendChild(allLabel);
     
     translatedParties.forEach(party => {
@@ -324,6 +328,7 @@ function populatePartyFilter() {
 }
 
 function translateDepartment(deptDE) {
+    if (isDE) return deptDE;
     const translations = {
         'EFD': 'DFF',
         'EDI': 'DFI',
@@ -350,7 +355,7 @@ function populateDepartmentFilter() {
     
     const allLabel = document.createElement('label');
     allLabel.className = 'select-all';
-    allLabel.innerHTML = `<input type="checkbox" data-select-all checked> Tous`;
+    allLabel.innerHTML = `<input type="checkbox" data-select-all checked> ${isDE ? 'Alle' : 'Tous'}`;
     deptMenu.appendChild(allLabel);
     
     departments.forEach(dept => {
@@ -378,7 +383,7 @@ function populateTagsFilter() {
     
     const allLabel = document.createElement('label');
     allLabel.className = 'select-all';
-    allLabel.innerHTML = `<input type="checkbox" data-select-all checked> Tous`;
+    allLabel.innerHTML = `<input type="checkbox" data-select-all checked> ${isDE ? 'Alle' : 'Tous'}`;
     tagsMenu.appendChild(allLabel);
     
     tagsArray.forEach(tag => {
@@ -669,7 +674,7 @@ function toggleSortOrder() {
 
 function renderResults(loadMore = false) {
     resultsCount.textContent = isDE
-        ? `${filteredData.length} Vorstoss${filteredData.length !== 1 ? '̈e' : ''} gefunden`
+        ? `${filteredData.length} ${filteredData.length !== 1 ? 'Vorstösse' : 'Vorstoss'} gefunden`
         : `${filteredData.length} objet${filteredData.length !== 1 ? 's' : ''} trouvé${filteredData.length !== 1 ? 's' : ''}`;
     
     if (filteredData.length === 0) {
@@ -823,7 +828,7 @@ function createCard(item, searchTerm) {
                 <span class="card-id">${shortId}</span>
                 <div class="card-badges">
                     <span class="badge badge-type">${translateType(item.type)}</span>
-                    <span class="badge badge-council">${item.council === 'NR' ? 'CN' : 'CE'}</span>
+                    <span class="badge badge-council">${isDE ? (item.council === 'NR' ? 'NR' : 'SR') : (item.council === 'NR' ? 'CN' : 'CE')}</span>
                     <span class="badge badge-mention" title="${mentionData.tooltip}">${mentionData.emojis}</span>
                 </div>
             </div>
@@ -869,7 +874,7 @@ function showLoading() {
 function showError(message) {
     resultsContainer.innerHTML = `
         <div class="empty-state">
-            <h3>Erreur</h3>
+            <h3>${isDE ? 'Fehler' : 'Erreur'}</h3>
             <p>${message}</p>
         </div>
     `;
@@ -890,7 +895,7 @@ function debounce(func, wait) {
 function getStatusFR(status) {
     if (!status) return '';
     if (status.includes('/')) {
-        return status.split('/')[1].trim();
+        return isDE ? status.split('/')[0].trim() : status.split('/')[1].trim();
     }
     return status;
 }
@@ -901,8 +906,8 @@ function downloadFilteredData() {
         return;
     }
     
-    const councilMap = { 'N': 'CN', 'S': 'CE', 'V': 'AF' };
-    const headers = ['ID', 'Type', 'Titre', 'Auteur', 'Parti', 'Conseil', 'Date', 'Statut', 'Lien'];
+    const councilMap = isDE ? { 'N': 'NR', 'S': 'SR', 'V': 'BV' } : { 'N': 'CN', 'S': 'CE', 'V': 'AF' };
+    const headers = isDE ? ['ID', 'Typ', 'Titel', 'Autor', 'Partei', 'Rat', 'Datum', 'Status', 'Link'] : ['ID', 'Type', 'Titre', 'Auteur', 'Parti', 'Conseil', 'Date', 'Statut', 'Lien'];
     const rows = filteredData.map(item => {
         const frMissing = isTitleMissing(item.title);
         const exportTitle = frMissing && item.title_de ? item.title_de : (item.title || item.title_de || '');
