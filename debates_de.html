@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Migration & Asyl - Parlamentsdebatten</title>
+    <meta name="theme-color" content="#2D6A8F">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="header-main">
+                <h1><a href="home_de.html" style="color: inherit; text-decoration: none;">🏛️ Migration & Asyl im Parlament</a></h1>
+                <nav>
+                    <a href="home_de.html">Home</a>
+                    <a href="objects_de.html">Vorstösse</a>
+                    <a href="debates_de.html" class="active">Debatten</a>
+                    <a href="stats_de.html">Statistiken</a>
+                </nav>
+            </div>
+            <div class="lang-switcher">
+                <a href="debates.html">FR</a>
+                <span>|</span>
+                <a href="debates_de.html" class="active">DE</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="search-section">
+            <h2>Parlamentsdebatten</h2>
+            <p class="section-intro">Mündliche Interventionen zu Migration und Asyl in den Debatten im National- und Ständerat.</p>
+            
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="In Debatten suchen...">
+                <button id="clearSearch" class="btn-clear" title="Löschen">✕</button>
+            </div>
+            <div class="filters">
+                <div class="filter-dropdown" id="legislatureDropdown">
+                    <button class="filter-btn" type="button">Legislatur <span class="filter-count"></span></button>
+                    <div class="filter-menu" id="legislatureMenu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Alle</label>
+                        <label><input type="checkbox" value="52"> 52. (ab Dez. 2023)</label>
+                        <label><input type="checkbox" value="51"> 51. (Dez. 2019 - Sept. 2023)</label>
+                        <label><input type="checkbox" value="50"> 50. (Dez. 2015 - Sept. 2019)</label>
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="yearDropdown">
+                    <button class="filter-btn" type="button">Jahr <span class="filter-count"></span></button>
+                    <div class="filter-menu" id="yearMenu">
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="sessionDropdown">
+                    <button class="filter-btn" type="button">Session <span class="filter-count"></span></button>
+                    <div class="filter-menu" id="sessionMenu">
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="councilDropdown">
+                    <button class="filter-btn" type="button">Rat <span class="filter-count"></span></button>
+                    <div class="filter-menu" id="councilMenu">
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="partyDropdown">
+                    <button class="filter-btn" type="button">Partei <span class="filter-count"></span></button>
+                    <div class="filter-menu" id="partyMenu">
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="departmentDropdown">
+                    <button class="filter-btn" type="button">Behörde <span class="filter-count"></span></button>
+                    <div class="filter-menu" id="departmentMenu">
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="tagsDropdown">
+                    <button class="filter-btn" type="button">Themen <span class="filter-count"></span></button>
+                    <div class="filter-menu" id="tagsMenu">
+                    </div>
+                </div>
+                <div class="filter-actions">
+                    <button class="filter-reset" id="resetFilters" title="Filter zurücksetzen">↻</button>
+                    <button class="filter-new-updates" id="showNewUpdates" title="Neuheiten anzeigen">Neuheiten</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="results-section">
+            <div class="results-header">
+                <span id="resultsCount">Laden...</span>
+                <button id="sortOrderBtn" class="btn-sort" title="Reihenfolge umkehren">↓ Neuste</button>
+                <span id="lastUpdate"></span>
+            </div>
+            <div id="results" class="results-grid">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Daten: <a href="https://ws-old.parlament.ch/" target="_blank">API des Schweizer Parlaments</a></p>
+            <p>Quelle: <a href="https://github.com/SwissParlMonitoring/SEM" target="_blank">GitHub</a></p>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" class="scroll-top-btn" title="Nach oben">↑</button>
+    <script>window.LANG = 'de';</script>
+    <script src="debates.js"></script>
+    <script>
+        const scrollBtn = document.getElementById('scrollTopBtn');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                scrollBtn.classList.add('visible');
+            } else {
+                scrollBtn.classList.remove('visible');
+            }
+        });
+        scrollBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

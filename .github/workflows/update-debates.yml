@@ -1,0 +1,125 @@
+name: Update Debates Data
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 2x par jour pendant les sessions: 13h et 22h Suisse (12h et 21h UTC)
+    - cron: '0 12 * * *'   # 13h CH
+    - cron: '0 21 * * *'   # 22h CH
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  check-session:
+    runs-on: ubuntu-latest
+    outputs:
+      in_session: ${{ steps.check.outputs.in_session }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Check if in session
+        id: check
+        shell: bash
+        run: |
+          TODAY=$(date +%Y-%m-%d)
+          IN_SESSION="false"
+          
+          # Vérifier si en session via jq directement
+          SESSION_MATCH=$(jq -r --arg today "$TODAY" '.sessions[] | select(.start <= $today and .end >= $today) | "in session: \(.start) to \(.end)"' sessions.json | head -1)
+          
+          if [ -n "$SESSION_MATCH" ]; then
+            IN_SESSION="true"
+            echo "Currently $SESSION_MATCH"
+          fi
+          
+          # Toujours exécuter si workflow_dispatch
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            IN_SESSION="true"
+            echo "Manual trigger - forcing execution"
+          fi
+          
+          echo "in_session=$IN_SESSION" >> $GITHUB_OUTPUT
+          echo "In session: $IN_SESSION"
+
+  update-debates:
+    needs: check-session
+    if: needs.check-session.outputs.in_session == 'true'
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.3.0'
+          
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcurl4-openssl-dev libssl-dev libxml2-dev
+          
+      - name: Install R packages
+        run: |
+          install.packages(c("dplyr", "swissparl", "stringr", "openxlsx", "jsonlite", "xfun", "httr"))
+        shell: Rscript {0}
+        
+      - name: Run debates script
+        run: |
+          source("Recherche_Debats_Migration.R")
+        shell: Rscript {0}
+        env:
+          CI: true
+          
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add debates_data.json || true
+          git add Debats_SEM_Migration.xlsx || true
+          git add new_ids_debates_tracking.json || true
+          git stash --include-untracked || true
+          git pull --rebase origin main || true
+          git stash pop || true
+          git add debates_data.json || true
+          git add Debats_SEM_Migration.xlsx || true
+          git add new_ids_debates_tracking.json || true
+          git diff --quiet --cached || git commit -m "Update debates data - $(date +'%Y-%m-%d')"
+          git push
+
+  deploy-pages:
+    needs: update-debates
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          
+      - name: Pull latest changes
+        run: git pull origin main
+        
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+        
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+          
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -291,13 +291,28 @@ normaliser_parti <- function(parti) {
     "Fraktion der Schweizerischen Volkspartei" = "UDC",
     # Vert'libéraux
     "Grünliberale Fraktion" = "pvl",
-    "GLP" = "pvl"
+    "GLP" = "pvl",
+    # Indépendant
+    "-" = "Indépendant"
   )
   
   if (parti %in% names(mapping)) {
     return(mapping[parti])
   }
   return(parti)
+}
+
+# Corrections spécifiques pour parlementaires indépendants
+corriger_partis_speciaux <- function(df) {
+  df |>
+    mutate(Parti = case_when(
+      # Thomas Minder: toujours indépendant
+      grepl("Minder Thomas", Auteur) ~ "Indépendant",
+      # Daniel Jositsch: PS jusqu'au 7.6.2026, ensuite indépendant
+      grepl("Jositsch Daniel", Auteur) & Date_dépôt > "2026-06-07" ~ "Indépendant",
+      grepl("Jositsch Daniel", Auteur) & Date_dépôt <= "2026-06-07" ~ "PS",
+      TRUE ~ Parti
+    ))
 }
 
 # ============================================================================
@@ -772,6 +787,11 @@ if (length(IDs_A_Traiter) > 0) {
 } else {
   cat("Aucun nouvel objet ou mise à jour.\n")
   Resultats <- Donnees_Existantes
+}
+
+# Appliquer les corrections de partis spéciaux
+if (!is.null(Resultats) && nrow(Resultats) > 0) {
+  Resultats <- corriger_partis_speciaux(Resultats)
 }
 
 # ============================================================================

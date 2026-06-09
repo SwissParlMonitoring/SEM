@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Migration & Asyl - Statistiken</title>
+    <meta name="theme-color" content="#2D6A8F">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="header-main">
+                <h1><a href="home_de.html" style="color: inherit; text-decoration: none;">🏛️ Migration & Asyl im Parlament</a></h1>
+                <nav>
+                    <a href="home_de.html">Home</a>
+                    <a href="objects_de.html">Vorstösse</a>
+                    <a href="debates_de.html">Debatten</a>
+                    <a href="stats_de.html" class="active">Statistiken</a>
+                </nav>
+            </div>
+            <div class="lang-switcher">
+                <a href="stats.html">FR</a>
+                <span>|</span>
+                <a href="stats_de.html" class="active">DE</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="global-summary">
+            <h2>📊 Übersicht</h2>
+            <div class="summary-cards">
+                <div class="summary-card">
+                    <span class="summary-number" id="globalObjectsCount">-</span>
+                    <span class="summary-label">Parlamentarische Vorstösse</span>
+                    <div class="mention-breakdown" id="mentionBreakdown">
+                        <a href="objects_de.html?filter_mention=elu" class="mention-stat" title="Der Autor zitiert das Thema (inkl. wenn beide zitieren)">
+                            <span class="mention-icon">👤</span>
+                            <span class="mention-pct" id="pctElu">-</span>
+                        </a>
+                        <a href="objects_de.html?filter_mention=cf" class="mention-stat" title="Der Bundesrat zitiert das Thema (inkl. wenn beide zitieren)">
+                            <span class="mention-icon">🏛️</span>
+                            <span class="mention-pct" id="pctCF">-</span>
+                        </a>
+                    </div>
+                    <div class="mention-both-note" id="mentionBothNote"></div>
+                </div>
+                <div class="summary-card">
+                    <span class="summary-number" id="globalDebatesCount">-</span>
+                    <span class="summary-label">Debatten</span>
+                    <div class="mention-breakdown" id="debatesBreakdown">
+                        <span class="mention-stat clickable-stat" title="Nationalrat" onclick="filterDebatesByCouncil('N')">
+                            <span class="mention-icon">NR</span>
+                            <span class="mention-pct" id="debatesCN">-</span>
+                        </span>
+                        <span class="mention-stat clickable-stat" title="Ständerat" onclick="filterDebatesByCouncil('S')">
+                            <span class="mention-icon">SR</span>
+                            <span class="mention-pct" id="debatesCE">-</span>
+                        </span>
+                        <span class="mention-stat clickable-stat" title="Vereinigte Bundesversammlung" onclick="filterDebatesByCouncil('V')">
+                            <span class="mention-icon">VB</span>
+                            <span class="mention-pct" id="debatesAF">-</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <span class="summary-period" id="globalPeriod">2015 - 2026</span>
+                    <span class="summary-label">Analysierter Zeitraum</span>
+                    <div class="mention-breakdown" id="legislaturesBreakdown">
+                        <span class="mention-stat legislature-stat clickable-stat" id="leg50" title="50. Legislatur (2015-2019)" onclick="filterByLegislature('50')">
+                            <span class="mention-icon">50.</span>
+                        </span>
+                        <span class="mention-stat legislature-stat clickable-stat" id="leg51" title="51. Legislatur (2019-2023)" onclick="filterByLegislature('51')">
+                            <span class="mention-icon">51.</span>
+                        </span>
+                        <span class="mention-stat legislature-stat clickable-stat" id="leg52" title="52. Legislatur (2023-)" onclick="filterByLegislature('52')">
+                            <span class="mention-icon">52.</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <h2>📊 Vorstoss-Statistiken</h2>
+            
+            <div class="stats-filters">
+                <div class="filter-dropdown" id="objectLegislatureDropdown">
+                    <button class="filter-btn" type="button">Legislatur <span class="filter-count"></span></button>
+                    <div class="filter-menu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Alle</label>
+                        <label><input type="checkbox" value="52"> 52. (ab Dez. 2023)</label>
+                        <label><input type="checkbox" value="51"> 51. (Dez. 2019 - Sept. 2023)</label>
+                        <label><input type="checkbox" value="50"> 50. (Dez. 2015 - Sept. 2019)</label>
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="objectYearDropdown">
+                    <button class="filter-btn" type="button">Jahr <span class="filter-count"></span></button>
+                    <div class="filter-menu" id="objectYearMenu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Alle</label>
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="objectCouncilDropdown">
+                    <button class="filter-btn" type="button">Rat <span class="filter-count"></span></button>
+                    <div class="filter-menu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Alle</label>
+                        <label><input type="checkbox" value="N"> Nationalrat</label>
+                        <label><input type="checkbox" value="S"> Ständerat</label>
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="objectPartyDropdown">
+                    <button class="filter-btn" type="button">Partei <span class="filter-count"></span></button>
+                    <div class="filter-menu" id="objectPartyMenu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Alle</label>
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="objectDeptDropdown">
+                    <button class="filter-btn" type="button">Behörde <span class="filter-count"></span></button>
+                    <div class="filter-menu" id="objectDeptMenu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Alle</label>
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="objectTagsDropdown">
+                    <button class="filter-btn" type="button">Themen <span class="filter-count"></span></button>
+                    <div class="filter-menu" id="objectTagsMenu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Alle</label>
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="objectMentionDropdown">
+                    <button class="filter-btn" type="button">Wer zitiert <span class="filter-count"></span></button>
+                    <div class="filter-menu" id="objectMentionMenu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Alle</label>
+                        <label><input type="checkbox" value="elu"> 👤 Parlamentarier</label>
+                        <label><input type="checkbox" value="cf"> 🏛️ Bundesrat</label>
+                        <label><input type="checkbox" value="both"> 👤🏛️ Beide</label>
+                    </div>
+                </div>
+                <button class="filter-reset" id="resetObjectFilters" title="Zurücksetzen">↻</button>
+            </div>
+            
+            <div class="stats-row">
+                <div class="stat-card">
+                    <h3>Vorstösse nach Partei <button class="chart-screenshot-btn" onclick="downloadChart('partyChart', 'objets-par-parti')" title="Bild herunterladen">📷</button></h3>
+                    <div class="chart-container">
+                        <canvas id="partyChart"></canvas>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <h3>Vorstösse nach Typ <button class="chart-screenshot-btn" onclick="downloadChart('typeChart', 'objets-par-type')" title="Bild herunterladen">📷</button></h3>
+                    <div class="chart-container">
+                        <canvas id="typeChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stats-row">
+                <div class="stat-card">
+                    <h3>📈 Entwicklung pro Jahr <button class="chart-screenshot-btn" onclick="downloadChart('yearChart', 'objets-par-annee')" title="Bild herunterladen">📷</button></h3>
+                    <div class="chart-container-wide">
+                        <canvas id="yearChart"></canvas>
+                    </div>
+                    <div id="sessionDetail" class="session-detail" style="display: none;">
+                        <h4 id="sessionDetailTitle"></h4>
+                        <div id="sessionDetailContent"></div>
+                    </div>
+                </div>
+                
+                <div class="stat-card top-card">
+                    <h3>🗣️ Aktivste Parlamentarier</h3>
+                    <div id="topAuthors" class="top-authors-list">
+                        <p>Laden...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="stats-section" id="debatesSection">
+            <h2>💬 Debatten-Statistiken</h2>
+            
+            <div class="stats-filters">
+                <div class="filter-dropdown" id="debateLegislatureDropdown">
+                    <button class="filter-btn" type="button">Legislatur <span class="filter-count"></span></button>
+                    <div class="filter-menu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Alle</label>
+                        <label><input type="checkbox" value="52"> 52. (ab Dez. 2023)</label>
+                        <label><input type="checkbox" value="51"> 51. (Dez. 2019 - Sept. 2023)</label>
+                        <label><input type="checkbox" value="50"> 50. (Dez. 2015 - Sept. 2019)</label>
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="debateYearDropdown">
+                    <button class="filter-btn" type="button">Jahr <span class="filter-count"></span></button>
+                    <div class="filter-menu" id="debateYearMenu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Alle</label>
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="debateSessionDropdown">
+                    <button class="filter-btn" type="button">Session <span class="filter-count"></span></button>
+                    <div class="filter-menu" id="debateSessionMenu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Alle</label>
+                        <label><input type="checkbox" value="Printemps"> Frühling</label>
+                        <label><input type="checkbox" value="Été"> Sommer</label>
+                        <label><input type="checkbox" value="Automne"> Herbst</label>
+                        <label><input type="checkbox" value="Hiver"> Winter</label>
+                        <label><input type="checkbox" value="Spéciale"> Sondersession</label>
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="debateCouncilDropdown">
+                    <button class="filter-btn" type="button">Rat <span class="filter-count"></span></button>
+                    <div class="filter-menu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Alle</label>
+                        <label><input type="checkbox" value="N"> Nationalrat</label>
+                        <label><input type="checkbox" value="S"> Ständerat</label>
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="debatePartyDropdown">
+                    <button class="filter-btn" type="button">Partei <span class="filter-count"></span></button>
+                    <div class="filter-menu" id="debatePartyMenu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Alle</label>
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="debateDeptDropdown">
+                    <button class="filter-btn" type="button">Behörde <span class="filter-count"></span></button>
+                    <div class="filter-menu" id="debateDeptMenu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Alle</label>
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="debateTagsDropdown">
+                    <button class="filter-btn" type="button">Themen <span class="filter-count"></span></button>
+                    <div class="filter-menu" id="debateTagsMenu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Alle</label>
+                    </div>
+                </div>
+                <button class="filter-reset" id="resetDebateFilters" title="Zurücksetzen">↻</button>
+            </div>
+            
+            <div class="stats-row">
+                <div class="stat-card">
+                    <h3>Interventionen nach Akteur <button class="chart-screenshot-btn" onclick="downloadChart('debatePartyChart', 'debats-par-acteur')" title="Bild herunterladen">📷</button></h3>
+                    <div class="chart-container">
+                        <canvas id="debatePartyChart"></canvas>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <h3>Interventionen nach Rat <button class="chart-screenshot-btn" onclick="downloadChart('debateCouncilChart', 'debats-par-conseil')" title="Bild herunterladen">📷</button></h3>
+                    <div class="chart-container">
+                        <canvas id="debateCouncilChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stats-row">
+                <div class="stat-card top-card">
+                    <h3>📢 Redner</h3>
+                    <div id="topSpeakers" class="top-authors-list">
+                        <p>Laden...</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card top-card">
+                    <h3>📢 Redner (ohne BR)</h3>
+                    <div id="topSpeakersNoCF" class="top-authors-list">
+                        <p>Laden...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Daten: <a href="https://ws-old.parlament.ch/" target="_blank">API des Schweizer Parlaments</a> · 
+               <a href="https://github.com/SwissParlMonitoring/SEM" target="_blank">Quellcode</a></p>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" class="scroll-top-btn" title="Nach oben">↑</button>
+    <script>window.LANG = 'de';</script>
+    <script src="stats.js"></script>
+    <script>
+        const scrollBtn = document.getElementById('scrollTopBtn');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollBtn.classList.add('visible');
+            } else {
+                scrollBtn.classList.remove('visible');
+            }
+        });
+        scrollBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

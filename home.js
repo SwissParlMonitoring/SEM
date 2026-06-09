@@ -2,9 +2,22 @@
 const DATA_URL = 'sem_migration_data.json';
 const DEBATES_URL = 'debates_data.json';
 const SESSIONS_URL = 'sessions.json';
+const isDE = (window.LANG === 'de');
 
 // Traduction des types d'objets
-const typeLabels = {
+const typeLabels = isDE ? {
+    'Mo.': 'Mo.',
+    'Po.': 'Po.',
+    'Ip.': 'Ip.',
+    'D.Ip.': 'D.Ip.',
+    'Fra.': 'Fragestunde',
+    'A.': 'Anfrage',
+    'Pa. Iv.': 'Pa. Iv.',
+    'Iv. pa.': 'Pa. Iv.',
+    'Iv. ct.': 'Kt. Iv.',
+    'Kt. Iv.': 'Kt. Iv.',
+    'BRG': 'BRG'
+} : {
     'Mo.': 'Mo.',
     'Po.': 'Po.',
     'Ip.': 'Ip.',
@@ -19,8 +32,26 @@ const typeLabels = {
 
 // Traduction des partis
 function translateParty(party) {
-    if (!party || party === 'None' || party === 'null') return 'Conseil fédéral';
-    const translations = {
+    if (!party || party === 'None' || party === 'null') return isDE ? 'Bundesrat' : 'Conseil fédéral';
+    const translations = isDE ? {
+        'V': 'SVP',
+        'S': 'SP',
+        'RL': 'FDP',
+        'M-E': 'Die Mitte',
+        'M': 'Die Mitte',
+        'G': 'GRÜNE',
+        'GL': 'GLP',
+        'BD': 'Die Mitte',
+        'CEg': 'Die Mitte',
+        'UDC': 'SVP',
+        'PS': 'SP',
+        'PLR': 'FDP',
+        'Le Centre': 'Die Mitte',
+        'VERT-E-S': 'GRÜNE',
+        'Vert\'libéraux': 'GLP',
+        'pvl': 'GLP',
+        'Indépendant': 'Parteilos'
+    } : {
         'V': 'UDC',
         'S': 'PS',
         'RL': 'PLR',
@@ -161,7 +192,8 @@ function showSessionAnimation(session) {
     
     window.currentSessionEnd = session.end;
     
-    const titleWithoutYear = session.name_fr.replace(/\s*\d{4}$/, '');
+    const sessionLabel = isDE ? session.name_de : session.name_fr;
+    const titleWithoutYear = (sessionLabel || '').replace(/\s*\d{4}$/, '');
     document.getElementById('sessionTitlePixel').textContent = titleWithoutYear;
     document.getElementById('sessionDatePixel').textContent = formatSessionDates(session.start, session.end);
     
@@ -399,12 +431,16 @@ function displaySessionSummaryEmpty(session) {
     const textEl = document.getElementById('summaryText');
     const startDate = formatDate(session.start);
     const endDate = formatDate(session.end);
-    const sessionName = session.name_fr || getSessionName(session.id);
+    const sessionName = isDE ? (session.name_de || getSessionName(session.id)) : (session.name_fr || getSessionName(session.id));
     if (titleEl) {
-        titleEl.textContent = `Résumé de la ${sessionName} (${startDate} - ${endDate})`;
+        titleEl.textContent = isDE
+            ? `Zusammenfassung ${sessionName} (${startDate} - ${endDate})`
+            : `Résumé de la ${sessionName} (${startDate} - ${endDate})`;
     }
     if (textEl) {
-        textEl.textContent = `Aucune intervention liée à la migration/asile n'a été déposée durant la ${sessionName}.`;
+        textEl.textContent = isDE
+            ? `Während der ${sessionName} wurden keine Vorstösse zu Migration/Asyl eingereicht.`
+            : `Aucune intervention liée à la migration/asile n'a été déposée durant la ${sessionName}.`;
     }
 }
 
@@ -412,7 +448,7 @@ function displayLatestUpdatedTitle() {
     const titleEl = document.getElementById('summaryTitle');
     const textEl = document.getElementById('summaryText');
     if (titleEl) {
-        titleEl.textContent = 'Dernières mises à jour';
+        titleEl.textContent = isDE ? 'Letzte Aktualisierungen' : 'Dernières mises à jour';
     }
     if (textEl) {
         textEl.style.display = 'none';
@@ -441,15 +477,21 @@ function displayLatestUpdatedObjects(allItems) {
         const partyColor = partyColors[party] || partyColors[item.party] || '#6B7280';
         
         const frMissing = isTitleMissing(item.title);
-        const displayTitle = frMissing && item.title_de ? item.title_de : (item.title || item.title_de || '');
-        const langWarning = frMissing && item.title_de ? '<span class="lang-warning">🌐 Uniquement en allemand</span>' : '';
+        const deMissing = isTitleMissing(item.title_de);
+        const displayTitle = isDE
+            ? (deMissing && !frMissing ? item.title : (item.title_de || item.title || ''))
+            : (frMissing && item.title_de ? item.title_de : (item.title || item.title_de || ''));
+        const langWarning = isDE
+            ? (deMissing && !frMissing ? '<span class="lang-warning">🌐 Nur auf Französisch</span>' : '')
+            : (frMissing && item.title_de ? '<span class="lang-warning">🌐 Uniquement en allemand</span>' : '');
         
         const itemDateStr = item.date_maj || item.date || '';
         const itemDate = itemDateStr ? new Date(itemDateStr + 'T12:00:00') : null;
         const isNew = itemDate ? itemDate >= fourDaysAgo : false;
+        const itemUrl = isDE ? (item.url_de || item.url_fr) : item.url_fr;
         
         html += `
-            <a href="${item.url_fr}" target="_blank" class="intervention-card${isNew ? ' card-new' : ''}">
+            <a href="${itemUrl}" target="_blank" class="intervention-card${isNew ? ' card-new' : ''}">
                 <div class="card-header">
                     <span class="card-type">${typeLabels[type] || type}</span>
                     <span class="card-id">${item.shortId}</span>
@@ -477,12 +519,16 @@ async function displaySessionSummary(summary, currentSession) {
     const sessionEnd = currentSession ? currentSession.end : summary.session_end;
     const sessionId = currentSession ? currentSession.id : summary.session_id;
     
-    const sessionName = currentSession ? currentSession.name_fr : getSessionName(sessionId);
+    const sessionName = isDE
+        ? (currentSession ? currentSession.name_de : getSessionName(sessionId))
+        : (currentSession ? currentSession.name_fr : getSessionName(sessionId));
     const startDate = formatDate(sessionStart);
     const endDate = formatDate(sessionEnd);
     
     if (titleEl) {
-        titleEl.textContent = `Résumé de la ${sessionName} (${startDate} - ${endDate})`;
+        titleEl.textContent = isDE
+            ? `Zusammenfassung ${sessionName} (${startDate} - ${endDate})`
+            : `Résumé de la ${sessionName} (${startDate} - ${endDate})`;
     }
     
     if (textEl) {
@@ -499,9 +545,13 @@ async function displaySessionSummary(summary, currentSession) {
         const cn = summary.by_council?.CN || 0;
         const ce = summary.by_council?.CE || 0;
         
-        let text = `Durant la ${sessionName}, ${count} interventions liées à la migration et l'asile ont été déposées : ${typesText.join(', ')}. `;
+        let text = isDE
+            ? `Während der ${sessionName} wurden ${count} Vorstösse zu Migration und Asyl eingereicht: ${typesText.join(', ')}. `
+            : `Durant la ${sessionName}, ${count} interventions liées à la migration et l'asile ont été déposées : ${typesText.join(', ')}. `;
         if (cn > 0 && ce > 0) {
-            text += `${cn} au Conseil national et ${ce} au Conseil des États. `;
+            text += isDE
+                ? `${cn} im Nationalrat und ${ce} im Ständerat. `
+                : `${cn} au Conseil national et ${ce} au Conseil des États. `;
         }
         
         if (summary.interventions && summary.interventions.party) {
@@ -557,14 +607,20 @@ function displayNewObjectsDuringSession(allItems, newIds, activeSession) {
         const partyColor = partyColors[party] || partyColors[item.party] || '#6B7280';
         
         const frMissing = isTitleMissing(item.title);
-        const displayTitle = frMissing && item.title_de ? item.title_de : (item.title || item.title_de || '');
-        const langWarning = frMissing && item.title_de ? '<span class="lang-warning">🌐 Uniquement en allemand</span>' : '';
+        const deMissing = isTitleMissing(item.title_de);
+        const displayTitle = isDE
+            ? (deMissing && !frMissing ? item.title : (item.title_de || item.title || ''))
+            : (frMissing && item.title_de ? item.title_de : (item.title || item.title_de || ''));
+        const langWarning = isDE
+            ? (deMissing && !frMissing ? '<span class="lang-warning">🌐 Nur auf Französisch</span>' : '')
+            : (frMissing && item.title_de ? '<span class="lang-warning">🌐 Uniquement en allemand</span>' : '');
         
         const itemDate = new Date(item.date + 'T12:00:00');
         const isNew = itemDate >= fourDaysAgo;
+        const itemUrl = isDE ? (item.url_de || item.url_fr) : item.url_fr;
         
         html += `
-            <a href="${item.url_fr}" target="_blank" class="intervention-card${isNew ? ' card-new' : ''}">
+            <a href="${itemUrl}" target="_blank" class="intervention-card${isNew ? ' card-new' : ''}">
                 <div class="card-header">
                     <span class="card-type">${typeLabels[type] || type}</span>
                     <span class="card-id">${item.shortId}</span>
@@ -618,11 +674,17 @@ function displayObjectsList(summary, newIds = [], allItems = []) {
         const frTitle = itemData?.title || interventions.title[i];
         const deTitle = itemData?.title_de || '';
         const frMissing = isTitleMissing(frTitle);
-        const displayTitle = frMissing && !isTitleMissing(deTitle) ? deTitle : (frTitle || deTitle || '');
-        const langWarning = frMissing && !isTitleMissing(deTitle) ? '<span class="lang-warning">🌐 Uniquement en allemand</span>' : '';
+        const deMissing = isTitleMissing(deTitle);
+        const displayTitle = isDE
+            ? (deMissing && !frMissing ? frTitle : (deTitle || frTitle || ''))
+            : (frMissing && !deMissing ? deTitle : (frTitle || deTitle || ''));
+        const langWarning = isDE
+            ? (deMissing && !frMissing ? '<span class="lang-warning">🌐 Nur auf Französisch</span>' : '')
+            : (frMissing && !deMissing ? '<span class="lang-warning">🌐 Uniquement en allemand</span>' : '');
+        const cardUrl = isDE ? (interventions.url_de?.[i] || interventions.url_fr[i]) : interventions.url_fr[i];
         
         html += `
-            <a href="${interventions.url_fr[i]}" target="_blank" class="intervention-card${isNew ? ' card-new' : ''}">
+            <a href="${cardUrl}" target="_blank" class="intervention-card${isNew ? ' card-new' : ''}">
                 <div class="card-header">
                     <span class="card-type">${typeLabels[type] || type}</span>
                     <span class="card-id">${shortId}</span>

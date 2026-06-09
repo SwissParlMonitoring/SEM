@@ -1,0 +1,89 @@
+name: Update Parliament Data
+
+on:
+  schedule:
+    # 2x par jour: 13h et 22h Suisse (12h et 21h UTC)
+    - cron: '0 12 * * *'   # 13h CH
+    - cron: '0 21 * * *'   # 22h CH
+  workflow_dispatch: # Permet l'exécution manuelle
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.3.0'
+          
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcurl4-openssl-dev libssl-dev libxml2-dev
+          
+      - name: Install R packages
+        run: |
+          install.packages(c("dplyr", "swissparl", "stringr", "openxlsx", "tidyr", "xfun", "jsonlite", "lubridate", "httr"))
+        shell: Rscript {0}
+        
+      - name: Run R script
+        run: |
+          source("Recherche_SEM_Migration.R")
+        shell: Rscript {0}
+        env:
+          CI: true
+          
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add sem_migration_data.json Objets_parlementaires_SEM_Migration.xlsx new_ids_tracking.json || true
+          git stash --include-untracked || true
+          git pull --rebase origin main || true
+          git stash pop || true
+          git add sem_migration_data.json Objets_parlementaires_SEM_Migration.xlsx new_ids_tracking.json || true
+          git diff --quiet --cached || git commit -m "Update parliament data - $(date +'%Y-%m-%d')"
+          git push
+
+  deploy-pages:
+    needs: update-data
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          
+      - name: Pull latest changes
+        run: git pull origin main
+        
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+        
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+          
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

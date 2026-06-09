@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Migration & Asyl - Parlamentarische Vorstösse</title>
+    <meta name="theme-color" content="#2D6A8F">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="header-main">
+                <h1><a href="home_de.html" style="color: inherit; text-decoration: none;">🏛️ Migration & Asyl im Parlament</a></h1>
+                <nav>
+                    <a href="home_de.html">Home</a>
+                    <a href="objects_de.html" class="active">Vorstösse</a>
+                    <a href="debates_de.html">Debatten</a>
+                    <a href="stats_de.html">Statistiken</a>
+                </nav>
+            </div>
+            <div class="lang-switcher">
+                <a href="objects.html">FR</a>
+                <span>|</span>
+                <a href="objects_de.html" class="active">DE</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="search-section">
+            <h2>Vorstoss suchen</h2>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Suche nach Titel, Autor, Nummer...">
+                <button id="clearSearch" class="btn-clear" title="Löschen">✕</button>
+            </div>
+            <div class="filters">
+                <div class="filter-dropdown" id="legislatureDropdown">
+                    <button class="filter-btn" type="button">Legislatur <span class="filter-count"></span></button>
+                    <div class="filter-menu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Alle</label>
+                        <label><input type="checkbox" value="52"> 52. (ab Dez. 2023)</label>
+                        <label><input type="checkbox" value="51"> 51. (Dez. 2019 - Sept. 2023)</label>
+                        <label><input type="checkbox" value="50"> 50. (Dez. 2015 - Sept. 2019)</label>
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="typeDropdown">
+                    <button class="filter-btn" type="button">Typ <span class="filter-count"></span></button>
+                    <div class="filter-menu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Alle</label>
+                        <label><input type="checkbox" value="Mo."> Motion</label>
+                        <label><input type="checkbox" value="Po."> Postulat</label>
+                        <label><input type="checkbox" value="Ip."> Interpellation</label>
+                        <label><input type="checkbox" value="Fra."> Fragestunde</label>
+                        <label><input type="checkbox" value="A."> Anfrage</label>
+                        <label><input type="checkbox" value="Pa. Iv."> Parlamentarische Initiative</label>
+                        <label><input type="checkbox" value="D.Ip."> Dringliche Interpellation</label>
+                        <label><input type="checkbox" value="BRG"> Geschäft des Bundesrates</label>
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="councilDropdown">
+                    <button class="filter-btn" type="button">Rat <span class="filter-count"></span></button>
+                    <div class="filter-menu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Alle</label>
+                        <label><input type="checkbox" value="NR"> Nationalrat</label>
+                        <label><input type="checkbox" value="SR"> Ständerat</label>
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="yearDropdown">
+                    <button class="filter-btn" type="button">Jahr <span class="filter-count"></span></button>
+                    <div class="filter-menu" id="yearMenu">
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="partyDropdown">
+                    <button class="filter-btn" type="button">Partei <span class="filter-count"></span></button>
+                    <div class="filter-menu" id="partyMenu">
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="departmentDropdown">
+                    <button class="filter-btn" type="button">Behörde <span class="filter-count"></span></button>
+                    <div class="filter-menu" id="departmentMenu">
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="tagsDropdown">
+                    <button class="filter-btn" type="button">Themen <span class="filter-count"></span></button>
+                    <div class="filter-menu" id="tagsMenu">
+                    </div>
+                </div>
+                <div class="filter-dropdown" id="mentionDropdown">
+                    <button class="filter-btn" type="button">Wer zitiert <span class="filter-count"></span></button>
+                    <div class="filter-menu" id="mentionMenu">
+                        <label class="select-all"><input type="checkbox" data-select-all checked> Alle</label>
+                        <label><input type="checkbox" value="elu"> 👤 Parlamentarier</label>
+                        <label><input type="checkbox" value="cf"> 🏛️ Bundesrat</label>
+                        <label><input type="checkbox" value="both"> 👤🏛️ Beide</label>
+                    </div>
+                </div>
+                <div class="filter-actions">
+                    <button class="filter-reset" id="resetFilters" title="Filter zurücksetzen">↻</button>
+                    <button class="filter-new-updates" id="showNewUpdates" title="Neuheiten anzeigen">Neuheiten</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="results-section">
+            <div class="results-header">
+                <span id="resultsCount">Laden...</span>
+                <button id="downloadBtn" class="btn-download" title="Excel herunterladen">📥 Excel</button>
+                <button id="sortOrderBtn" class="btn-sort" title="Reihenfolge umkehren">↓ Neuste</button>
+                <span id="lastUpdate"></span>
+            </div>
+            <div id="results" class="results-grid">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Daten: <a href="https://ws-old.parlament.ch/" target="_blank">API des Schweizer Parlaments</a></p>
+            <p>Quelle: <a href="https://github.com/SwissParlMonitoring/SEM" target="_blank">GitHub</a></p>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" class="scroll-top-btn" title="Nach oben">↑</button>
+    <script>window.LANG = 'de';</script>
+    <script src="app.js"></script>
+    <script>
+        const scrollBtn = document.getElementById('scrollTopBtn');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                scrollBtn.classList.add('visible');
+            } else {
+                scrollBtn.classList.remove('visible');
+            }
+        });
+        scrollBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
