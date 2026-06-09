@@ -117,9 +117,15 @@ async function init() {
         }
         
         // Load debates data
-        const debatesResponse = await fetch(DEBATES_URL);
-        const debatesJson = await debatesResponse.json();
-        displayDebatesSummary(debatesJson, currentSession);
+        try {
+            const debatesResponse = await fetch(DEBATES_URL);
+            if (debatesResponse.ok) {
+                const debatesJson = await debatesResponse.json();
+                displayDebatesSummary(debatesJson, currentSession);
+            }
+        } catch (e) {
+            console.warn('Debates data not available yet:', e.message);
+        }
         
     } catch (error) {
         console.error('Error loading data:', error);
