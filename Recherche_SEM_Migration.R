@@ -324,10 +324,11 @@ if (file.exists(FICHIER_EXCEL)) {
   
   if ("Date_dépôt" %in% names(Donnees_Existantes)) {
     Donnees_Existantes <- Donnees_Existantes |>
-      mutate(Date_dépôt = case_when(
-        is.numeric(Date_dépôt) ~ format(as.Date(Date_dépôt, origin = "1899-12-30"), "%Y-%m-%d"),
-        TRUE ~ as.character(Date_dépôt)
-      ))
+      mutate(Date_dépôt = if (is.numeric(Date_dépôt)) {
+        format(as.Date(Date_dépôt, origin = "1899-12-30"), "%Y-%m-%d")
+      } else {
+        as.character(Date_dépôt)
+      })
   }
   
   if ("Statut_DE" %in% names(Donnees_Existantes) && !"Statut" %in% names(Donnees_Existantes)) {
@@ -761,8 +762,8 @@ if (length(IDs_A_Traiter) > 0) {
     Nouveaux_Resultats <- Nouveaux_Resultats |>
       left_join(Date_MAJ_Existantes, by = "ID") |>
       mutate(
-        Date_MAJ = if_else(!is.na(Date_MAJ_Existante), Date_MAJ_Existante, Date_MAJ),
-        Date_MAJ_Langs = if_else(!is.na(Date_MAJ_Langs_Existante), Date_MAJ_Langs_Existante, Date_MAJ_Langs)
+        Date_MAJ = if_else(!is.na(Date_MAJ_Existante), as.character(Date_MAJ_Existante), as.character(Date_MAJ)),
+        Date_MAJ_Langs = if_else(!is.na(Date_MAJ_Langs_Existante), as.character(Date_MAJ_Langs_Existante), as.character(Date_MAJ_Langs))
       ) |>
       select(-Date_MAJ_Existante, -Date_MAJ_Langs_Existante)
     
