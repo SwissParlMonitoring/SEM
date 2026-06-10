@@ -193,7 +193,11 @@ function translateParty(party) {
             'VERT-E-S': 'GRÜNE',
             'Vert\'libéraux': 'GLP',
             'pvl': 'GLP',
-            'Indépendant': 'Parteilos'
+            'Indépendant': 'Parteilos',
+            'PEV': 'EVP',
+            'UDF': 'EDU',
+            'PLD': 'LDP',
+            'csp-ow': 'Die Mitte'
         };
         return translations[party] || party;
     }
@@ -206,7 +210,11 @@ function translateParty(party) {
         'CSPO': 'Le Centre',
         'CVP': 'Le Centre',
         'BDP': 'Le Centre',
-        'AI': 'VERT-E-S'
+        'AI': 'VERT-E-S',
+        'EVP': 'PEV',
+        'EDU': 'UDF',
+        'LDP': 'PLD',
+        'csp-ow': 'Le Centre'
     };
     return translations[party] || party;
 }

@@ -45,7 +45,13 @@ const partyColors = {
     'Vert\'libéraux': '#CDDC39',
     'GLP': '#CDDC39',
     'pvl': '#CDDC39',
-    'PVL': '#CDDC39'
+    'PVL': '#CDDC39',
+    'EVP': '#FFD700',
+    'PEV': '#FFD700',
+    'EDU': '#7B3F00',
+    'UDF': '#7B3F00',
+    'LDP': '#0066CC',
+    'PLD': '#0066CC'
 };
 
 const partyLabels = isDE ? {
@@ -71,7 +77,13 @@ const partyLabels = isDE ? {
     'SP': 'SP',
     'FDP': 'FDP',
     'GRÜNE': 'GRÜNE',
-    'GLP': 'GLP'
+    'GLP': 'GLP',
+    'EVP': 'EVP',
+    'PEV': 'EVP',
+    'EDU': 'EDU',
+    'UDF': 'EDU',
+    'LDP': 'LDP',
+    'PLD': 'LDP'
 } : {
     'UDC': 'UDC',
     'PSS': 'PS',
@@ -89,7 +101,13 @@ const partyLabels = isDE ? {
     'Les Vert-e-s': 'VERT-E-S',
     'Al': 'VERT-E-S',
     'pvl': 'Vert\'libéraux',
-    'PVL': 'Vert\'libéraux'
+    'PVL': 'Vert\'libéraux',
+    'EVP': 'PEV',
+    'PEV': 'PEV',
+    'EDU': 'UDF',
+    'UDF': 'UDF',
+    'LDP': 'PLD',
+    'PLD': 'PLD'
 };
 
 const typeLabels = isDE ? {

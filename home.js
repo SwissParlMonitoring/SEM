@@ -50,7 +50,11 @@ function translateParty(party) {
         'VERT-E-S': 'GRÜNE',
         'Vert\'libéraux': 'GLP',
         'pvl': 'GLP',
-        'Indépendant': 'Parteilos'
+        'Indépendant': 'Parteilos',
+        'PEV': 'EVP',
+        'UDF': 'EDU',
+        'PLD': 'LDP',
+        'csp-ow': 'Die Mitte'
     } : {
         'V': 'UDC',
         'S': 'PS',
@@ -60,7 +64,11 @@ function translateParty(party) {
         'G': 'VERT-E-S',
         'GL': 'Vert\'libéraux',
         'BD': 'Le Centre',
-        'CEg': 'Le Centre'
+        'CEg': 'Le Centre',
+        'EVP': 'PEV',
+        'EDU': 'UDF',
+        'LDP': 'PLD',
+        'csp-ow': 'Le Centre'
     };
     return translations[party] || party;
 }
@@ -85,14 +93,26 @@ const typeColors = {
 // Couleurs par parti
 const partyColors = {
     'UDC': '#009F4D',
+    'SVP': '#009F4D',
     'PLR': '#0066CC',
+    'FDP': '#0066CC',
     'Le Centre': '#FF9900',
+    'Die Mitte': '#FF9900',
     'M-E': '#FF9900',
     'PS': '#E41019',
     'PSS': '#E41019',
+    'SP': '#E41019',
     'VERT-E-S': '#84B414',
+    'GRÜNE': '#84B414',
     'Vert\'libéraux': '#A6CF42',
-    'pvl': '#A6CF42'
+    'GLP': '#A6CF42',
+    'pvl': '#A6CF42',
+    'EVP': '#FFD700',
+    'PEV': '#FFD700',
+    'EDU': '#7B3F00',
+    'UDF': '#7B3F00',
+    'LDP': '#0066CC',
+    'PLD': '#0066CC'
 };
 
 // Initialize
