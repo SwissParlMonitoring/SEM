@@ -35,14 +35,17 @@ const THEMATIC_CATEGORIES = [
         id: 'grenze',
         label_fr: 'Gestion des frontières & autorités',
         label_de: 'Grenzmanagement & Behörden',
-        keywords: ['migration', 'migrationspolitik', 'politique migratoire', 'schengen', 'visum', 'visa', 'grenze', 'frontière', 'sem ']
+        keywords: ['migrationspolitik', 'politique migratoire', 'migrationsabkommen', 'accord migratoire', 'migrationspartnerschaft', 'partenariat migratoire', 'migrationsströme', 'flux migratoire', 'migrationsbehörde', 'sekundärmigration', 'migration secondaire', 'migration illégale', 'illegale migration', 'schengen', 'visum', 'visa', 'grenze', 'frontière', 'staatssekretariat für migration', 'secrétariat d\'état aux migrations', 'migrationskommission', 'commission des migrations']
     }
 ];
+
+const IT_EXCLUSION_KEYWORDS = ['datenmigration', 'it-migration', 'systemmigration', 'datenbankm', 'softwaremigration', 'cloud-migration', 'migration informatique', 'migration numérique', 'migration des données', 'migration de système'];
 
 function getItemCategories(item) {
     const searchText = [
         item.title, item.title_de, item.text, item.text_de
     ].filter(Boolean).join(' ').toLowerCase();
+    if (IT_EXCLUSION_KEYWORDS.some(kw => searchText.includes(kw))) return [];
     const categories = [];
     for (const cat of THEMATIC_CATEGORIES) {
         if (cat.keywords.some(kw => searchText.includes(kw.toLowerCase()))) {
@@ -56,6 +59,7 @@ function getDebateCategories(item) {
     const searchText = [
         item.business_title_fr, item.business_title_de, item.text
     ].filter(Boolean).join(' ').toLowerCase();
+    if (IT_EXCLUSION_KEYWORDS.some(kw => searchText.includes(kw))) return [];
     const categories = [];
     for (const cat of THEMATIC_CATEGORIES) {
         if (cat.keywords.some(kw => searchText.includes(kw.toLowerCase()))) {
