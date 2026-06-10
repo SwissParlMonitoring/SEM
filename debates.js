@@ -2,6 +2,59 @@ const INITIAL_ITEMS = 5;
 const ITEMS_PER_LOAD = 5;
 const isDE = (window.LANG === 'de');
 
+const THEMATIC_CATEGORIES = [
+    {
+        id: 'asyl',
+        label_fr: 'Asile & procédures',
+        label_de: 'Asylwesen & Verfahren',
+        keywords: ['asyl', 'asile', 'asylwesen', 'asylverfahren', 'asylpolitik', 'asylgesetz', 'asylg', 'dublin', 'härtefallregelung', 'cas de rigueur', 'procédure d\'asile', 'loi sur l\'asile', 'lasi']
+    },
+    {
+        id: 'fluechtlinge',
+        label_fr: 'Réfugiés & statut de protection',
+        label_de: 'Flüchtlinge & Schutzstatus',
+        keywords: ['flüchtling', 'réfugié', 'schutzstatus', 'statut de protection', 'ukraine', 'vorläufige aufnahme', 'admission provisoire', 'n-ausweis', 'f-ausweis', 'permis n', 'permis f', 'livret n', 'livret f']
+    },
+    {
+        id: 'aufenthalt',
+        label_fr: 'Séjour & marché du travail',
+        label_de: 'Aufenthalt & Arbeitsmarkt',
+        keywords: ['ausländerrecht', 'droit des étrangers', 'ausländer- und integrationsgesetz', 'aig', 'letr', 'loi sur les étrangers', 'b-ausweis', 'c-ausweis', 'permis b', 'permis c', 'livret b', 'livret c', 'aufenthaltsbewilligung', 'autorisation de séjour', 'niederlassungsbewilligung', 'autorisation d\'établissement', 'arbeitsbewilligung', 'autorisation de travail', 'familiennachzug', 'regroupement familial']
+    },
+    {
+        id: 'integration',
+        label_fr: 'Intégration & naturalisation',
+        label_de: 'Integration & Einbürgerung',
+        keywords: ['integration', 'intégration', 'einbürgerung', 'naturalisation', 'schweizer bürgerrecht', 'droit de cité', 'bürgerrechtsgesetz', 'loi sur la nationalité']
+    },
+    {
+        id: 'wegweisung',
+        label_fr: 'Renvoi & sans-papiers',
+        label_de: 'Wegweisung & Sans-Papiers',
+        keywords: ['rückkehrhilfe', 'aide au retour', 'rückführung', 'rapatriement', 'wegweisung', 'renvoi', 'ausschaffung', 'expulsion', 'sans-papiers']
+    },
+    {
+        id: 'grenze',
+        label_fr: 'Gestion des frontières & autorités',
+        label_de: 'Grenzmanagement & Behörden',
+        keywords: ['migration', 'migrationspolitik', 'politique migratoire', 'schengen', 'visum', 'visa', 'grenze', 'frontière', 'sem ']
+    }
+];
+
+function getDebateCategories(item) {
+    const searchText = [
+        item.business_title_fr, item.business_title_de, item.text
+    ].filter(Boolean).join(' ').toLowerCase();
+    
+    const categories = [];
+    for (const cat of THEMATIC_CATEGORIES) {
+        if (cat.keywords.some(kw => searchText.includes(kw.toLowerCase()))) {
+            categories.push(cat.id);
+        }
+    }
+    return categories;
+}
+
 let allData = [];
 let filteredData = [];
 let displayedCount = 0;
@@ -369,33 +422,19 @@ function populateDepartmentFilter() {
     });
 }
 
-function getDebateTags(item) {
-    if (!item.business_number) return [];
-    const tags = objectsData[item.business_number];
-    if (!tags) return [];
-    return tags.split('|').map(t => t.trim()).filter(t => t);
-}
-
 function populateTagsFilter() {
     const tagsMenu = document.getElementById('tagsMenu');
     if (!tagsMenu) return;
     
-    const allTags = new Set();
-    allData.forEach(item => {
-        const tags = getDebateTags(item);
-        tags.forEach(tag => allTags.add(tag));
-    });
-    
-    const tagsArray = [...allTags].sort((a, b) => a.localeCompare(b, 'fr'));
-    
     const allLabel = document.createElement('label');
     allLabel.className = 'select-all';
-    allLabel.innerHTML = `<input type="checkbox" data-select-all checked> ${isDE ? 'Alle' : 'Tous'}`;
+    allLabel.innerHTML = `<input type="checkbox" data-select-all checked> ${isDE ? 'Alle' : 'Toutes'}`;
     tagsMenu.appendChild(allLabel);
     
-    tagsArray.forEach(tag => {
+    THEMATIC_CATEGORIES.forEach(cat => {
         const label = document.createElement('label');
-        label.innerHTML = `<input type="checkbox" value="${tag}"> ${tag}`;
+        const displayLabel = isDE ? cat.label_de : cat.label_fr;
+        label.innerHTML = `<input type="checkbox" value="${cat.id}"> ${displayLabel}`;
         tagsMenu.appendChild(label);
     });
 }
@@ -600,10 +639,10 @@ function applyFilters() {
             if (!legislatureValues.includes(itemLegislature)) return false;
         }
         
-        if (tagsValues) {
-            const itemTags = getDebateTags(item);
-            const hasMatchingTag = tagsValues.some(tag => itemTags.includes(tag));
-            if (!hasMatchingTag) return false;
+        if (tagsValues.length > 0) {
+            const itemCategories = getDebateCategories(item);
+            const hasMatchingCategory = itemCategories.some(cat => tagsValues.includes(cat));
+            if (!hasMatchingCategory) return false;
         }
         
         return true;
