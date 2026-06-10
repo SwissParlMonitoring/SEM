@@ -7,7 +7,7 @@ const THEMATIC_CATEGORIES = [
         id: 'asyl',
         label_fr: 'Asile & procédures',
         label_de: 'Asylwesen & Verfahren',
-        keywords: ['asyl', 'asile', 'asylwesen', 'asylverfahren', 'asylpolitik', 'asylgesetz', 'asylg', 'dublin', 'härtefallregelung', 'cas de rigueur', 'procédure d\'asile', 'loi sur l\'asile', 'lasi']
+        keywords: ['asyl', 'asile', 'asylwesen', 'asylverfahren', 'asylpolitik', 'asylgesetz', 'asylg', 'dublin', 'härtefallregelung', 'härtefallkommission', 'härtefallbewilligung', 'härtefallklausel', 'procédure d\'asile', 'loi sur l\'asile', 'lasi']
     },
     {
         id: 'fluechtlinge',

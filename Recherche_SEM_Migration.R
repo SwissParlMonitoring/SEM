@@ -109,7 +109,7 @@ pattern_migration_de <- regex(
     # Sans-Papiers
     "|\\bSans-Papiers\\b",
     # Härtefallregelung
-    "|\\bH(ä|ae)rtefall(regelung|kommission|bewilligung|gesuche)?\\b"
+    "|\\bH(ä|ae)rtefall(regelung|kommission|bewilligung|gesuche|klausel)\\b"
   ),
   ignore_case = TRUE
 )
@@ -169,9 +169,7 @@ pattern_migration_fr <- regex(
     # Visa
     "|\\bvisa(s)?\\b",
     # Sans-papiers
-    "|\\bsans-papiers\\b",
-    # Cas de rigueur
-    "|\\bcas\\s+de\\s+rigueur\\b"
+    "|\\bsans-papiers\\b"
   ),
   ignore_case = TRUE
 )
@@ -225,9 +223,7 @@ pattern_migration_it <- regex(
     # Visto
     "|\\bvisto\\b",
     # Sans-papiers
-    "|\\bsans-papiers\\b",
-    # Caso di rigore
-    "|\\bcaso\\s+di\\s+rigore\\b"
+    "|\\bsans-papiers\\b"
   ),
   ignore_case = TRUE
 )

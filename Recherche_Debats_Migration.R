@@ -123,7 +123,7 @@ pattern_migration_de <- regex(
     "|\\bAusschaffung(en|sinitiative)?\\b",
     "|\\bDublin(-Verfahren|-Abkommen|-System)?\\b",
     "|\\bSans-Papiers\\b",
-    "|\\bH(ä|ae)rtefall(regelung|kommission|bewilligung)?\\b"
+    "|\\bH(ä|ae)rtefall(regelung|kommission|bewilligung|klausel)\\b"
   ),
   ignore_case = TRUE
 )
@@ -148,11 +148,10 @@ pattern_migration_fr <- regex(
     "|\\bregroupement\\s+familial\\b",
     "|\\bnaturalisation(s)?\\b",
     "|\\baide\\s+au\\s+retour\\b",
-    "|\\brenvoi(s)?\\b",
+    "|\\brenvoi(s)?(?!\\s+(en\\s+commission|du\\s+projet|au\\s+Conseil|à\\s+la\\s+commission))\\b",
     "|\\bexpulsion(s)?\\b",
     "|\\bDublin\\b",
-    "|\\bsans-papiers\\b",
-    "|\\bcas\\s+de\\s+rigueur\\b"
+    "|\\bsans-papiers\\b"
   ),
   ignore_case = TRUE
 )
@@ -172,8 +171,7 @@ pattern_migration_it <- regex(
     "|\\bricongiungimento\\s+familiare\\b",
     "|\\bnaturalizzazione\\b",
     "|\\bDublino\\b",
-    "|\\bsans-papiers\\b",
-    "|\\bcaso\\s+di\\s+rigore\\b"
+    "|\\bsans-papiers\\b"
   ),
   ignore_case = TRUE
 )
