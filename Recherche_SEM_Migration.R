@@ -1200,7 +1200,8 @@ if (!is.null(Resultats) && nrow(Resultats) > 0) {
       date_maj_langs = if ("Date_MAJ_Langs" %in% names(Resultats)) Date_MAJ_Langs else NA_character_
     ) |>
     select(shortId, title, title_de, title_it, author, party, type, status, 
-           council, department, date, date_maj, date_maj_langs, statut_change_date, url_fr, url_de, mention, text, text_de, tags, tags_de, tags_it)
+           council, department, date, date_maj, date_maj_langs, statut_change_date, url_fr, url_de, mention, text, text_de, tags, tags_de, tags_it) |>
+    mutate(party = ifelse(party == "-", "UDC", party))
   
   # Charger le suivi existant des new_ids
   new_ids_tracking <- if (file.exists(FICHIER_NEW_IDS)) {
