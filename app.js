@@ -795,7 +795,16 @@ function translateType(type) {
             'Question': 'Anfrage',
             'Interpellation urgente': 'Dringliche Interpellation',
             'Initiative parlementaire': 'Parlamentarische Initiative',
-            'Objet du Conseil fédéral': 'Geschäft des Bundesrates'
+            'Objet du Conseil fédéral': 'Geschäft des Bundesrates',
+            'Kt. Iv.': 'Standesinitiative',
+            'Iv. ct.': 'Standesinitiative',
+            'Initiative cantonale': 'Standesinitiative',
+            'Pet.': 'Petition',
+            'Pétition': 'Petition',
+            'DA': 'Erklärung',
+            'Déclaration': 'Erklärung',
+            'PAG': 'Geschäft des Parlaments',
+            'Objet du Parlement': 'Geschäft des Parlaments'
         };
         return translations[type] || type;
     }
@@ -816,6 +825,14 @@ function translateType(type) {
         'Parlamentarische Initiative': 'Initiative parlementaire',
         'Pa.Iv.': 'Iv. pa.',
         'Pa. Iv.': 'Iv. pa.',
+        'Geschäft des Parlaments': 'Objet du Parlement',
+        'Kt. Iv.': 'Iv. ct.',
+        'Standesinitiative': 'Initiative cantonale',
+        'Pet.': 'Pétition',
+        'Petition': 'Pétition',
+        'DA': 'Déclaration',
+        'Erklärung': 'Déclaration',
+        'PAG': 'Objet du Parlement',
         'Geschäft des Parlaments': 'Objet du Parlement'
     };
     return translations[type] || type;

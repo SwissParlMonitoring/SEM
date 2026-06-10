@@ -187,7 +187,11 @@ const typeLabels = isDE ? {
     'A.': 'Anfrage',
     'Pa. Iv.': 'Pa. Iv.',
     'D.Ip.': 'D. Interpellation',
-    'BRG': 'Geschäft BR'
+    'BRG': 'Geschäft BR',
+    'Kt. Iv.': 'Standesinitiative',
+    'Pet.': 'Petition',
+    'DA': 'Erklärung',
+    'PAG': 'Geschäft Parl.'
 } : {
     'Mo.': 'Motion',
     'Po.': 'Postulat',
@@ -196,7 +200,11 @@ const typeLabels = isDE ? {
     'A.': 'Question',
     'Pa. Iv.': 'Initiative parl.',
     'D.Ip.': 'Interpellation urgente',
-    'BRG': 'Objet du CF'
+    'BRG': 'Objet du CF',
+    'Kt. Iv.': 'Initiative cantonale',
+    'Pet.': 'Pétition',
+    'DA': 'Déclaration',
+    'PAG': 'Objet du Parlement'
 };
 
 function translateDept(deptDE) {
@@ -218,7 +226,20 @@ function translateDept(deptDE) {
     return translations[deptDE] || deptDE;
 }
 
-const typeToFilter = {
+const typeToFilter = isDE ? {
+    'Motion': 'Mo.',
+    'Postulat': 'Po.',
+    'Interpellation': 'Ip.',
+    'Fragestunde': 'Fra.',
+    'Anfrage': 'A.',
+    'Pa. Iv.': 'Pa. Iv.',
+    'D. Interpellation': 'D.Ip.',
+    'Geschäft BR': 'BRG',
+    'Standesinitiative': 'Kt. Iv.',
+    'Petition': 'Pet.',
+    'Erklärung': 'DA',
+    'Geschäft Parl.': 'PAG'
+} : {
     'Motion': 'Mo.',
     'Postulat': 'Po.',
     'Interpellation': 'Ip.',
@@ -226,7 +247,11 @@ const typeToFilter = {
     'Question': 'A.',
     'Initiative parl.': 'Pa. Iv.',
     'Interpellation urgente': 'D.Ip.',
-    'Objet du CF': 'BRG'
+    'Objet du CF': 'BRG',
+    'Initiative cantonale': 'Kt. Iv.',
+    'Pétition': 'Pet.',
+    'Déclaration': 'DA',
+    'Objet du Parlement': 'PAG'
 };
 
 const partyToFilter = {
