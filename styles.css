@@ -1457,6 +1457,85 @@ a.author-row {
     cursor: help;
 }
 
+/* Session Animation */
+.session-animation {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: white;
+    border-radius: 12px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 1.25rem 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.session-animation::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    background: radial-gradient(circle at 80% 50%, rgba(255,255,255,0.08) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.session-animation::after {
+    content: '🏛️';
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    opacity: 0.6;
+}
+
+.session-pixel-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.session-pixel-container h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 0.01em;
+}
+
+.session-pixel-container p {
+    font-size: 0.9rem;
+    margin: 0;
+    opacity: 0.85;
+    font-weight: 400;
+}
+
+.session-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0.9;
+    margin-bottom: 0.2rem;
+}
+
+.pulse-dot {
+    width: 8px;
+    height: 8px;
+    background: #4caf50;
+    border-radius: 50%;
+    animation: pulse 1.5s ease-in-out infinite;
+    box-shadow: 0 0 4px rgba(76, 175, 80, 0.6);
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(0.85); }
+}
+
 /* Hero Banner */
 .hero-banner {
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
@@ -1638,6 +1717,19 @@ a.author-row {
 }
 
 @media (max-width: 768px) {
+    .session-animation {
+        padding: 1rem 1.25rem;
+    }
+    
+    .session-animation::after {
+        font-size: 1.5rem;
+        right: 1rem;
+    }
+    
+    .session-pixel-container h2 {
+        font-size: 1.05rem;
+    }
+    
     .hero-banner {
         padding: 1.5rem 1rem;
     }
