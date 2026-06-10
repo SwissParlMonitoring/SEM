@@ -148,7 +148,7 @@ pattern_migration_fr <- regex(
     "|\\bregroupement\\s+familial\\b",
     "|\\bnaturalisation(s)?\\b",
     "|\\baide\\s+au\\s+retour\\b",
-    "|\\brenvoi(s)?(?!\\s+(en\\s+commission|du\\s+projet|au\\s+Conseil|à\\s+la\\s+commission))\\b",
+    "|(?<!pas\\s(un|de|le|du)\\s)\\brenvoi(s)?(?!\\s+(en\\s+commission|du\\s+(contre[- ])?projet|au\\s+Conseil|à\\s+la\\s+commission|du\\s+rapport|de\\s+la\\s+motion|de\\s+l['](initiative|interpellation|objet)))\\b",
     "|\\bexpulsion(s)?\\b",
     "|\\bDublin\\b",
     "|\\bsans-papiers\\b"
