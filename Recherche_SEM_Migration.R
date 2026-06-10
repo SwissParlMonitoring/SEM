@@ -331,6 +331,13 @@ if (file.exists(FICHIER_EXCEL)) {
       })
   }
   
+  if ("Date_MAJ" %in% names(Donnees_Existantes)) {
+    Donnees_Existantes$Date_MAJ <- as.character(Donnees_Existantes$Date_MAJ)
+  }
+  if ("Date_MAJ_Langs" %in% names(Donnees_Existantes)) {
+    Donnees_Existantes$Date_MAJ_Langs <- as.character(Donnees_Existantes$Date_MAJ_Langs)
+  }
+  
   if ("Statut_DE" %in% names(Donnees_Existantes) && !"Statut" %in% names(Donnees_Existantes)) {
     cat("  -> Migration de l'ancienne structure de colonnes...\n")
     Donnees_Existantes <- Donnees_Existantes |>
