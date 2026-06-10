@@ -194,8 +194,8 @@ function showSessionAnimation(session) {
     
     const sessionLabel = isDE ? session.name_de : session.name_fr;
     const titleWithoutYear = (sessionLabel || '').replace(/\s*\d{4}$/, '');
-    document.getElementById('sessionTitlePixel').textContent = 'SEM';
-    document.getElementById('sessionDatePixel').textContent = `${titleWithoutYear} – ${formatSessionDates(session.start, session.end)}`;
+    document.getElementById('sessionTitlePixel').textContent = titleWithoutYear;
+    document.getElementById('sessionDatePixel').textContent = formatSessionDates(session.start, session.end);
     
     const year = new Date(session.start).getFullYear();
     const sessionType = getSessionType(session.id);
