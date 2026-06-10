@@ -159,7 +159,7 @@ pattern_migration_fr <- regex(
     "|\\bloi\\s+sur\\s+la\\s+nationalit(é|e)\\b",
     # Aide au retour / Renvoi / Expulsion
     "|\\baide\\s+au\\s+retour\\b",
-    "|(?<!pas\\s(un|de|le|du)\\s)\\brenvoi(s)?(?!\\s+(en\\s+commission|du\\s+(contre[- ])?projet|au\\s+Conseil|à\\s+la\\s+commission|du\\s+rapport|de\\s+la\\s+motion|de\\s+l['](initiative|interpellation|objet)))\\b",
+    "|\\brenvoi(s)?(?!\\s+(en\\s+commission|du\\s+(contre[- ])?projet|au\\s+Conseil|à\\s+la\\s+commission|du\\s+rapport|de\\s+la\\s+motion|de\\s+l['](initiative|interpellation|objet)))\\b",
     "|\\bexpulsion(s)?\\b",
     # Dublin
     "|\\bDublin\\b",
