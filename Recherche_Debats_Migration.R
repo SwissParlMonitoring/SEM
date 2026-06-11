@@ -101,7 +101,7 @@ JOURS_NOUVEAUTE <- 4
 pattern_migration_de <- regex(
   paste0(
     "\\bStaatssekretariat\\s+(f(ü|ue)r)\\s+Migration\\b",
-    "|(?<![a-zA-Z])SEM(?![a-zA-Z])",
+    "|(?<![a-zA-ZàâäéèêëïîôùûüçÀÂÄÉÈÊËÏÎÔÙÛÜÇ])SEM(?![a-zA-ZàâäéèêëïîôùûüçÀÂÄÉÈÊËÏÎÔÙÛÜÇ])",
     "|\\bMigrationspolitik\\b",
     "|\\bMigration(s(abkommen|krise|pakt|recht|welle|strom|druck))?\\b",
     "|\\bAusl(ä|ae)nder(recht|gesetz)\\b",
@@ -132,7 +132,7 @@ pattern_migration_de <- regex(
 pattern_migration_fr <- regex(
   paste0(
     "\\bSecr(é|e)tariat\\s+d'(É|E)tat\\s+aux\\s+migrations\\b",
-    "|(?<![a-zA-Z])SEM(?![a-zA-Z])",
+    "|(?<![a-zA-ZàâäéèêëïîôùûüçÀÂÄÉÈÊËÏÎÔÙÛÜÇ])SEM(?![a-zA-ZàâäéèêëïîôùûüçÀÂÄÉÈÊËÏÎÔÙÛÜÇ])",
     "|\\bmigration(s)?\\b",
     "|\\bpolitique\\s+migratoire\\b",
     "|\\bdroit\\s+des\\s+(é|e)trangers\\b",
@@ -148,7 +148,7 @@ pattern_migration_fr <- regex(
     "|\\bregroupement\\s+familial\\b",
     "|\\bnaturalisation(s)?\\b",
     "|\\baide\\s+au\\s+retour\\b",
-    "|\\brenvoi(s)?(?!\\s+(en\\s+commission|du\\s+(contre[- ])?projet|au\\s+Conseil|à\\s+la\\s+commission|du\\s+rapport|de\\s+la\\s+motion|de\\s+l['](initiative|interpellation|objet)))\\b",
+    "|\\brenvoi(s)?(?!\\s+(en\\s+commission|du\\s+(contre[- ])?projet|au\\s+Conseil|à\\s+la\\s+commission|du\\s+rapport|de\\s+la\\s+motion|de\\s+l['](initiative|interpellation|objet)|de\\s+l['](affaire|objet)\\s+au|au\\s+Conseil\\s+f(é|e)d(é|e)ral|à\\s+la\\s+commission\\s+comp(é|e)tente))\\b",
     "|\\bexpulsion(s)?\\b",
     "|\\bDublin\\b",
     "|\\bsans-papiers\\b"
@@ -160,7 +160,7 @@ pattern_migration_fr <- regex(
 pattern_migration_it <- regex(
   paste0(
     "\\bSegreteria\\s+di\\s+Stato\\s+della\\s+migrazione\\b",
-    "|(?<![a-zA-Z])SEM(?![a-zA-Z])",
+    "|(?<![a-zA-ZàâäéèêëïîôùûüçÀÂÄÉÈÊËÏÎÔÙÛÜÇ])SEM(?![a-zA-ZàâäéèêëïîôùûüçÀÂÄÉÈÊËÏÎÔÙÛÜÇ])",
     "|\\bmigrazione\\b",
     "|(?<![a-zA-Z])LStrI(?![a-zA-Z])",
     "|\\basilo\\b",
@@ -274,7 +274,72 @@ if (!is.null(Debats_Tous) && nrow(Debats_Tous) > 0) {
     distinct(ID, .keep_all = TRUE)
 }
 
-cat("\nTotal débats scannés:", nrow(Debats_Tous), "\n")
+cat("\nTotal débats avant post-filtrage:", nrow(Debats_Tous), "\n")
+
+# ============================================================================
+# POST-FILTRAGE : Exclure les faux positifs
+# ============================================================================
+# Certains textes sont captés par les patterns (ex: "renvoi" procédural,
+# faux positif SEM/LEI avec accents, textes multilingues sans lien migration).
+# On vérifie que le texte contient au moins un vrai mot-clé migration/asile.
+
+post_validation_pattern <- regex(
+  paste0(
+    # FR
+    "\\basile\\b",
+    "|\\bmigration(s)?\\b",
+    "|\\br(é|e)fugi(é|e)",
+    "|\\brequ(é|e)rant",
+    "|\\bnaturalisation",
+    "|\\bexpulsion",
+    "|\\bsans-papiers\\b",
+    "|\\bDublin\\b",
+    "|\\badmission\\s+provisoire",
+    "|\\bregroupement\\s+familial",
+    "|\\bpermis\\s+[NFBC]\\b",
+    "|\\blivret\\s+[NFBC]\\b",
+    "|\\baide\\s+au\\s+retour",
+    "|\\bdroit\\s+des\\s+(é|e)trangers",
+    "|\\bSecr(é|e)tariat\\s+d.(É|E)tat\\s+aux\\s+migrations",
+    "|(?<![a-zA-ZàâäéèêëïîôùûüçÀÂÄÉÈÊËÏÎÔÙÛÜÇ])SEM(?![a-zA-ZàâäéèêëïîôùûüçÀÂÄÉÈÊËÏÎÔÙÛÜÇ])",
+    "|(?<![a-zA-Z])LEI(?![a-zA-Z])",
+    "|(?<![a-zA-Z])LAsi(?![a-zA-Z])",
+    # DE
+    "|\\bAsyl",
+    "|\\bFl(ü|ue)chtling",
+    "|\\bMigration(s(abkommen|krise|pakt|recht|welle|strom|druck|politik|behörde))?\\b",
+    "|\\bWegweisung",
+    "|\\bAusschaffung",
+    "|\\bEinb(ü|ue)rgerung",
+    "|\\bAusl(ä|ae)nder",
+    "|\\bFamiliennachzug",
+    "|\\bSchutzstatus",
+    "|\\bvorl(ä|ae)ufige.{0,3}Aufnahme",
+    "|\\b[NFBC]-Ausweis\\b",
+    "|\\bR(ü|ue)ck(kehr|f(ü|ue)hr)",
+    "|\\bH(ä|ae)rtefall",
+    "|\\bStaatssekretariat\\s+f(ü|ue)r\\s+Migration",
+    "|(?<![a-zA-Z])AIG(?![a-zA-Z])",
+    "|(?<![a-zA-Z])AsylG(?![a-zA-Z])",
+    # IT
+    "|\\bmigrazione\\b",
+    "|\\basilo\\b",
+    "|\\brifugiat[ie]",
+    "|\\bnaturalizzazione",
+    "|\\bammissione\\s+provvisoria",
+    "|\\bricongiungimento\\s+familiare",
+    "|\\bDublino\\b",
+    "|\\bSegreteria\\s+di\\s+Stato\\s+della\\s+migrazione"
+  ),
+  ignore_case = TRUE
+)
+
+# Exclure les textes purement procéduraux (renvoi en commission, etc.)
+# qui ne contiennent aucun autre mot-clé migration
+Debats_Tous <- Debats_Tous |>
+  filter(str_detect(Text, post_validation_pattern))
+
+cat("Total débats après post-filtrage:", nrow(Debats_Tous), "\n")
 
 # En mode CI: fusionner avec les données existantes
 if (Sys.getenv("CI") == "true" && file.exists(FICHIER_DEBATS_JSON)) {
