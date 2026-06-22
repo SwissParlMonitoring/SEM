@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-06-22T16:31:00",
+    "updated": "2026-06-22T22:35:52",
     "total_count": 3857,
     "source": "Swiss Parliament API",
     "legislature": 52,
@@ -43,6 +43,28 @@
     }
   },
   "items": [
+    {
+      "shortId": "26.3056",
+      "title": "Réintroduisons le contrôle de nos frontières intérieures durant le G7 !",
+      "title_de": "Wiedereinführung der Kontrollen an den Binnengrenzen der Schweiz während des G7-Gipfels!",
+      "title_it": "Reintrodurre i controlli alle frontiere interne durante il G7!",
+      "author": "Addor Jean-Luc",
+      "party": "UDC",
+      "type": "Mo.",
+      "status": "Erledigt / Liquidé",
+      "council": "NR",
+      "department": "EJPD",
+      "date": "2026-03-05",
+      "date_maj": "2026-06-22",
+      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20263056",
+      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20263056",
+      "mention": "Élu",
+      "text": "<p>Le Conseil fédéral est chargé de prendre toutes dispositions utiles pour réintroduire le contrôle de nos frontières intérieures pendant le sommet du G7 à Evian en juin 2026 pour la durée des menaces que les troubles qui accompagneront immanquablement cet événement font peser sur l’ordre public et la sécurité intérieure de la Suisse.<\/p>",
+      "text_de": "<p>Der Bundesrat wird beauftragt, alle notwendigen Vorkehrungen zu treffen, um während des G7-Gipfels in Evian im Juni&nbsp;2026 die Kontrollen an den Binnengrenzen der Schweiz wieder einzuführen, solange von den Unruhen, die dieses Ereignis unweigerlich begleiten werden, eine Bedrohung der öffentlichen Ordnung und der inneren Sicherheit der Schweiz ausgeht.<\/p>",
+      "tags": "Politique internationale|Politique de sécurité",
+      "tags_de": "Internationale Politik|Sicherheitspolitik",
+      "tags_it": "Politica internazionale|Politica di sicurezza"
+    },
     {
       "shortId": "26.433",
       "title": "Titre suit",
@@ -3816,29 +3838,6 @@
       "mention": "Conseil fédéral",
       "text": "<p>Dans un rapport récent, le SRC affirme que le Hezbollah dispose en Suisse d'un réseau de personnes qui pourraient être activées pour soutenir des actions terroristes. En outre, selon un porte-parole du SRC cité dans le SonntagsBlick du 8 mars, il est probable que des services iraniens ou des réseaux criminels mandatés par l'Iran mènent des actions en Europe et en Suisse.<br>- &nbsp;Depuis quand les représentants du Hezbollah et des services iraniens sont-ils présents en Suisse&nbsp;?&nbsp;<br>- Quand seront-ils expulsés&nbsp;?<\/p>",
       "text_de": "<p>Gemäss dem aktuellen Lagebericht des Nachrichtendienstes des Bundes (NDB) unterhält die Hisbollah in der Schweiz ein Personennetzwerk, das zur Unterstützung von Terroraktionen aktiviert werden könnte. Darüber hinaus ist es laut einem Sprecher des NDB, der im Sonntagsblick vom 8.&nbsp;März&nbsp;2026 zitiert wird, wahrscheinlich, dass iranische Dienste oder vom Iran mandatierte kriminelle Netzwerke Aktionen in Europa und in der Schweiz durchführen.<br>- Seit wann sind die Vertreter der Hisbollah und der iranischen Dienste in der Schweiz präsent?&nbsp;<br>- Wann werden sie ausgewiesen?<\/p>",
-      "tags": "Politique internationale|Politique de sécurité",
-      "tags_de": "Internationale Politik|Sicherheitspolitik",
-      "tags_it": "Politica internazionale|Politica di sicurezza"
-    },
-    {
-      "shortId": "26.3056",
-      "title": "Réintroduisons le contrôle de nos frontières intérieures durant le G7 !",
-      "title_de": "Wiedereinführung der Kontrollen an den Binnengrenzen der Schweiz während des G7-Gipfels!",
-      "title_it": "Reintrodurre i controlli alle frontiere interne durante il G7!",
-      "author": "Addor Jean-Luc",
-      "party": "UDC",
-      "type": "Mo.",
-      "status": "Erledigt / Liquidé",
-      "council": "NR",
-      "department": "EJPD",
-      "date": "2026-03-05",
-      "date_maj": "2026-06-22",
-      "statut_change_date": "2026-06-22",
-      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20263056",
-      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20263056",
-      "mention": "Élu",
-      "text": "<p>Le Conseil fédéral est chargé de prendre toutes dispositions utiles pour réintroduire le contrôle de nos frontières intérieures pendant le sommet du G7 à Evian en juin 2026 pour la durée des menaces que les troubles qui accompagneront immanquablement cet événement font peser sur l’ordre public et la sécurité intérieure de la Suisse.<\/p>",
-      "text_de": "<p>Der Bundesrat wird beauftragt, alle notwendigen Vorkehrungen zu treffen, um während des G7-Gipfels in Evian im Juni&nbsp;2026 die Kontrollen an den Binnengrenzen der Schweiz wieder einzuführen, solange von den Unruhen, die dieses Ereignis unweigerlich begleiten werden, eine Bedrohung der öffentlichen Ordnung und der inneren Sicherheit der Schweiz ausgeht.<\/p>",
       "tags": "Politique internationale|Politique de sécurité",
       "tags_de": "Internationale Politik|Sicherheitspolitik",
       "tags_it": "Politica internazionale|Politica di sicurezza"
