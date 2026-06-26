@@ -255,7 +255,8 @@ function translateParty(party) {
             'PEV': 'EVP',
             'UDF': 'EDU',
             'PLD': 'LDP',
-            'csp-ow': 'Die Mitte'
+            'csp-ow': 'Die Mitte',
+            'Commissions': 'Kommissionen'
         };
         return translations[party] || party;
     }
@@ -279,13 +280,31 @@ function translateParty(party) {
 
 function translateAuthor(author) {
     if (!author) return '';
-    if (isDE) return author;
+    if (isDE) {
+        const translations = {
+            // Abréviations commissions FR → DE
+            'Bu-N': 'Bü-N', 'Bu-E': 'Bü-S',
+            'CdF-N': 'FK-N', 'CdF-E': 'FK-S',
+            'CdG-N': 'GPK-N', 'CdG-E': 'GPK-S',
+            'CSSS-N': 'SGK-N', 'CSSS-E': 'SGK-S',
+            'CEATE-N': 'UREK-N', 'CEATE-E': 'UREK-S',
+            'CIP-N': 'SPK-N', 'CIP-E': 'SPK-S',
+            'CAJ-N': 'RK-N', 'CAJ-E': 'RK-S',
+            'CPS-N': 'SiK-N', 'CPS-E': 'SiK-S',
+            'CTT-N': 'KVF-N', 'CTT-E': 'KVF-S',
+            'CER-N': 'WAK-N', 'CER-E': 'WAK-S',
+            'CSEC-N': 'WBK-N', 'CSEC-E': 'WBK-S',
+            'DélFin': 'FinDel', 'DélCdG': 'GPDel'
+        };
+        return translations[author] || author;
+    }
     const translations = {
-        'Sicherheitspolitische Kommission Nationalrat-Nationalrat': 'Commission de la politique de sécurité du Conseil national',
-        'Sicherheitspolitische Kommission Nationalrat': 'Commission de la politique de sécurité du Conseil national',
-        'Sicherheitspolitische Kommission Ständerat': 'Commission de la politique de sécurité du Conseil des États',
-        'Staatspolitische Kommission Nationalrat': 'Commission des institutions politiques du Conseil national',
-        'Staatspolitische Kommission Ständerat': 'Commission des institutions politiques du Conseil des États',
+        // Anciens noms complets DE → FR (rétrocompatibilité)
+        'Sicherheitspolitische Kommission Nationalrat-Nationalrat': 'CPS-N',
+        'Sicherheitspolitische Kommission Nationalrat': 'CPS-N',
+        'Sicherheitspolitische Kommission Ständerat': 'CPS-E',
+        'Staatspolitische Kommission Nationalrat': 'CIP-N',
+        'Staatspolitische Kommission Ständerat': 'CIP-E',
         'FDP-Liberale Fraktion': 'Groupe libéral-radical',
         'Grüne Fraktion': 'Groupe des VERT-E-S',
         'Sozialdemokratische Fraktion': 'Groupe socialiste',
