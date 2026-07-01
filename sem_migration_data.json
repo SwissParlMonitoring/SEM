@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-07-01T14:09:49",
+    "updated": "2026-07-01T22:18:13",
     "total_count": 3861,
     "source": "Swiss Parliament API",
     "legislature": 52,
@@ -4776,11 +4776,12 @@
       "author": "CIP-N",
       "party": "Commissions",
       "type": "Pa. Iv.",
-      "status": "In Kommission des Ständerats / En commission du Conseil des Etats",
+      "status": "Beratung in Kommission des Ständerates abgeschlossen / Fin des discussions en commission du Conseil des Etats",
       "council": "NR",
       "department": "EJPD",
       "date": "2026-01-23",
-      "date_maj": "2026-06-09",
+      "date_maj": "2026-07-01",
+      "statut_change_date": "2026-07-01",
       "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20260403",
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20260403",
       "mention": "Élu",
