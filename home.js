@@ -679,7 +679,9 @@ function displayObjectsList(summary, newIds = [], allItems = []) {
     const now = new Date();
     const fourDaysAgo = new Date(now.getTime() - 4 * 24 * 60 * 60 * 1000);
     
+    const INITIAL_LIMIT = 9;
     let html = '';
+    let cardIndex = 0;
     
     for (const i of indices) {
         const shortId = interventions.shortId[i];
@@ -703,8 +705,9 @@ function displayObjectsList(summary, newIds = [], allItems = []) {
             : (frMissing && !deMissing ? '<span class="lang-warning">🌐 Uniquement en allemand</span>' : '');
         const cardUrl = isDE ? (interventions.url_de?.[i] || interventions.url_fr[i]) : interventions.url_fr[i];
         
+        const hiddenClass = cardIndex >= INITIAL_LIMIT ? ' card-extra' : '';
         html += `
-            <a href="${cardUrl}" target="_blank" class="intervention-card${isNew ? ' card-new' : ''}">
+            <a href="${cardUrl}" target="_blank" class="intervention-card${isNew ? ' card-new' : ''}${hiddenClass}">
                 <div class="card-header">
                     <span class="card-type">${typeLabels[type] || type}</span>
                     <span class="card-id">${shortId}</span>
@@ -717,9 +720,29 @@ function displayObjectsList(summary, newIds = [], allItems = []) {
                 </div>
             </a>
         `;
+        cardIndex++;
     }
     
     container.innerHTML = html;
+    
+    const totalCards = cardIndex;
+    const existingBtn = document.getElementById('showMoreObjects');
+    if (existingBtn) existingBtn.remove();
+    
+    if (totalCards > INITIAL_LIMIT) {
+        const remaining = totalCards - INITIAL_LIMIT;
+        const btn = document.createElement('button');
+        btn.id = 'showMoreObjects';
+        btn.className = 'btn-show-more';
+        btn.textContent = isDE
+            ? `${remaining} weitere anzeigen`
+            : `Voir les ${remaining} autres`;
+        btn.addEventListener('click', () => {
+            container.classList.add('show-all');
+            btn.remove();
+        });
+        container.insertAdjacentElement('afterend', btn);
+    }
 }
 
 function displayDebatesSummary(debatesData, currentSession) {
