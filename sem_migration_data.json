@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-07-30T13:30:07",
+    "updated": "2026-07-31T13:46:32",
     "total_count": 3871,
     "source": "Swiss Parliament API",
     "legislature": 52,
@@ -2995,7 +2995,7 @@
       "title_it": "Legge sugli stranieri e la loro integrazione (Promozione dell’attività lucrativa dei beneficiari di una protezione provvisoria e agevolazione dell’ammissione di cittadini di Stati terzi che hanno conseguito una formazione in Svizzera). Modifica",
       "party": "Commissions",
       "type": "BRG",
-      "status": "Eingereicht / Déposé",
+      "status": "In Kommission des Nationalrats / En commission du Conseil national",
       "department": "EJPD",
       "date": "2026-05-27",
       "date_maj": "2026-06-09",
@@ -5068,7 +5068,7 @@
       "title_it": "Prevista distinzione tra le regioni ucraine nell’applicazione dello statuto di protezione S",
       "author": "Flüchtlingsparlament Schweiz",
       "type": "Pet.",
-      "status": "Eingereicht / Déposé",
+      "status": "In beiden Kommissionen / Dans les deux commissions",
       "department": "Parl",
       "date": "2026-01-06",
       "date_maj": "2026-06-09",
