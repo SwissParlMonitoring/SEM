@@ -1425,29 +1425,6 @@ a.author-row {
     display: none;
 }
 
-.home-cards.show-all .intervention-card.card-extra {
-    display: flex;
-}
-
-.btn-show-more {
-    display: inline-block;
-    margin: 0 0 1.5rem;
-    padding: 0.6rem 1.25rem;
-    background: transparent;
-    color: var(--primary);
-    border: 1px solid var(--primary);
-    border-radius: 8px;
-    font-size: 0.95rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.2s, color 0.2s;
-}
-
-.btn-show-more:hover {
-    background: var(--primary);
-    color: #fff;
-}
-
 .card-type {
     color: #6B7280;
     background: transparent;

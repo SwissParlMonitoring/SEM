@@ -724,25 +724,6 @@ function displayObjectsList(summary, newIds = [], allItems = []) {
     }
     
     container.innerHTML = html;
-    
-    const totalCards = cardIndex;
-    const existingBtn = document.getElementById('showMoreObjects');
-    if (existingBtn) existingBtn.remove();
-    
-    if (totalCards > INITIAL_LIMIT) {
-        const remaining = totalCards - INITIAL_LIMIT;
-        const btn = document.createElement('button');
-        btn.id = 'showMoreObjects';
-        btn.className = 'btn-show-more';
-        btn.textContent = isDE
-            ? `${remaining} weitere anzeigen`
-            : `Voir les ${remaining} autres`;
-        btn.addEventListener('click', () => {
-            container.classList.add('show-all');
-            btn.remove();
-        });
-        container.insertAdjacentElement('afterend', btn);
-    }
 }
 
 function displayDebatesSummary(debatesData, currentSession) {
