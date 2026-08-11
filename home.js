@@ -556,22 +556,31 @@ async function displaySessionSummary(summary, currentSession) {
         const types = summary.by_type || {};
         
         let typesText = [];
-        if (types['Ip.']) typesText.push(`${types['Ip.']} interpellation${types['Ip.'] > 1 ? 's' : ''}`);
-        if (types['D.Ip.']) typesText.push(`${types['D.Ip.']} interpellation${types['D.Ip.'] > 1 ? 's' : ''} urgente${types['D.Ip.'] > 1 ? 's' : ''}`);
-        if (types['Mo.']) typesText.push(`${types['Mo.']} motion${types['Mo.'] > 1 ? 's' : ''}`);
-        if (types['Fra.']) typesText.push(`${types['Fra.']} question${types['Fra.'] > 1 ? 's' : ''}`);
-        if (types['Po.']) typesText.push(`${types['Po.']} postulat${types['Po.'] > 1 ? 's' : ''}`);
+        if (types['Ip.']) typesText.push(isDE ? `${types['Ip.']} Interpellation${types['Ip.'] > 1 ? 'en' : ''}` : `${types['Ip.']} interpellation${types['Ip.'] > 1 ? 's' : ''}`);
+        if (types['D.Ip.']) typesText.push(isDE ? `${types['D.Ip.']} dringliche Interpellation${types['D.Ip.'] > 1 ? 'en' : ''}` : `${types['D.Ip.']} interpellation${types['D.Ip.'] > 1 ? 's' : ''} urgente${types['D.Ip.'] > 1 ? 's' : ''}`);
+        if (types['Mo.']) typesText.push(isDE ? `${types['Mo.']} Motion${types['Mo.'] > 1 ? 'en' : ''}` : `${types['Mo.']} motion${types['Mo.'] > 1 ? 's' : ''}`);
+        if (types['Fra.']) typesText.push(isDE ? `${types['Fra.']} Anfrage${types['Fra.'] > 1 ? 'n' : ''}` : `${types['Fra.']} question${types['Fra.'] > 1 ? 's' : ''}`);
+        if (types['Po.']) typesText.push(isDE ? `${types['Po.']} Postulat${types['Po.'] > 1 ? 'e' : ''}` : `${types['Po.']} postulat${types['Po.'] > 1 ? 's' : ''}`);
+        if (types['Pa. Iv.']) typesText.push(isDE ? `${types['Pa. Iv.']} parlamentarische Initiative${types['Pa. Iv.'] > 1 ? 'n' : ''}` : `${types['Pa. Iv.']} initiative${types['Pa. Iv.'] > 1 ? 's' : ''} parlementaire${types['Pa. Iv.'] > 1 ? 's' : ''}`);
+        if (types['BRG']) typesText.push(isDE ? `${types['BRG']} Geschäft${types['BRG'] > 1 ? 'e' : ''} des Bundesrates` : `${types['BRG']} objet${types['BRG'] > 1 ? 's' : ''} du Conseil fédéral`);
         
         const cn = summary.by_council?.CN || 0;
         const ce = summary.by_council?.CE || 0;
+        const otherCouncil = Math.max(count - cn - ce, 0);
         
         let text = isDE
             ? `Während der ${sessionName} wurden ${count} Vorstösse zu Migration und Asyl eingereicht: ${typesText.join(', ')}. `
             : `Durant la ${sessionName}, ${count} interventions liées à la migration et l'asile ont été déposées : ${typesText.join(', ')}. `;
         if (cn > 0 && ce > 0) {
-            text += isDE
-                ? `${cn} im Nationalrat und ${ce} im Ständerat. `
-                : `${cn} au Conseil national et ${ce} au Conseil des États. `;
+            if (otherCouncil > 0) {
+                text += isDE
+                    ? `${cn} im Nationalrat, ${ce} im Ständerat und ${otherCouncil} ohne Rat (Geschäft${otherCouncil > 1 ? 'e' : ''} des Bundesrates). `
+                    : `${cn} au Conseil national, ${ce} au Conseil des États et ${otherCouncil} sans conseil (objet${otherCouncil > 1 ? 's' : ''} du Conseil fédéral). `;
+            } else {
+                text += isDE
+                    ? `${cn} im Nationalrat und ${ce} im Ständerat. `
+                    : `${cn} au Conseil national et ${ce} au Conseil des États. `;
+            }
         }
         
         if (summary.interventions && summary.interventions.party) {
