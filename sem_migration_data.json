@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-08-14T12:44:10",
+    "updated": "2026-08-14T21:19:25",
     "total_count": 3872,
     "source": "Swiss Parliament API",
     "legislature": 52,
@@ -3017,7 +3017,7 @@
       "title_it": "Legge sugli stranieri e la loro integrazione (Promozione dell’attività lucrativa dei beneficiari di una protezione provvisoria e agevolazione dell’ammissione di cittadini di Stati terzi che hanno conseguito una formazione in Svizzera). Modifica",
       "party": "Commissions",
       "type": "BRG",
-      "status": "In Kommission des Nationalrats / En commission du Conseil national",
+      "status": "Beratung in Kommission des Nationalrates abgeschlossen / Fin des discussions en commission du Conseil national",
       "department": "EJPD",
       "date": "2026-05-27",
       "date_maj": "2026-06-09",
