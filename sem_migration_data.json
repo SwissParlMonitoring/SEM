@@ -1,10 +1,10 @@
 {
   "meta": {
-    "updated": "2026-08-24T21:23:28",
+    "updated": "2026-08-25T12:29:40",
     "total_count": 3876,
     "source": "Swiss Parliament API",
     "legislature": 52,
-    "new_ids": ["26.3895", "26.3858"]
+    "new_ids": []
   },
   "session_summary": {
     "session_id": "2026-ete",
@@ -10756,7 +10756,7 @@
       "title_it": "Reintroduzione di controlli alle frontiere più rigorosi",
       "author": "Aargau",
       "type": "Kt. Iv.",
-      "status": "In Kommission des Ständerats / En commission du Conseil des Etats",
+      "status": "In Kommission des Nationalrats / En commission du Conseil national",
       "department": "Parl",
       "date": "2025-06-12",
       "date_maj": "2026-06-09",
