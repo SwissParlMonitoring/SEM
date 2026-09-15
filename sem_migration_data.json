@@ -1,10 +1,10 @@
 {
   "meta": {
-    "updated": "2026-09-14T23:38:14",
-    "total_count": 3903,
+    "updated": "2026-09-15T15:56:12",
+    "total_count": 3908,
     "source": "Swiss Parliament API",
     "legislature": 52,
-    "new_ids": ["26.3809", "26.4083", "26.4085", "26.4090", "26.7633", "26.7666", "26.7669", "26.7674", "26.9019", "26.9020", "26.4062", "26.1036"]
+    "new_ids": ["26.4083", "26.4085", "26.4090", "26.7633", "26.7666", "26.7669", "26.7674", "26.9019", "26.9020", "26.4062", "26.1036", "26.4125", "26.7689", "26.7690", "26.7702", "26.7714"]
   },
   "session_summary": {
     "session_id": "2026-ete",
@@ -44,8 +44,94 @@
   },
   "items": [
     {
+      "shortId": "26.4125",
+      "title": "Titre suit",
+      "title_de": "Rechtsstaatliche Garantien im kantonalen Migrationsvollzug - Konsequenzen aus den Vorgängen im Kanton Baselland",
+      "title_it": "Titolo segue",
+      "author": "Locher Miriam",
+      "party": "PS",
+      "type": "Ip.",
+      "status": "Eingereicht / Déposé",
+      "council": "NR",
+      "date": "2026-09-15",
+      "date_maj": "2026-09-15",
+      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20264125",
+      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20264125",
+      "mention": "Élu",
+      "text_de": "<p>Der Bundesrat wird um die Beantwortung folgender Fragen gebeten:<\/p><ol style=\"list-style-type:decimal;\"><li>Welche Erkenntnisse hat der Bundesrat zu den Vorgängen im Baselbieter Migrationsamt, soweit sie den Vollzug von Bundesrecht betreffen?<\/li><li>Wie stellt der Bund sicher, dass kantonale Migrationsbehörden stets formelle, anfechtbare Verfügungen erlassen, wenn Rechte oder Aufenthaltsansprüche betroffen sind?<\/li><li>Welche Hinweise auf systematische Defizite beim Zugang zu Rechtsmitteln im kantonalen Migrationsvollzug sieht der Bundesrat?<\/li><li>Welche Instrumente stehen dem SEM zur Verfügung, um die rechtskonforme Anwendung des Ausländer- und Integrationsgesetzes sowie des Freizügigkeitsabkommens durch die Kantone zu überwachen?<\/li><li>Wie überprüft der Bund, ob EU/EFTA-Angehörige schweizweit nach einheitlichen Kriterien behandelt werden?<\/li><li>Welche Massnahmen bestehen gegen diskriminierende Praktiken in Migrationsbehörden, insbesondere aufgrund von Herkunft, Religion oder Erscheinungsbild?<\/li><li>Welche Massnahmen gibt es gegen vergleichbare Diskriminierungen durch IV oder KESB?<\/li><li>Ist der Bundesrat bereit, Mindeststandards für Dokumentation und Qualitätssicherung im kantonalen Migrationsvollzug zu prüfen?<\/li><li>Welche Möglichkeiten haben Betroffene, rechtswidrige frühere Entscheide überprüfen zu lassen, und sieht der Bundesrat hier zusätzlichen Handlungsbedarf?<\/li><\/ol>"
+    },
+    {
+      "shortId": "26.7689",
+      "title": "Titre suit",
+      "title_de": "Islamismus als Staatsfeind Nr. 1",
+      "author": "Schläpfer Therese",
+      "party": "UDC",
+      "type": "Fra.",
+      "status": "Eingereicht / Déposé",
+      "council": "NR",
+      "date": "2026-09-15",
+      "date_maj": "2026-09-15",
+      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267689",
+      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267689",
+      "mention": "Élu",
+      "text_de": "<p>In der NZZ vom 26. Juni 2026 hat Benedict Neff den Islamismus als Staatsfeind Nr. 1 bezeichnet.<br>1. Täuscht mein Eindruck, dass der Bundesrat die Gefahr, die vom Islamismus für unsere Rechts- und Gesellschaftsordnung ausgeht, unterschätzt?<br>2. Hat der Nachrichtendienst die Bedrohung der Schweiz durch den Islamismus genügend auf dem Radar, müsste nicht mehr gemacht werden?<br>3. Ist der Bundesrat bereit, Ausländer inklusive Asylbewerber des Landes zu verweisen, wenn sie islamistisches Gedankengut verbreiten?<\/p>"
+    },
+    {
+      "shortId": "26.7690",
+      "title": "Centre fédéral d’Altstätten : 220 collaborateurs pour 390 requérants d’asile ;?",
+      "title_de": "Bundesasylzentrum Altstätten: 220 Mitarbeitende für 390 Asylsuchende?",
+      "author": "Egger Mike",
+      "party": "UDC",
+      "type": "Fra.",
+      "status": "Eingereicht / Déposé",
+      "council": "NR",
+      "date": "2026-09-15",
+      "date_maj": "2026-09-15",
+      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267690",
+      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267690",
+      "mention": "Élu",
+      "text": "<p>Le nouveau centre fédéral d’Altstätten peut accueillir 390 requérants d’asile. D’après les médias, environ 220 collaborateurs sont nécessaires pour assurer le fonctionnement de l’établissement, si l’on inclut la sécurité, l’accompagnement et divers autres services.&nbsp;<br>- Comment le Conseil fédéral justifie-t-il un tel besoin en personnel (problèmes de sécurité, etc.)&nbsp;?&nbsp;<br>- À combien d’emplois à temps plein correspondent ces 220 collaborateurs et à combien s’élèvent les frais annuels de personnel&nbsp;?&nbsp;<\/p>",
+      "text_de": "<p>Das neue Bundesasylzentrum Altstätten bietet Platz für 390 Asylsuchende. Gemäss Medienberichten werden für den Betrieb rund 220 Mitarbeitende benötigt sofern man die Sicherheits-, Betreuungs- und weiteren Dienstleistungsunternehmen mitzählt.&nbsp;<br>- Wie begründet der Bundesrat diesen hohen Personalbedarf (Sicherheitsbedenken etc.)?&nbsp;<br>- Wie viele Vollzeitstellen entsprechen den 220 Mitarbeitenden und wie hoch sind die jährlichen Personalkosten?&nbsp;<\/p>"
+    },
+    {
+      "shortId": "26.7702",
+      "title": "Programmes de réinstallation",
+      "title_de": "Resettlement-Programm",
+      "author": "Rüegger Monika",
+      "party": "UDC",
+      "type": "Fra.",
+      "status": "Eingereicht / Déposé",
+      "council": "NR",
+      "date": "2026-09-15",
+      "date_maj": "2026-09-15",
+      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267702",
+      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267702",
+      "mention": "Élu",
+      "text": "<p>–&nbsp;Combien de personnes ont été autorisées à entrer en Suisse en 2025 et 2026 dans le cadre des programmes de réinstallation prévus à l’art.&nbsp;56 de la loi sur l’asile&nbsp;?<br>–&nbsp;Comment se répartissent-elles par sexe, tranche d’âge, état civil, pays de séjour et pays d’origine&nbsp;?&nbsp;<\/p><p>–&nbsp;Combien de personnes prévoit-on encore de faire entrer sur le territoire ? D’ici quand&nbsp;?<\/p><p>–&nbsp;Le Conseil fédéral peut-il exclure avec certitude que toutes les personnes déjà arrivées et celles qui seront encore accueillies ont un lien avec le terrorisme ou avec des organisations extrémistes&nbsp;?<\/p>",
+      "text_de": "<p>- Wie vielen Personen wurde 2025 und 2026 im Rahmen der Resettlement-Programme nach Art. 56 AsylG die Einreise gewährt?<br>- Wie verteilen sie sich nach Geschlecht, Altersgruppen, Zivilstand, Aufenthalt- und Herkunftsland?&nbsp;<\/p><p>- Wie viele weitere Personen sollen noch einreisen und in welcher Zeitspanne?<\/p><p>- Kann der Bundesrat bei sämtlichen aufgenommenen und vorgesehenen Personen mit Sicherheit ausschliessen, dass ein terroristischer Hintergrund oder eine Verbindung zu extremistischen Organisationen besteht?<\/p>"
+    },
+    {
+      "shortId": "26.7714",
+      "title": "Rapport 2025 sur le suivi du système d’asile : durée de la procédure pour les demandes de statut S",
+      "title_de": "Monitoringbericht zum Asylsystem 2025: Verfahrensdauer für Gesuche um Schutzstatus S",
+      "author": "Dünki-Bättig Michèle",
+      "party": "PS",
+      "type": "Fra.",
+      "status": "Eingereicht / Déposé",
+      "council": "NR",
+      "date": "2026-09-15",
+      "date_maj": "2026-09-15",
+      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267714",
+      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267714",
+      "mention": "Élu",
+      "text": "<p>Dans le rapport&nbsp;2025 sur le suivi du système d’asile, le SEM fait état d’une durée moyenne de procédure de 109,1&nbsp;jours pour les demandes de statut S, alors que l’objectif fixé était de 50&nbsp;jours.&nbsp;<br>–&nbsp;Combien de demandes ont été reçues, ont été traitées ou sont pendantes depuis le 1er&nbsp;janvier 2026&nbsp;?&nbsp;<br>–&nbsp;Quelles sont les durées moyenne et médiane des procédures en 2026&nbsp;?&nbsp;<br>–&nbsp;Combien de dossiers sont pendants depuis plus de 30, plus de 60 et plus de 90&nbsp;jours&nbsp;?&nbsp;<br>–&nbsp;Quelles mesures le SEM prend-il pour accélérer les procédures&nbsp;?<\/p>",
+      "text_de": "<p>Im Monitoringbericht zum Asylsystem 2025 weist das SEM für Gesuche um Schutzstatus S eine durchschnittliche Verfahrensdauer von 109,1 Tagen bei einem Zielwert von 50 Tagen aus.&nbsp;<br>- Wie viele Gesuche sind seit dem 1.1.2026 eingegangen, erledigt bzw. pendent?&nbsp;<br>- Wie hoch sind durchschnittliche und mediane Verfahrensdauer 2026?&nbsp;<br>- Wie viele Pendenzen bestehen seit mehr als 30, 60 bzw. 90 Tagen?&nbsp;<br>- Welche Massnahmen ergreift das SEM zur Beschleunigung der Verfahren?<\/p>"
+    },
+    {
       "shortId": "26.1036",
+      "title": "Titre suit",
       "title_de": "Einschränkung des Asyl-Antragsrechtes",
+      "title_it": "Titolo segue",
       "author": "Portmann Hans-Peter",
       "party": "PLR",
       "type": "DA",
@@ -56,7 +142,7 @@
       "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20261036",
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20261036",
       "mention": "Élu",
-      "text_de": "<p>Die FDP, Liberale Fraktion hat eine Motion mit dem Titel \"Einschränkung des Asyl-Antragsrechtes\" eingereicht. Eine Gesetzesgrundlage soll es möglich machen das Recht auf Asylgesuch-Antragsstellung vorübergehend auszusetzen, indem gewisse Personengruppen, welche erfahrungsgemäss grossmehrheitlich Wirtschaftsflüchtlinge sind und eine erhöhte Kriminalitätsrate aufweisen, bereits an der Grenze abzuweisen. Im September 2026 findet eine ausserordentliche Session zum Thema \"EU - Asyl\" im Nationalrat statt.&nbsp;<\/p><p>&nbsp;<\/p><p>Ich bitte den Bundesrat dazu um Beantwortung folgender dringlicher Fragen:<\/p><p>&nbsp;<\/p><p>1. Gewichtet der Bundesrat das in internationalen Konventionen erwähnte Recht auf \"Asylgesuch-Antragsstellung\" höher, als das verfassungsmässige Recht von Leib, Leben und Eigentum der Schweizer Bevölkerung?<\/p><p>2. Wo ist in internationalen Konventionen das Recht auf Schutz von Leib, Leben und Eigentum für die eigene Bevölkerung erwähnt?<\/p><p>3. Würde der Gesetzgeber in einer referendumsfähigen Gesetzesvorlage die Möglichkeit zur vorübergehenden und spezifisch Personengruppen bezogenen Aussetzung des Asylgesuch-Antragsstellungs-Rechtes beschliessen, müsste dann aus Sicht des Bundesrates das Bundesgericht diesbezüglich die \"Schubertpraxis\" anwenden, oder müsste dazu die \"Schubertpraxis\" in unserer Verfassung verankert werden?<\/p><p>&nbsp;<\/p><p>Der Bundesrat plant eine vorgelagerte Abklärung über das Recht auf Asyl einzuführen. Dazu bitte ich den Bundesrat folgende Fragen zu beantworten:<\/p><p>&nbsp;<\/p><p>4. Auf welchem Staatsgebiet und in welchen Lokalitäten soll eine solche Abklärung stattfinden ?<\/p><p>5. Welche Behörde mit welchem geschulten Personal soll diese Abklärungen durchführen ?<\/p><p>6. Können sich die Asylsuchenden während der Dauer dieser Abklärung frei bewegen ?<\/p><p>7. Wie wird sicher gestellt, dass während der Dauer dieser Abklärungen die Asylsuchenden nicht kriminell werden ?<\/p><p>8. Wo werden Asylsuchende, denen kein Recht auf Asyl zugesprochen wurden, danach physisch verbleiben ?<\/p><p>&nbsp;<\/p><p>Vielen Dank im Voraus für die Beantwortung dieser dringlicher Fragen.<\/p>"
+      "text_de": "<p>Die FDP, Liberale Fraktion hat eine Motion mit dem Titel \"Einschränkung des Asyl-Antragsrechtes\" eingereicht. Eine Gesetzesgrundlage soll es möglich machen das Recht auf Asylgesuch-Antragsstellung vorübergehend auszusetzen, indem gewisse Personengruppen, welche erfahrungsgemäss grossmehrheitlich Wirtschaftsflüchtlinge sind und eine erhöhte Kriminalitätsrate aufweisen, bereits an der Grenze abzuweisen. Im September 2026 findet eine ausserordentliche Session zum Thema \"EU - Asyl\" im Nationalrat statt.&nbsp;<\/p><p>&nbsp;<\/p><p>Ich bitte den Bundesrat dazu um Beantwortung folgender dringlicher Fragen:<\/p><p>&nbsp;<\/p><p>1. Gewichtet der Bundesrat das in internationalen Konventionen erwähnte Recht auf \"Asylgesuch-Antragsstellung\" höher, als das verfassungsmässige Recht von Leib, Leben und Eigentum der Schweizer Bevölkerung?<\/p><p>2. Wo ist in internationalen Konventionen das Recht auf Schutz von Leib, Leben und Eigentum für die eigene Bevölkerung erwähnt?<\/p><p>3. Würde der Gesetzgeber in einer referendumsfähigen Gesetzesvorlage die Möglichkeit zur vorübergehenden und spezifisch Personengruppen bezogenen Aussetzung des Asylgesuch-Antragsstellungs-Rechtes beschliessen, müsste dann aus Sicht des Bundesrates das Bundesgericht diesbezüglich die \"Schubertpraxis\" anwenden, oder müsste dazu die \"Schubertpraxis\" in unserer Verfassung verankert werden?<\/p><p>&nbsp;<\/p><p>Der Bundesrat plant eine vorgelagerte Abklärung über das Recht auf Asyl einzuführen. Dazu bitte ich den Bundesrat folgende Fragen zu beantworten:<\/p><p>&nbsp;<\/p><p>4. Auf welchem Staatsgebiet und in welchen Lokalitäten soll eine solche Abklärung stattfinden ?<\/p><p>5. Welche Behörde mit welchem geschulten Personal soll diese Abklärungen durchführen ?<\/p><p>6. Können sich die Asylsuchenden während der Dauer dieser Abklärung frei bewegen ?<\/p><p>7. Wie wird sicher gestellt, dass während der Dauer dieser Abklärungen die Asylsuchenden nicht kriminell werden ?<\/p><p>8. Wo werden Asylsuchende, denen kein Recht auf Asyl zugesprochen wurden, danach physisch verbleiben ?<\/p><p>&nbsp;<\/p><p>Vielen Dank im Voraus für die Beantwortung dieser dringlichen Fragen.<\/p>"
     },
     {
       "shortId": "26.4083",
@@ -122,7 +208,10 @@
       "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267633",
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267633",
       "mention": "Élu",
-      "text": "<p>Selon le Secrétariat d’État aux migrations (SEM), 53 vols spéciaux ont transporté 462 personnes en 2024, pour environ 2,5 millions de francs de frais de vol nets.&nbsp;<br>- Quel montant total la Confédération a-t-elle consacré à ces vols durant les dix dernières années ?&nbsp;<br>- A-t-elle comparé ce coût à l’acquisition ou au leasing d’un avion fédéral polyvalent, utilisable pour les expulsions mais aussi pour d’autres missions ?<br>- &nbsp;Dans la négative, est-elle disposée à réaliser une telle analyse ?<\/p>"
+      "text": "<p>Selon le Secrétariat d’État aux migrations (SEM), 53 vols spéciaux ont transporté 462 personnes en 2024, pour environ 2,5 millions de francs de frais de vol nets.&nbsp;<br>- Quel montant total la Confédération a-t-elle consacré à ces vols durant les dix dernières années ?&nbsp;<br>- A-t-elle comparé ce coût à l’acquisition ou au leasing d’un avion fédéral polyvalent, utilisable pour les expulsions mais aussi pour d’autres missions ?<br>- &nbsp;Dans la négative, est-elle disposée à réaliser une telle analyse ?<\/p>",
+      "tags": "Finances|Transports|Politique migratoire",
+      "tags_de": "Finanzwesen|Verkehr|Migration",
+      "tags_it": "Finanze|Trasporti|Migrazione"
     },
     {
       "shortId": "26.7666",
@@ -138,7 +227,10 @@
       "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267666",
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267666",
       "mention": "Élu",
-      "text_de": "<p>Die Kohäsionszusammenarbeit der Schweiz orientiert sich an den Bedürfnissen der Empfängerländer und deckt unter anderem die Bereiche Bildung, Gesundheit sowie Demokratieförderung, Transparenz und Migration ab, welche bisher von der Deza abgedeckt wurden. Neu soll das Seco alleine für die Kohäsion zuständig sein.&nbsp;<br>Werden bisher von der Deza durchgeführte Programme nun vom Seco weitergeführt oder wie sollen in der Praxis diesbezügliche Bedürfnisse der Empfängerländer abgedeckt werden?<\/p>"
+      "text_de": "<p>Die Kohäsionszusammenarbeit der Schweiz orientiert sich an den Bedürfnissen der Empfängerländer und deckt unter anderem die Bereiche Bildung, Gesundheit sowie Demokratieförderung, Transparenz und Migration ab, welche bisher von der Deza abgedeckt wurden. Neu soll das Seco alleine für die Kohäsion zuständig sein.&nbsp;<br>Werden bisher von der Deza durchgeführte Programme nun vom Seco weitergeführt oder wie sollen in der Praxis diesbezügliche Bedürfnisse der Empfängerländer abgedeckt werden?<\/p>",
+      "tags": "Politique d'Etat|Politique internationale",
+      "tags_de": "Staatspolitik|Internationale Politik",
+      "tags_it": "Politica nazionale|Politica internazionale"
     },
     {
       "shortId": "26.7669",
@@ -170,7 +262,10 @@
       "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267674",
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267674",
       "mention": "Élu",
-      "text": "<p>Un&nbsp;<a href=\"https://che01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.watson.ch%2Fschweiz%2Finternational%2F817047080-maghreb-asylsuchende-darum-kommen-sie-in-die-schweiz&amp;data=05%7C02%7Cjacqueline.dequattro%40parl.ch%7Cf34f0eeffc8e4e4315b708df126c427e%7C0cf3ddc638a5480885f1cae22925a1b0%7C0%7C0%7C639249928312149233%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=D5TQmk6%2F2QK678oeZ280KBLSQCszxHc7qaDbDJlfAhw%3D&amp;reserved=0\">article&nbsp;<\/a>paru récemment relate le cas d’un Algérien de 24 ans qui&nbsp;est en détention depuis 10 mois dans l’attente de son renvoi vers son pays d’origine. Il a passé six mois en rétention administrative. Auparavant, il a purgé quatre mois de détention pour séjour irrégulier en Suisse.<br>&nbsp;<\/p><p>Le Conseil fédéral peut-il informer de la durée moyenne de séjour des ressortissants algériens en détention administrative en vue du renvoi (Art. 75 et art. 77 LEI) pour les années 2024, 2025 et 2026 ?<\/p>"
+      "text": "<p>Un&nbsp;<a href=\"https://che01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.watson.ch%2Fschweiz%2Finternational%2F817047080-maghreb-asylsuchende-darum-kommen-sie-in-die-schweiz&amp;data=05%7C02%7Cjacqueline.dequattro%40parl.ch%7Cf34f0eeffc8e4e4315b708df126c427e%7C0cf3ddc638a5480885f1cae22925a1b0%7C0%7C0%7C639249928312149233%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=D5TQmk6%2F2QK678oeZ280KBLSQCszxHc7qaDbDJlfAhw%3D&amp;reserved=0\">article&nbsp;<\/a>paru récemment relate le cas d’un Algérien de 24 ans qui&nbsp;est en détention depuis 10 mois dans l’attente de son renvoi vers son pays d’origine. Il a passé six mois en rétention administrative. Auparavant, il a purgé quatre mois de détention pour séjour irrégulier en Suisse.<br>&nbsp;<\/p><p>Le Conseil fédéral peut-il informer de la durée moyenne de séjour des ressortissants algériens en détention administrative en vue du renvoi (Art. 75 et art. 77 LEI) pour les années 2024, 2025 et 2026 ?<\/p>",
+      "tags": "Politique migratoire",
+      "tags_de": "Migration",
+      "tags_it": "Migrazione"
     },
     {
       "shortId": "26.9019",
@@ -5717,7 +5812,7 @@
       "author": "Flüchtlingsparlament Schweiz",
       "type": "Pet.",
       "status": "In beiden Kommissionen / Dans les deux commissions",
-      "department": "Parl",
+      "department": "EJPD",
       "date": "2026-01-06",
       "date_maj": "2026-06-09",
       "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20262001",
@@ -8206,7 +8301,7 @@
       "author": "Genf",
       "type": "Kt. Iv.",
       "status": "Zugewiesen an die behandelnde Kommission / Attribué à la commission compétente",
-      "department": "Parl",
+      "department": "EJPD",
       "date": "2025-11-04",
       "date_maj": "2026-06-09",
       "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20250320",
