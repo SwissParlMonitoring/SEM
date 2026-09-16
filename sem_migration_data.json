@@ -1,10 +1,10 @@
 {
   "meta": {
-    "updated": "2026-09-15T23:20:25",
-    "total_count": 3908,
+    "updated": "2026-09-16T15:48:02",
+    "total_count": 3923,
     "source": "Swiss Parliament API",
     "legislature": 52,
-    "new_ids": ["26.4083", "26.4085", "26.4090", "26.7633", "26.7666", "26.7669", "26.7674", "26.9019", "26.9020", "26.4062", "26.1036", "26.4125", "26.7689", "26.7690", "26.7702", "26.7714"]
+    "new_ids": ["26.4083", "26.4085", "26.4090", "26.7633", "26.7666", "26.7669", "26.7674", "26.9019", "26.9020", "26.4062", "26.1036", "26.4125", "26.7689", "26.7690", "26.7702", "26.7714", "26.7734", "26.7738", "26.7744", "26.7761", "26.7772", "26.7776", "26.7778", "26.7810", "26.7813", "26.7818", "26.7819", "26.7823", "26.7838", "26.7843", "26.7846"]
   },
   "session_summary": {
     "session_id": "2026-ete",
@@ -44,6 +44,249 @@
   },
   "items": [
     {
+      "shortId": "26.7734",
+      "title": "Titre suit",
+      "title_de": "Wieso werden die Herkunftsländer bei der Statistik über die Dauer von Asylverfahren nicht erfasst?",
+      "author": "Candinas Martin",
+      "party": "Le Centre",
+      "type": "Fra.",
+      "status": "Eingereicht / Déposé",
+      "council": "NR",
+      "date": "2026-09-16",
+      "date_maj": "2026-09-16",
+      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267734",
+      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267734",
+      "mention": "Élu",
+      "text_de": "<p>Gemäss SEM dauert jedes fünfte Asylverfahren länger als sechs Monate. Somit treiben vergleichsweise wenige Fälle die durchschnittliche Verfahrensdauer in die Höhe. Gemäss SEM könne man allerdings nicht sagen, aus welchen Ländern die betreffenden Asylbewerber stammen, obwohl die Asylstatistik die Herkunftsländer klar ausweist.&nbsp;<br>- Bis wann gedenkt der Bundesrat auch bei der Statistik über die Dauer von Asylverfahren die Herkunftsländer zu erfassen?&nbsp;<br>- Wieso wurde bislang darauf verzichtet?<\/p>"
+    },
+    {
+      "shortId": "26.7738",
+      "title": "Titre suit",
+      "title_de": "Wie wirksam ist die Wiederaufnahme der Dublin-Überstellungen nach Italien?",
+      "author": "Schilliger Peter",
+      "party": "PLR",
+      "type": "Fra.",
+      "status": "Eingereicht / Déposé",
+      "council": "NR",
+      "date": "2026-09-16",
+      "date_maj": "2026-09-16",
+      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267738",
+      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267738",
+      "mention": "Élu",
+      "text_de": "<p>Anlässlich der <a href=\"https://che01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.parlament.ch%2Fde%2Fratsbetrieb%2Famtliches-bulletin%2Famtliches-bulletin-die-verhandlungen%3FSubjectId%3D72008&amp;data=05%7C02%7Cpeter.schilliger%40parl.ch%7Cc336ff5fae8245208e3208df116bee17%7C0cf3ddc638a5480885f1cae22925a1b0%7C0%7C0%7C639248827384304287%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=uPIdqnH5T0hRcfXt8H2bs7DNIqGdrxb8UXw64vCspoA%3D&amp;reserved=0\">Debatte <\/a>über die <a href=\"https://che01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.parlament.ch%2Fde%2Fratsbetrieb%2Fsuche-curia-vista%2Fgeschaeft%3FAffairId%3D20263185&amp;data=05%7C02%7Cpeter.schilliger%40parl.ch%7Cc336ff5fae8245208e3208df116bee17%7C0cf3ddc638a5480885f1cae22925a1b0%7C0%7C0%7C639248827384328755%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=jm0mhWBIVggN7qvq6lz16gQmbFhB2suR%2ByNHv3iBUdg%3D&amp;reserved=0\">Motion 26.185<\/a> erklärte Bundesrat Jans, dass «die Schweiz gehört laut der italienischen Seite zu den prioritären Ländern, mit denen die Überstellungen wieder aufgenommen werden sollen». Wie viele Dublin-Fälle wurden seitdem tatsächlich von der Schweiz nach Italien zurückgeführt?<br>- Wie viele Pendenzenfällen stehen noch zur Überstellung nach Italien aus?<br>- Wie viele Fälle wurden Italien unterbreitet und wie viele haben eine positive Antwort aus Italien erhalten?<\/p>",
+      "tags": "Politique migratoire",
+      "tags_de": "Migration",
+      "tags_it": "Migrazione"
+    },
+    {
+      "shortId": "26.7744",
+      "title": "Titre suit",
+      "title_de": "Arbeitslose und Personenfreizügigkeit",
+      "author": "Steinemann Barbara",
+      "party": "UDC",
+      "type": "Fra.",
+      "status": "Eingereicht / Déposé",
+      "council": "NR",
+      "date": "2026-09-16",
+      "date_maj": "2026-09-16",
+      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267744",
+      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267744",
+      "mention": "Élu",
+      "text_de": "<p>Ist es nach geltender Rechtslage möglich, dass die Schweiz EU-Bürgern, die via PFZ hierherkamen und die Stelle verloren haben und/oder Arbeitslosengelder erhalten, die Aufenthaltsbewilligung zu entziehen? Wenn ja, welches ist die rechtliche Grundlage? Wie oft wurde dies letztes Jahr gemacht und wie oft seit 2022?<\/p>"
+    },
+    {
+      "shortId": "26.7761",
+      "title": "Titre suit",
+      "title_de": "Fr. 18,9 Mio. Subventionen des Bundes an Caritas für den Verfahrensaufwand für Asylsuchende",
+      "author": "Schläpfer Therese",
+      "party": "UDC",
+      "type": "Fra.",
+      "status": "Eingereicht / Déposé",
+      "council": "NR",
+      "date": "2026-09-16",
+      "date_maj": "2026-09-16",
+      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267761",
+      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267761",
+      "mention": "Élu",
+      "text_de": "<p>-Weshalb unterstützt der Bund die Caritas mit Fr. 18,9 Mio. für Verfahrenskosten für Asylsuchende?&nbsp;<\/p><p>&nbsp;<\/p><p>-Worin sieht er den Mehrwert für die steuerzahlende Schweizer Bevölkerung?<\/p><p>&nbsp;<\/p><p>-Schafft der Bund damit nicht Anreize für das 'Schleusergeschäft'?<\/p><p>&nbsp;<\/p><p>-Findet der Bund die Bezeichnung der Caritas als NGO trotz der hohen Unterstützung noch angebracht?<\/p><p>&nbsp;<\/p><p>-Wäre der Begriff 'Regierungsnterstützte Organisation' für die Caritas nicht treffender?<\/p><p>&nbsp;<\/p>"
+    },
+    {
+      "shortId": "26.7772",
+      "title": "Renvois d'êtres humains et analyse de la situation sur place",
+      "title_de": "Titel folgt",
+      "author": "Tschopp Jean",
+      "party": "PS",
+      "type": "Fra.",
+      "status": "Eingereicht / Déposé",
+      "council": "NR",
+      "date": "2026-09-16",
+      "date_maj": "2026-09-16",
+      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267772",
+      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267772",
+      "mention": "Élu",
+      "text": "<p>Dans ses réponses aux interpellations <a href=\"https://che01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.parlament.ch%2Ffr%2Fratsbetrieb%2Fsuche-curia-vista%2Fgeschaeft%3FAffairId%3D20263557&amp;data=05%7C02%7Cjean.tschopp%40parl.ch%7C381343f386314bfecfb308df1334df16%7C0cf3ddc638a5480885f1cae22925a1b0%7C0%7C0%7C639250789967905263%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=OE331YBHFd%2BEHRd92spdvnJuQEilFgLCY0Jj3t9qkR8%3D&amp;reserved=0\">26.3557<\/a> et <a href=\"https://che01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.parlament.ch%2Ffr%2Fratsbetrieb%2Fsuche-curia-vista%2Fgeschaeft%3FAffairId%3D20263867&amp;data=05%7C02%7Cjean.tschopp%40parl.ch%7C381343f386314bfecfb308df1334df16%7C0cf3ddc638a5480885f1cae22925a1b0%7C0%7C0%7C639250789967943988%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=sPE26LUe2v3W4To1mXxGon04odjqCzgtBBK1HfBp%2BqE%3D&amp;reserved=0\">26.3867<\/a>, le Conseil fédéral affirme qu'en vertu du principe de souveraineté, la compétence suisse « prend fin à l'aéroport ». Or l'ODM indiquait pouvoir mener des « missions de clarification dans les États de provenance » (<a href=\"https://che01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.parlament.ch%2Ffr%2Fratsbetrieb%2Fsuche-curia-vista%2Fgeschaeft%3FAffairId%3D20133793&amp;data=05%7C02%7Cjean.tschopp%40parl.ch%7C381343f386314bfecfb308df1334df16%7C0cf3ddc638a5480885f1cae22925a1b0%7C0%7C0%7C639250789967968120%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=53fFwEvsDQI52H5rsgLhJOAm86RvA2VWfWFy76lHbMo%3D&amp;reserved=0\">13.3793<\/a>) et avait chargé l'Ambassade suisse à Colombo d'enquêter sur deux personnes renvoyées (<a href=\"https://che01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.tagesanzeiger.ch%2Fschweiz-schafft-vorlaeufig-keine-tamilen-aus-845989585630&amp;data=05%7C02%7Cjean.tschopp%40parl.ch%7C381343f386314bfecfb308df1334df16%7C0cf3ddc638a5480885f1cae22925a1b0%7C0%7C0%7C639250789968023159%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=FA1po%2FxpoZk1tPQwVcyhbHHzZke%2BLHy7%2B1PlGXtnzhM%3D&amp;reserved=0\">Tages-Anzeiger, 2.9.2013<\/a>). En quoi ce principe empêche-t-il aujourd'hui le SEM de recueillir de telles informations au Burundi ?<\/p>"
+    },
+    {
+      "shortId": "26.7776",
+      "title": "Différence d’appréciation entre la Suisse et les pays n’effectuant pas de renvois forcés de personnes burundaises",
+      "title_de": "Titel folgt",
+      "author": "Chollet Clarence",
+      "party": "VERT-E-S",
+      "type": "Fra.",
+      "status": "Eingereicht / Déposé",
+      "council": "NR",
+      "date": "2026-09-16",
+      "date_maj": "2026-09-16",
+      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267776",
+      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267776",
+      "mention": "Élu",
+      "text": "<p>En réponse à l'objet<a href=\"https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267538\">&nbsp;<u>26.7538<\/u><\/a>, le Conseil fédéral indique un nombre peu important de pays à exécuter des renvois forcés de ressortissants burundais. Ainsi, quelle différence d'appréciation vis-à-vis de la situation politique, des risques encourus en cas de renvois, ou des rapports dénonçant des violations de droits humains au Burundi, fait la Suisse vis-à-vis de la France et des pays n'ayant pas de telles pratiques ?<\/p>"
+    },
+    {
+      "shortId": "26.7778",
+      "title": "Clarification des arrivées en Suisse des personne soudanaises en quête de protection",
+      "title_de": "Titel folgt",
+      "author": "Chollet Clarence",
+      "party": "VERT-E-S",
+      "type": "Fra.",
+      "status": "Eingereicht / Déposé",
+      "council": "NR",
+      "date": "2026-09-16",
+      "date_maj": "2026-09-16",
+      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267778",
+      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267778",
+      "mention": "Élu",
+      "text": "<p>Depuis 2023, la dégradation politique et sécuritaire au Soudan entraîne une hausse des arrivées de personnes soudanaises en quête de protection dans notamment plusieurs pays européens.<br>- La Suisse a-t-elle constaté une évolution des demandes d'asile depuis 2023 ?<br>- Quels sont les chiffres à disposition ?<br>- Si cette évolution est moindre qu'en France ou d’autres pays européens, comment l'expliquer ?<br>- Quels sont les taux d'octroi de l’asile et d'admission provisoire accordés aux personnes soudanaises ?<\/p>"
+    },
+    {
+      "shortId": "26.7810",
+      "title": "Burundi : renvois malgré les risques ",
+      "title_de": "Titel folgt",
+      "author": "Klopfenstein Broggini Delphine",
+      "party": "VERT-E-S",
+      "type": "Fra.",
+      "status": "Eingereicht / Déposé",
+      "council": "NR",
+      "date": "2026-09-16",
+      "date_maj": "2026-09-16",
+      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267810",
+      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267810",
+      "mention": "Élu",
+      "text": "<p>En 2013, après deux arrestations suivant des renvois au Sri Lanka, l'ODM avait suspendu les renvois et réexaminé les dossiers concernés. Les experts avaient ensuite conclu à une « évaluation erronée du risque individuel » (<a href=\"https://che01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.admin.ch%2Ffr%2Fnsb%3Fid%3D53120%26&amp;data=05%7C02%7Cdelphine.klopfenstein%40parl.ch%7C0dc39992b17245ae830008df1334dd4d%7C0cf3ddc638a5480885f1cae22925a1b0%7C0%7C0%7C639250789932164635%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=bmXWLIhU6%2BpbmDplLiVuh6qIpuBS7DitazGSkpFRRbg%3D&amp;reserved=0\">ODM, 26.5.2014<\/a>). Au Burundi, des arrestations, détentions et violences après renvoi ont été signalées au SEM. Selon des organisations en contact avec les intéressés, 11 des 16 personnes renvoyées ont quitté le pays. Pourquoi aucun réexamen comparable ?<\/p>"
+    },
+    {
+      "shortId": "26.7813",
+      "title": "Le camps de jeunes extrémistes allemands au Simplon était-il connu des autorités ?",
+      "title_de": "Titel folgt",
+      "author": "Amoos Emmanuel",
+      "party": "PS",
+      "type": "Fra.",
+      "status": "Eingereicht / Déposé",
+      "council": "NR",
+      "date": "2026-09-16",
+      "date_maj": "2026-09-16",
+      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267813",
+      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267813",
+      "mention": "Élu",
+      "text": "<p>En août 2026, le Mouvement identitaire allemand a organisé durant une semaine son « camp fédéral » au Simplon, avec notamment des exercices de combat rapproché et des exercices nocturnes. Le propriétaire du gîte affirme avoir été interrogé par la police, tandis que la police valaisanne dit ne pas avoir eu connaissance de la présence du groupe.&nbsp;<br>Le Conseil fédéral peut-il nous dire si le SRC, le SEM et fedpol étaient informés de la tenue de ce «&nbsp;camp fédéral&nbsp;»&nbsp;?<\/p>"
+    },
+    {
+      "shortId": "26.7818",
+      "title": "Camps de jeunes extrémistes allemands au Simplon. Coopération entre autorités",
+      "title_de": "Titel folgt",
+      "author": "Gaillard Benoît",
+      "party": "PS",
+      "type": "Fra.",
+      "status": "Eingereicht / Déposé",
+      "council": "NR",
+      "date": "2026-09-16",
+      "date_maj": "2026-09-16",
+      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267818",
+      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267818",
+      "mention": "Élu",
+      "text": "<p>La détection précoce de la radicalisation et de l’extrémisme violent implique le Service de renseignement de la Confédération, les polices cantonales, fedpol et le SEM.&nbsp;<br>- Dans le cas du rassemblement du Simplon, comment cette coopération a-t-elle fonctionné ?&nbsp;<br>- Le Conseil fédéral identifie-t-il des lacunes dans la circulation de l’information entre ces autorités ?<\/p>"
+    },
+    {
+      "shortId": "26.7819",
+      "title": "Camps de jeunes extrémistes allemands au Simplon. Interdictions d’entrée",
+      "title_de": "Titel folgt",
+      "author": "Amoos Emmanuel",
+      "party": "PS",
+      "type": "Fra.",
+      "status": "Eingereicht / Déposé",
+      "council": "NR",
+      "date": "2026-09-16",
+      "date_maj": "2026-09-16",
+      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267819",
+      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267819",
+      "mention": "Élu",
+      "text": "<p>Des personnalités étrangères liées à des milieux d’extrême droite ont déjà fait l’objet de mesures d’interdiction d’entrée en Suisse. Le Conseil fédéral entend-il demander à fedpol et au SEM d’examiner systématiquement, pour les principaux organisateurs et participants étrangers de rassemblements d’extrême droite, identifiés en Suisse, si les conditions légales d’une interdiction d’entrée sont réunies ?<\/p>"
+    },
+    {
+      "shortId": "26.7823",
+      "title": "Titre suit",
+      "title_de": "Gutachten betreffend Altersbestimmung im Asylprozess",
+      "author": "Steinemann Barbara",
+      "party": "UDC",
+      "type": "Fra.",
+      "status": "Eingereicht / Déposé",
+      "council": "NR",
+      "date": "2026-09-16",
+      "date_maj": "2026-09-16",
+      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267823",
+      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267823",
+      "mention": "Élu",
+      "text_de": "<p>Das SEM beauftragt während des Asylprozesses Einrichtungen mit der Durchführung von forensischen und anderen Lebensaltersschätzungen, wenn die behauptete Minderjährigkeit von Asylbewerbern nicht glaubwürdig ist.&nbsp;<br>- Für wie viele Asylantragsteller wurde im letzten Jahr eine solche Abklärung für eine Alterseinschätzung in Auftrag gegeben?&nbsp;<br>- Wie viele davon wurden wie behauptet für minderjährig befunden?<br>- Wie hoch waren 2025 die Gesamtkosten für solche Gutachten?<\/p>"
+    },
+    {
+      "shortId": "26.7838",
+      "title": "Titre suit",
+      "title_de": "Wie viele Asylbewerber sind zur Fahndung ausgeschrieben?",
+      "author": "Steinemann Barbara",
+      "party": "UDC",
+      "type": "Fra.",
+      "status": "Eingereicht / Déposé",
+      "council": "NR",
+      "date": "2026-09-16",
+      "date_maj": "2026-09-16",
+      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267838",
+      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267838",
+      "mention": "Élu",
+      "text_de": "<p>Von Anfang 2023 bis Mitte Dezember 2023 hat das SEM 23 000 Asylbewerber auf die Sicherheit mit Fahndungsdatenbank Ripol, mit den europäischen Systemen wie dem Schengener Informationssystem oder Eurodac sowie mittels Interpol überprüft und dabei 5200 Treffer festgestellt.<br>- Wie viele Treffer ergaben die Sicherheitsabklärungen im Jahr 2024, wie viele im Jahr 2025?&nbsp;<br>- Wie sind diese Treffer bezüglich Sicherheit und bezüglich Kriminalitätsbekämpfung einzuordnen?<\/p>"
+    },
+    {
+      "shortId": "26.7843",
+      "title": "Titre suit",
+      "title_de": "Wie viele Härtefälle werden wegen häuslicher Gewalt beantragt?",
+      "author": "Steinemann Barbara",
+      "party": "UDC",
+      "type": "Fra.",
+      "status": "Eingereicht / Déposé",
+      "council": "NR",
+      "date": "2026-09-16",
+      "date_maj": "2026-09-16",
+      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267843",
+      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267843",
+      "mention": "Élu",
+      "text_de": "<p>Mit Vorlage 21.504 wurde Art. 50 AIG geändert, die Revision ist seit Anfang 2025 in Kraft.&nbsp;<\/p><p>Seither können Personen, die ihren Partner der Gewalt beschuldigen, ein eigenständiges Aufenthaltsrecht beantragten.&nbsp;<br>- Wie viele haben dies seither gemacht? Wie viele Gesuche wurden positiv beschieden?<br>- In wie vielen Fällen beruht die Gewährung des Härtefalles auf der blossen Beschuldigung des Partners?<br>- In wie vielen Fällen wurden Strafanzeigen eingereicht?<br>- Welche Aufenthaltskategorien sind davon betroffen?<\/p>"
+    },
+    {
+      "shortId": "26.7846",
+      "title": "Titre suit",
+      "title_de": "Ausgaben im Gesundheitsbereich für Asylsuchende, vorläufig Aufgenommene und Status S Personen",
+      "author": "Aeschi Thomas",
+      "party": "UDC",
+      "type": "Fra.",
+      "status": "Eingereicht / Déposé",
+      "council": "NR",
+      "date": "2026-09-16",
+      "date_maj": "2026-09-16",
+      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267846",
+      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267846",
+      "mention": "Élu",
+      "text_de": "<p>- Wie hoch sind die Krankenkassenprämien, die die Eidgenossenschaft auf Bundesebene für Asylsuchende, vorläufig Aufgenommene und Status S Personen übernimmt?<br>- Welche zusätzlichen Kosten im Gesundheitsbereich übernimmt die Eidgenossenschaft für Asylsuchende, vorläufig Aufgenommene und Status S Personen?<\/p>"
+    },
+    {
       "shortId": "26.4125",
       "title": "Titre suit",
       "title_de": "Rechtsstaatliche Garantien im kantonalen Migrationsvollzug - Konsequenzen aus den Vorgängen im Kanton Baselland",
@@ -58,7 +301,10 @@
       "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20264125",
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20264125",
       "mention": "Élu",
-      "text_de": "<p>Der Bundesrat wird um die Beantwortung folgender Fragen gebeten:<\/p><ol style=\"list-style-type:decimal;\"><li>Welche Erkenntnisse hat der Bundesrat zu den Vorgängen im Baselbieter Migrationsamt, soweit sie den Vollzug von Bundesrecht betreffen?<\/li><li>Wie stellt der Bund sicher, dass kantonale Migrationsbehörden stets formelle, anfechtbare Verfügungen erlassen, wenn Rechte oder Aufenthaltsansprüche betroffen sind?<\/li><li>Welche Hinweise auf systematische Defizite beim Zugang zu Rechtsmitteln im kantonalen Migrationsvollzug sieht der Bundesrat?<\/li><li>Welche Instrumente stehen dem SEM zur Verfügung, um die rechtskonforme Anwendung des Ausländer- und Integrationsgesetzes sowie des Freizügigkeitsabkommens durch die Kantone zu überwachen?<\/li><li>Wie überprüft der Bund, ob EU/EFTA-Angehörige schweizweit nach einheitlichen Kriterien behandelt werden?<\/li><li>Welche Massnahmen bestehen gegen diskriminierende Praktiken in Migrationsbehörden, insbesondere aufgrund von Herkunft, Religion oder Erscheinungsbild?<\/li><li>Welche Massnahmen gibt es gegen vergleichbare Diskriminierungen durch IV oder KESB?<\/li><li>Ist der Bundesrat bereit, Mindeststandards für Dokumentation und Qualitätssicherung im kantonalen Migrationsvollzug zu prüfen?<\/li><li>Welche Möglichkeiten haben Betroffene, rechtswidrige frühere Entscheide überprüfen zu lassen, und sieht der Bundesrat hier zusätzlichen Handlungsbedarf?<\/li><\/ol>"
+      "text_de": "<p>Der Bundesrat wird um die Beantwortung folgender Fragen gebeten:<\/p><ol style=\"list-style-type:decimal;\"><li>Welche Erkenntnisse hat der Bundesrat zu den Vorgängen im Baselbieter Migrationsamt, soweit sie den Vollzug von Bundesrecht betreffen?<\/li><li>Wie stellt der Bund sicher, dass kantonale Migrationsbehörden stets formelle, anfechtbare Verfügungen erlassen, wenn Rechte oder Aufenthaltsansprüche betroffen sind?<\/li><li>Welche Hinweise auf systematische Defizite beim Zugang zu Rechtsmitteln im kantonalen Migrationsvollzug sieht der Bundesrat?<\/li><li>Welche Instrumente stehen dem SEM zur Verfügung, um die rechtskonforme Anwendung des Ausländer- und Integrationsgesetzes sowie des Freizügigkeitsabkommens durch die Kantone zu überwachen?<\/li><li>Wie überprüft der Bund, ob EU/EFTA-Angehörige schweizweit nach einheitlichen Kriterien behandelt werden?<\/li><li>Welche Massnahmen bestehen gegen diskriminierende Praktiken in Migrationsbehörden, insbesondere aufgrund von Herkunft, Religion oder Erscheinungsbild?<\/li><li>Welche Massnahmen gibt es gegen vergleichbare Diskriminierungen durch IV oder KESB?<\/li><li>Ist der Bundesrat bereit, Mindeststandards für Dokumentation und Qualitätssicherung im kantonalen Migrationsvollzug zu prüfen?<\/li><li>Welche Möglichkeiten haben Betroffene, rechtswidrige frühere Entscheide überprüfen zu lassen, und sieht der Bundesrat hier zusätzlichen Handlungsbedarf?<\/li><\/ol>",
+      "tags": "Politique d'Etat|Politique européenne|Droit|Droits de l'homme|Politique migratoire",
+      "tags_de": "Staatspolitik|Europapolitik|Recht Allgemein|Menschenrechte|Migration",
+      "tags_it": "Politica nazionale|Politica europea|Diritto generale|Diritti umani|Migrazione"
     },
     {
       "shortId": "26.7689",
@@ -74,7 +320,10 @@
       "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267689",
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267689",
       "mention": "Élu",
-      "text_de": "<p>In der NZZ vom 26. Juni 2026 hat Benedict Neff den Islamismus als Staatsfeind Nr. 1 bezeichnet.<br>1. Täuscht mein Eindruck, dass der Bundesrat die Gefahr, die vom Islamismus für unsere Rechts- und Gesellschaftsordnung ausgeht, unterschätzt?<br>2. Hat der Nachrichtendienst die Bedrohung der Schweiz durch den Islamismus genügend auf dem Radar, müsste nicht mehr gemacht werden?<br>3. Ist der Bundesrat bereit, Ausländer inklusive Asylbewerber des Landes zu verweisen, wenn sie islamistisches Gedankengut verbreiten?<\/p>"
+      "text_de": "<p>In der NZZ vom 26. Juni 2026 hat Benedict Neff den Islamismus als Staatsfeind Nr. 1 bezeichnet.<br>1. Täuscht mein Eindruck, dass der Bundesrat die Gefahr, die vom Islamismus für unsere Rechts- und Gesellschaftsordnung ausgeht, unterschätzt?<br>2. Hat der Nachrichtendienst die Bedrohung der Schweiz durch den Islamismus genügend auf dem Radar, müsste nicht mehr gemacht werden?<br>3. Ist der Bundesrat bereit, Ausländer inklusive Asylbewerber des Landes zu verweisen, wenn sie islamistisches Gedankengut verbreiten?<\/p>",
+      "tags": "Politique de sécurité|Politique migratoire|Culture",
+      "tags_de": "Sicherheitspolitik|Migration|Kultur",
+      "tags_it": "Politica di sicurezza|Migrazione|Cultura"
     },
     {
       "shortId": "26.7690",
@@ -91,7 +340,10 @@
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267690",
       "mention": "Élu",
       "text": "<p>Le nouveau centre fédéral d’Altstätten peut accueillir 390 requérants d’asile. D’après les médias, environ 220 collaborateurs sont nécessaires pour assurer le fonctionnement de l’établissement, si l’on inclut la sécurité, l’accompagnement et divers autres services.&nbsp;<br>- Comment le Conseil fédéral justifie-t-il un tel besoin en personnel (problèmes de sécurité, etc.)&nbsp;?&nbsp;<br>- À combien d’emplois à temps plein correspondent ces 220 collaborateurs et à combien s’élèvent les frais annuels de personnel&nbsp;?&nbsp;<\/p>",
-      "text_de": "<p>Das neue Bundesasylzentrum Altstätten bietet Platz für 390 Asylsuchende. Gemäss Medienberichten werden für den Betrieb rund 220 Mitarbeitende benötigt sofern man die Sicherheits-, Betreuungs- und weiteren Dienstleistungsunternehmen mitzählt.&nbsp;<br>- Wie begründet der Bundesrat diesen hohen Personalbedarf (Sicherheitsbedenken etc.)?&nbsp;<br>- Wie viele Vollzeitstellen entsprechen den 220 Mitarbeitenden und wie hoch sind die jährlichen Personalkosten?&nbsp;<\/p>"
+      "text_de": "<p>Das neue Bundesasylzentrum Altstätten bietet Platz für 390 Asylsuchende. Gemäss Medienberichten werden für den Betrieb rund 220 Mitarbeitende benötigt sofern man die Sicherheits-, Betreuungs- und weiteren Dienstleistungsunternehmen mitzählt.&nbsp;<br>- Wie begründet der Bundesrat diesen hohen Personalbedarf (Sicherheitsbedenken etc.)?&nbsp;<br>- Wie viele Vollzeitstellen entsprechen den 220 Mitarbeitenden und wie hoch sind die jährlichen Personalkosten?&nbsp;<\/p>",
+      "tags": "Politique d'Etat|Politique migratoire",
+      "tags_de": "Staatspolitik|Migration",
+      "tags_it": "Politica nazionale|Migrazione"
     },
     {
       "shortId": "26.7702",
@@ -108,7 +360,10 @@
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267702",
       "mention": "Élu",
       "text": "<p>–&nbsp;Combien de personnes ont été autorisées à entrer en Suisse en 2025 et 2026 dans le cadre des programmes de réinstallation prévus à l’art.&nbsp;56 de la loi sur l’asile&nbsp;?<br>–&nbsp;Comment se répartissent-elles par sexe, tranche d’âge, état civil, pays de séjour et pays d’origine&nbsp;?&nbsp;<\/p><p>–&nbsp;Combien de personnes prévoit-on encore de faire entrer sur le territoire ? D’ici quand&nbsp;?<\/p><p>–&nbsp;Le Conseil fédéral peut-il exclure avec certitude que toutes les personnes déjà arrivées et celles qui seront encore accueillies ont un lien avec le terrorisme ou avec des organisations extrémistes&nbsp;?<\/p>",
-      "text_de": "<p>- Wie vielen Personen wurde 2025 und 2026 im Rahmen der Resettlement-Programme nach Art. 56 AsylG die Einreise gewährt?<br>- Wie verteilen sie sich nach Geschlecht, Altersgruppen, Zivilstand, Aufenthalt- und Herkunftsland?&nbsp;<\/p><p>- Wie viele weitere Personen sollen noch einreisen und in welcher Zeitspanne?<\/p><p>- Kann der Bundesrat bei sämtlichen aufgenommenen und vorgesehenen Personen mit Sicherheit ausschliessen, dass ein terroristischer Hintergrund oder eine Verbindung zu extremistischen Organisationen besteht?<\/p>"
+      "text_de": "<p>- Wie vielen Personen wurde 2025 und 2026 im Rahmen der Resettlement-Programme nach Art. 56 AsylG die Einreise gewährt?<br>- Wie verteilen sie sich nach Geschlecht, Altersgruppen, Zivilstand, Aufenthalt- und Herkunftsland?&nbsp;<\/p><p>- Wie viele weitere Personen sollen noch einreisen und in welcher Zeitspanne?<\/p><p>- Kann der Bundesrat bei sämtlichen aufgenommenen und vorgesehenen Personen mit Sicherheit ausschliessen, dass ein terroristischer Hintergrund oder eine Verbindung zu extremistischen Organisationen besteht?<\/p>",
+      "tags": "Politique de sécurité|Politique migratoire",
+      "tags_de": "Sicherheitspolitik|Migration",
+      "tags_it": "Politica di sicurezza|Migrazione"
     },
     {
       "shortId": "26.7714",
@@ -125,7 +380,10 @@
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267714",
       "mention": "Élu",
       "text": "<p>Dans le rapport&nbsp;2025 sur le suivi du système d’asile, le SEM fait état d’une durée moyenne de procédure de 109,1&nbsp;jours pour les demandes de statut S, alors que l’objectif fixé était de 50&nbsp;jours.&nbsp;<br>–&nbsp;Combien de demandes ont été reçues, ont été traitées ou sont pendantes depuis le 1er&nbsp;janvier 2026&nbsp;?&nbsp;<br>–&nbsp;Quelles sont les durées moyenne et médiane des procédures en 2026&nbsp;?&nbsp;<br>–&nbsp;Combien de dossiers sont pendants depuis plus de 30, plus de 60 et plus de 90&nbsp;jours&nbsp;?&nbsp;<br>–&nbsp;Quelles mesures le SEM prend-il pour accélérer les procédures&nbsp;?<\/p>",
-      "text_de": "<p>Im Monitoringbericht zum Asylsystem 2025 weist das SEM für Gesuche um Schutzstatus S eine durchschnittliche Verfahrensdauer von 109,1 Tagen bei einem Zielwert von 50 Tagen aus.&nbsp;<br>- Wie viele Gesuche sind seit dem 1.1.2026 eingegangen, erledigt bzw. pendent?&nbsp;<br>- Wie hoch sind durchschnittliche und mediane Verfahrensdauer 2026?&nbsp;<br>- Wie viele Pendenzen bestehen seit mehr als 30, 60 bzw. 90 Tagen?&nbsp;<br>- Welche Massnahmen ergreift das SEM zur Beschleunigung der Verfahren?<\/p>"
+      "text_de": "<p>Im Monitoringbericht zum Asylsystem 2025 weist das SEM für Gesuche um Schutzstatus S eine durchschnittliche Verfahrensdauer von 109,1 Tagen bei einem Zielwert von 50 Tagen aus.&nbsp;<br>- Wie viele Gesuche sind seit dem 1.1.2026 eingegangen, erledigt bzw. pendent?&nbsp;<br>- Wie hoch sind durchschnittliche und mediane Verfahrensdauer 2026?&nbsp;<br>- Wie viele Pendenzen bestehen seit mehr als 30, 60 bzw. 90 Tagen?&nbsp;<br>- Welche Massnahmen ergreift das SEM zur Beschleunigung der Verfahren?<\/p>",
+      "tags": "Politique migratoire",
+      "tags_de": "Migration",
+      "tags_it": "Migrazione"
     },
     {
       "shortId": "26.1036",
@@ -142,7 +400,10 @@
       "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20261036",
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20261036",
       "mention": "Élu",
-      "text_de": "<p>Die FDP, Liberale Fraktion hat eine Motion mit dem Titel \"Einschränkung des Asyl-Antragsrechtes\" eingereicht. Eine Gesetzesgrundlage soll es möglich machen das Recht auf Asylgesuch-Antragsstellung vorübergehend auszusetzen, indem gewisse Personengruppen, welche erfahrungsgemäss grossmehrheitlich Wirtschaftsflüchtlinge sind und eine erhöhte Kriminalitätsrate aufweisen, bereits an der Grenze abzuweisen. Im September 2026 findet eine ausserordentliche Session zum Thema \"EU - Asyl\" im Nationalrat statt.&nbsp;<\/p><p>&nbsp;<\/p><p>Ich bitte den Bundesrat dazu um Beantwortung folgender dringlicher Fragen:<\/p><p>&nbsp;<\/p><p>1. Gewichtet der Bundesrat das in internationalen Konventionen erwähnte Recht auf \"Asylgesuch-Antragsstellung\" höher, als das verfassungsmässige Recht von Leib, Leben und Eigentum der Schweizer Bevölkerung?<\/p><p>2. Wo ist in internationalen Konventionen das Recht auf Schutz von Leib, Leben und Eigentum für die eigene Bevölkerung erwähnt?<\/p><p>3. Würde der Gesetzgeber in einer referendumsfähigen Gesetzesvorlage die Möglichkeit zur vorübergehenden und spezifisch Personengruppen bezogenen Aussetzung des Asylgesuch-Antragsstellungs-Rechtes beschliessen, müsste dann aus Sicht des Bundesrates das Bundesgericht diesbezüglich die \"Schubertpraxis\" anwenden, oder müsste dazu die \"Schubertpraxis\" in unserer Verfassung verankert werden?<\/p><p>&nbsp;<\/p><p>Der Bundesrat plant eine vorgelagerte Abklärung über das Recht auf Asyl einzuführen. Dazu bitte ich den Bundesrat folgende Fragen zu beantworten:<\/p><p>&nbsp;<\/p><p>4. Auf welchem Staatsgebiet und in welchen Lokalitäten soll eine solche Abklärung stattfinden ?<\/p><p>5. Welche Behörde mit welchem geschulten Personal soll diese Abklärungen durchführen ?<\/p><p>6. Können sich die Asylsuchenden während der Dauer dieser Abklärung frei bewegen ?<\/p><p>7. Wie wird sicher gestellt, dass während der Dauer dieser Abklärungen die Asylsuchenden nicht kriminell werden ?<\/p><p>8. Wo werden Asylsuchende, denen kein Recht auf Asyl zugesprochen wurden, danach physisch verbleiben ?<\/p><p>&nbsp;<\/p><p>Vielen Dank im Voraus für die Beantwortung dieser dringlichen Fragen.<\/p>"
+      "text_de": "<p>Die FDP, Liberale Fraktion hat eine Motion mit dem Titel \"Einschränkung des Asyl-Antragsrechtes\" eingereicht. Eine Gesetzesgrundlage soll es möglich machen das Recht auf Asylgesuch-Antragsstellung vorübergehend auszusetzen, indem gewisse Personengruppen, welche erfahrungsgemäss grossmehrheitlich Wirtschaftsflüchtlinge sind und eine erhöhte Kriminalitätsrate aufweisen, bereits an der Grenze abzuweisen. Im September 2026 findet eine ausserordentliche Session zum Thema \"EU - Asyl\" im Nationalrat statt.&nbsp;<\/p><p>&nbsp;<\/p><p>Ich bitte den Bundesrat dazu um Beantwortung folgender dringlicher Fragen:<\/p><p>&nbsp;<\/p><p>1. Gewichtet der Bundesrat das in internationalen Konventionen erwähnte Recht auf \"Asylgesuch-Antragsstellung\" höher, als das verfassungsmässige Recht von Leib, Leben und Eigentum der Schweizer Bevölkerung?<\/p><p>2. Wo ist in internationalen Konventionen das Recht auf Schutz von Leib, Leben und Eigentum für die eigene Bevölkerung erwähnt?<\/p><p>3. Würde der Gesetzgeber in einer referendumsfähigen Gesetzesvorlage die Möglichkeit zur vorübergehenden und spezifisch Personengruppen bezogenen Aussetzung des Asylgesuch-Antragsstellungs-Rechtes beschliessen, müsste dann aus Sicht des Bundesrates das Bundesgericht diesbezüglich die \"Schubertpraxis\" anwenden, oder müsste dazu die \"Schubertpraxis\" in unserer Verfassung verankert werden?<\/p><p>&nbsp;<\/p><p>Der Bundesrat plant eine vorgelagerte Abklärung über das Recht auf Asyl einzuführen. Dazu bitte ich den Bundesrat folgende Fragen zu beantworten:<\/p><p>&nbsp;<\/p><p>4. Auf welchem Staatsgebiet und in welchen Lokalitäten soll eine solche Abklärung stattfinden ?<\/p><p>5. Welche Behörde mit welchem geschulten Personal soll diese Abklärungen durchführen ?<\/p><p>6. Können sich die Asylsuchenden während der Dauer dieser Abklärung frei bewegen ?<\/p><p>7. Wie wird sicher gestellt, dass während der Dauer dieser Abklärungen die Asylsuchenden nicht kriminell werden ?<\/p><p>8. Wo werden Asylsuchende, denen kein Recht auf Asyl zugesprochen wurden, danach physisch verbleiben ?<\/p><p>&nbsp;<\/p><p>Vielen Dank im Voraus für die Beantwortung dieser dringlichen Fragen.<\/p>",
+      "tags": "Politique migratoire",
+      "tags_de": "Migration",
+      "tags_it": "Migrazione"
     },
     {
       "shortId": "26.4083",
@@ -159,7 +420,10 @@
       "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20264083",
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20264083",
       "mention": "Élu",
-      "text_de": "<p>Der Missbrauchsfall um den ehemaligen Aargauer SVP-Grossrat Patrick Frei wirft Fragen zum Schutz von Frauen in unsicheren aufenthaltsrechtlichen Situationen auf. Die beiden Frauen waren finanziell und aufenthaltsrechtlich vom Täter abhängig. Nach der Trennung gerieten sie selbst unter ausländerrechtlichen Druck. Der gewaltbedingte Sozialhilfebezug führte zu einer drohenden Wegweisung.<\/p><p>Seit dem 1.1.2025 ist Art. 50 AIG bei häuslicher Gewalt erweitert. Es stellt sich die Frage, wie die Regelung angewendet wird und ob sie ausreichenden Schutz gewährleistet. Unklar ist, inwiefern Art. 30 lit. b AIG bei sexualisierter und geschlechtsbezogener Gewalt Schutz bietet.<\/p><p>- Wie viele Aufenthaltstitel von Personen mit häuslicher Gewalterfahrung werden jährlich schriftlich in Frage gestellt, nicht verlängert oder widerrufen? Werden diese Fälle nach Aufenthaltsstatus, Geschlecht und Kanton erfasst?<\/p><p>- Wie viele Bewilligungen werden nach Art. 30 lit. b AIG und Art. 50 AIG erteilt? Bitte separat ausweisen. Hatten die Aargauer Behörden im Fall Frei die Möglichkeit, gestützt auf Art. 30 lit. b AIG eine Bewilligung zu erteilen?<\/p><p>- Wie stellt der Bund eine einheitliche Anwendung in den Kantonen sicher? Welche Vorgaben und Kontrollen bestehen? Welche Lehren zieht das SEM aus dem Fall Frei bzgl. Weisungen?<\/p><p>- Welche Bedeutung hat Sozialhilfebezug für das Aufenthaltsrecht Gewaltbetroffener? Wie beurteilt der Bundesrat Fälle, in denen die Sozialhilfe Folge der Gewalt ist?<\/p><p>- Was macht der Bundesrat, damit ausländerrechtliche Konsequenzen einer Trennung Betroffene nicht vom Verlassen einer Gewaltbeziehung oder einer Anzeige abhalten?<\/p><p>- Was tut der Bundesrat, damit Gewaltbetroffene nicht direkt nach der Trennung gegenüber Migrationsbehörden Rechenschaft ablegen müssen (durch sogenannte Trennungsanfragen) und mit Wegweisung gedroht wird?<\/p><p>- Wie stellt der Bundesrat sicher, dass Betroffene bei Behördenkontakt (Migrationsamt, Sozialhilfebehörde) und Gewaltverdacht direkt mit einer Opferhilfestelle vernetzt werden – unabhängig von Schwere und Intensität der Gewalt?<\/p><p>- Wie beurteilt der Bundesrat Rechtslage und kantonale Praxis im Hinblick auf Art. 59 der Istanbul-Konvention? Ist der Kanton Aargau im Fall Frei seinen Verpflichtungen nachgekommen? Wenn nicht, was unternimmt der Bundesrat dafür, um die IK durchzusetzen?<\/p>"
+      "text_de": "<p>Der Missbrauchsfall um den ehemaligen Aargauer SVP-Grossrat Patrick Frei wirft Fragen zum Schutz von Frauen in unsicheren aufenthaltsrechtlichen Situationen auf. Die beiden Frauen waren finanziell und aufenthaltsrechtlich vom Täter abhängig. Nach der Trennung gerieten sie selbst unter ausländerrechtlichen Druck. Der gewaltbedingte Sozialhilfebezug führte zu einer drohenden Wegweisung.<\/p><p>Seit dem 1.1.2025 ist Art. 50 AIG bei häuslicher Gewalt erweitert. Es stellt sich die Frage, wie die Regelung angewendet wird und ob sie ausreichenden Schutz gewährleistet. Unklar ist, inwiefern Art. 30 lit. b AIG bei sexualisierter und geschlechtsbezogener Gewalt Schutz bietet.<\/p><p>- Wie viele Aufenthaltstitel von Personen mit häuslicher Gewalterfahrung werden jährlich schriftlich in Frage gestellt, nicht verlängert oder widerrufen? Werden diese Fälle nach Aufenthaltsstatus, Geschlecht und Kanton erfasst?<\/p><p>- Wie viele Bewilligungen werden nach Art. 30 lit. b AIG und Art. 50 AIG erteilt? Bitte separat ausweisen. Hatten die Aargauer Behörden im Fall Frei die Möglichkeit, gestützt auf Art. 30 lit. b AIG eine Bewilligung zu erteilen?<\/p><p>- Wie stellt der Bund eine einheitliche Anwendung in den Kantonen sicher? Welche Vorgaben und Kontrollen bestehen? Welche Lehren zieht das SEM aus dem Fall Frei bzgl. Weisungen?<\/p><p>- Welche Bedeutung hat Sozialhilfebezug für das Aufenthaltsrecht Gewaltbetroffener? Wie beurteilt der Bundesrat Fälle, in denen die Sozialhilfe Folge der Gewalt ist?<\/p><p>- Was macht der Bundesrat, damit ausländerrechtliche Konsequenzen einer Trennung Betroffene nicht vom Verlassen einer Gewaltbeziehung oder einer Anzeige abhalten?<\/p><p>- Was tut der Bundesrat, damit Gewaltbetroffene nicht direkt nach der Trennung gegenüber Migrationsbehörden Rechenschaft ablegen müssen (durch sogenannte Trennungsanfragen) und mit Wegweisung gedroht wird?<\/p><p>- Wie stellt der Bundesrat sicher, dass Betroffene bei Behördenkontakt (Migrationsamt, Sozialhilfebehörde) und Gewaltverdacht direkt mit einer Opferhilfestelle vernetzt werden – unabhängig von Schwere und Intensität der Gewalt?<\/p><p>- Wie beurteilt der Bundesrat Rechtslage und kantonale Praxis im Hinblick auf Art. 59 der Istanbul-Konvention? Ist der Kanton Aargau im Fall Frei seinen Verpflichtungen nachgekommen? Wenn nicht, was unternimmt der Bundesrat dafür, um die IK durchzusetzen?<\/p>",
+      "tags": "Questions sociales|Droit international|Politique migratoire|Protection sociale",
+      "tags_de": "Soziale Fragen|Internationales Recht|Migration|Sozialer Schutz",
+      "tags_it": "Questioni sociali|Diritto internazionale|Migrazione|Protezione sociale"
     },
     {
       "shortId": "26.4085",
@@ -176,7 +440,10 @@
       "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20264085",
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20264085",
       "mention": "Élu",
-      "text": "<p>Le Conseil fédéral est chargé de prendre les mesures nécessaires afin que toute correspondance individuelle, postale ou électronique, adressée à un particulier ou à une entreprise par l’administration fédérale mentionne clairement un numéro de téléphone permettant de joindre directement le service compétent ou une permanence en mesure de renseigner le destinataire sur l’objet du courrier.<\/p><p>Cette exigence devra également s’appliquer, dans le cadre des compétences de la Confédération, aux établissements et entreprises de la Confédération chargés de tâches de service public.<\/p>"
+      "text": "<p>Le Conseil fédéral est chargé de prendre les mesures nécessaires afin que toute correspondance individuelle, postale ou électronique, adressée à un particulier ou à une entreprise par l’administration fédérale mentionne clairement un numéro de téléphone permettant de joindre directement le service compétent ou une permanence en mesure de renseigner le destinataire sur l’objet du courrier.<\/p><p>Cette exigence devra également s’appliquer, dans le cadre des compétences de la Confédération, aux établissements et entreprises de la Confédération chargés de tâches de service public.<\/p>",
+      "tags": "Politique d'Etat|Droit|Médias et communication",
+      "tags_de": "Staatspolitik|Recht Allgemein|Medien und Kommunikation",
+      "tags_it": "Politica nazionale|Diritto generale|Media e comunicazione"
     },
     {
       "shortId": "26.4090",
@@ -192,12 +459,15 @@
       "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20264090",
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20264090",
       "mention": "Titre uniquement",
-      "text_de": "<p>Der Bundesrat wird beauftragt eine Vorlage auszuarbeiten, welche die gesetzliche Möglichkeit schafft, das Recht auf die Stellung eines Asylantrages für einzelne Personengruppen vorübergehend auszusetzen. Personengruppen aus Regionen, aus denen mehrheitlich Wirtschaftsflüchtlinge zu uns kommen, sollen bereits an der Schweizer Grenze abgewiesen werden. Gleichzeitig sollen Personen die einer solchen Gruppe zugeordnet werden, und kein gültiges Schengenvisa bei sich haben, die Durchreise verwehrt werden.<\/p>"
+      "text_de": "<p>Der Bundesrat wird beauftragt eine Vorlage auszuarbeiten, welche die gesetzliche Möglichkeit schafft, das Recht auf die Stellung eines Asylantrages für einzelne Personengruppen vorübergehend auszusetzen. Personengruppen aus Regionen, aus denen mehrheitlich Wirtschaftsflüchtlinge zu uns kommen, sollen bereits an der Schweizer Grenze abgewiesen werden. Gleichzeitig sollen Personen die einer solchen Gruppe zugeordnet werden, und kein gültiges Schengenvisa bei sich haben, die Durchreise verwehrt werden.<\/p>",
+      "tags": "Politique internationale|Politique de sécurité|Droit international|Politique migratoire",
+      "tags_de": "Internationale Politik|Sicherheitspolitik|Internationales Recht|Migration",
+      "tags_it": "Politica internazionale|Politica di sicurezza|Diritto internazionale|Migrazione"
     },
     {
       "shortId": "26.7633",
       "title": "Vols spéciaux d’expulsion : affréter ou posséder, qu’est-ce qui coûte le moins cher ?",
-      "title_de": "Titel folgt",
+      "title_de": "Sonderflüge für Ausschaffungen: Sind Charterflüge oder eigene Flugzeuge günstiger?",
       "author": "Golay Roger",
       "party": "MCG",
       "type": "Fra.",
@@ -209,6 +479,7 @@
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267633",
       "mention": "Élu",
       "text": "<p>Selon le Secrétariat d’État aux migrations (SEM), 53 vols spéciaux ont transporté 462 personnes en 2024, pour environ 2,5 millions de francs de frais de vol nets.&nbsp;<br>- Quel montant total la Confédération a-t-elle consacré à ces vols durant les dix dernières années ?&nbsp;<br>- A-t-elle comparé ce coût à l’acquisition ou au leasing d’un avion fédéral polyvalent, utilisable pour les expulsions mais aussi pour d’autres missions ?<br>- &nbsp;Dans la négative, est-elle disposée à réaliser une telle analyse ?<\/p>",
+      "text_de": "<p>Nach Angaben des Staatssekretariats für Migration wurden im Jahr 2024 insgesamt 462 Personen mittels 53 Sonderflügen ausgeschafft. Die Nettokosten für die Flüge lagen bei etwa 2,5 Millionen Franken.&nbsp;<br>– Wie hoch ist der Gesamtbetrag, den der Bund in den letzten zehn Jahren für solche Flüge ausgegeben hat?&nbsp;<br>– Wurden die entsprechenden Kosten mit den Kosten für den Kauf oder das Leasing eines Bundesflugzeugs verglichen, das nicht nur für Ausschaffungen genutzt werden könnte, sondern vielseitig einsetzbar wäre, auch für andere Zwecke?<br>– &nbsp;Wenn nicht, ist der Bund bereit, eine solche Analyse durchzuführen?<\/p>",
       "tags": "Finances|Transports|Politique migratoire",
       "tags_de": "Finanzwesen|Verkehr|Migration",
       "tags_it": "Finanze|Trasporti|Migrazione"
@@ -235,7 +506,7 @@
     {
       "shortId": "26.7669",
       "title": "Renvois vers les pays du Maghreb : le cas d’un ressortissant tunisien multirécidiviste",
-      "title_de": "Titel folgt",
+      "title_de": "Ausschaffungen in die Maghreb-Staaten: Der Fall eines tunesischen Intensivtäters",
       "author": "de Quattro Jacqueline",
       "party": "PLR",
       "type": "Fra.",
@@ -246,7 +517,11 @@
       "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267669",
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267669",
       "mention": "Élu",
-      "text": "<p>A Fribourg, un ressortissant tunisien de 28 ans, sans titre de séjour valable, a fait l’objet de 53 rapports de police liés notamment au trafic de stupéfiants, à des comportements agressifs et à son séjour illégal.&nbsp;<\/p><p>Malgré quatre incidents violents en quatre mois avant sa détention en août 2024, il est resté en Suisse.&nbsp;<br>Pourquoi le Conseil fédéral n’a-t-il pas effectué son renvoi alors que le SEM souligne régulièrement que les retours vers les pays du Maghreb fonctionnent bien ?<\/p>"
+      "text": "<p>A Fribourg, un ressortissant tunisien de 28 ans, sans titre de séjour valable, a fait l’objet de 53 rapports de police liés notamment au trafic de stupéfiants, à des comportements agressifs et à son séjour illégal.&nbsp;<\/p><p>Malgré quatre incidents violents en quatre mois avant sa détention en août 2024, il est resté en Suisse.&nbsp;<br>Pourquoi le Conseil fédéral n’a-t-il pas effectué son renvoi alors que le SEM souligne régulièrement que les retours vers les pays du Maghreb fonctionnent bien ?<\/p>",
+      "text_de": "<p>In Freiburg lagen in Bezug auf einen 28-jährigen tunesischen Staatsangehörigen ohne gültigen Aufenthaltstitel 53 Polizeirapporte vor, insbesondere im Zusammenhang mit Drogenhandel, aggressivem Verhalten und seinem illegalen Aufenthalt in der Schweiz.&nbsp;<\/p><p>Trotz vier gewalttätiger Vorfälle in den vier Monaten vor seiner Inhaftierung im August 2024 blieb er in der Schweiz.&nbsp;<br>Warum hat der Bundesrat nicht für seine Ausschaffung gesorgt, zumal das SEM regelmässig betont, dass Rückführungen in die Maghreb-Staaten reibungslos funktionieren?<\/p>",
+      "tags": "Politique migratoire",
+      "tags_de": "Migration",
+      "tags_it": "Migrazione"
     },
     {
       "shortId": "26.7674",
@@ -693,7 +968,7 @@
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20263628",
       "mention": "Élu",
       "text": "<p>Le Conseil fédéral est chargé d’élaborer, en collaboration avec les cantons, les hautes écoles, les instituts de recherche, les autorités de surveillance sectorielles et le secteur privé, une feuille de route nationale pour la transition de la Suisse vers la cryptographie post-quantique. Cette feuille de route doit garantir la protection durable des données et des communications sensibles, la résilience des infrastructures critiques, la validité à long terme des signatures et des documents électroniques, l’interopérabilité internationale des systèmes suisses et la compétitivité des entreprises actives sur les marchés internationaux. Elle doit en particulier :<\/p><ol style=\"list-style-type:lower-alpha;\"><li><strong>établir, d’ici à fin 2027 au plus tard, une stratégie nationale de migration — c’est-à-dire de remplacement progressif des algorithmes vulnérables — fondée sur les risques,&nbsp;<\/strong>comprenant un inventaire des usages cryptographiques critiques, une cartographie des dépendances, y compris à l’égard des fournisseurs étrangers, et le lancement de projets pilotes pour les cas d’usage présentant un risque élevé ou une longue durée de confidentialité ;<\/li><li><strong>fixer des jalons coordonnés avec les calendriers internationaux pertinents,&nbsp;<\/strong>notamment la migration prioritaire des cas d’usage à haut risque d’ici à fin 2030 et la transition progressive des autres systèmes critiques ou sensibles d’ici à fin 2035, sous réserve de la maturité des standards, de l’interopérabilité et de la proportionnalité des mesures ;<\/li><li><strong>désigner les responsabilités de pilotage et de coordination au sein de l’administration fédérale,&nbsp;<\/strong>en s’appuyant en particulier sur l’Office fédéral de la cybersécurité (OFCS, anciennement NCSC), l’Office fédéral de l’informatique et de la télécommunication (OFIT) et les autorités sectorielles compétentes, sans créer de structures redondantes, et présenter au Parlement un rapport biennal sur l’état d’avancement ;<\/li><li><strong>définir les exigences minimales applicables aux infrastructures critiques, aux systèmes d’information de la Confédération et aux fournisseurs de prestations numériques critiques,&nbsp;<\/strong>notamment en matière d’inventaire cryptographique standardisé et interopérable — fondé, lorsque cela est approprié, sur des formats reconnus tels que le Cryptographic Bill of Materials (CBOM) —, de crypto-agilité, de capacité de mise à jour et de gestion sécurisée des dépendances fournisseurs, ces inventaires étant traités comme des informations sensibles de sécurité à accès restreint et non destinées à publication détaillée ;<\/li><li><strong>intégrer des exigences de préparation à la cryptographie post-quantique dans les marchés publics fédéraux et dans les contrats fournisseurs&nbsp;<\/strong>pour les produits et services numériques dont la durée de vie, la criticité ou la durée de confidentialité attendue dépasse 2030 ;<\/li><li><strong>garantir la résilience quantique de la signature électronique et de l’archivage à long terme,&nbsp;<\/strong>afin de préserver la validité durable des signatures, certificats, horodatages, actes authentiques, dossiers médicaux, registres publics et archives, en cohérence avec les travaux de la Swiss Government PKI ;<\/li><li><strong>assurer la cohérence avec les cadres internationaux applicables,&nbsp;<\/strong>en particulier la feuille de route coordonnée adoptée par le NIS Cooperation Group de l’Union européenne le 11 juin 2025, ainsi que les exigences du Cyber Resilience Act applicables dès le 11 décembre 2027 aux produits placés sur le marché européen ;<\/li><li><strong>examiner les adaptations légales ou réglementaires nécessaires,&nbsp;<\/strong>notamment dans le cadre de la législation sur la sécurité de l’information, de l’ordonnance sur la cybersécurité, des prescriptions de marchés publics et des réglementations sectorielles applicables ;<\/li><li><strong>prévoir des mesures de soutien proportionnées pour les cantons, les PME, les hautes écoles et les entreprises suisses,&nbsp;<\/strong>notamment par des lignes directrices, des modèles d’inventaire, des projets pilotes, des tests d’interopérabilité et la mobilisation des compétences nationales, dans une logique de souveraineté technologique cohérente avec l’objectif de la motion 24.3209.<\/li><\/ol><p>La feuille de route respecte les principes de neutralité technologique, d’ouverture des standards, de sécurité par conception et de proportionnalité économique — les obligations étant graduées selon le risque, la criticité, la durée de confidentialité des données et la durée de vie des systèmes. Conformément à la tradition suisse de conditions-cadres favorables plutôt que de politique industrielle sélective, elle ne vise pas à privilégier un fournisseur ou une technologie, mais à fixer les exigences de sécurité applicables aux infrastructures de l’État. Les informations sensibles contenues dans les inventaires cryptographiques sont protégées.<\/p>",
-      "text_de": "<p>Der Bundesrat wird beauftragt, in Zusammenarbeit mit den Kantonen, den Hochschulen, den Forschungsinstituten, den branchenspezifischen Aufsichtsbehörden und der Privatwirtschaft eine nationale Roadmap für den Übergang der Schweiz zur Post-Quanten-Kryptografie auszuarbeiten. Diese Roadmap soll den nachhaltigen Schutz besonders schützenswerter Daten und sensitiver Kommunikation, die Widerstandsfähigkeit kritischer Infrastrukturen, die langfristige Gültigkeit elektronischer Signaturen und Dokumente, die internationale Interoperabilität der Schweizer Systeme und die Wettbewerbsfähigkeit der im internationalen Markt tätigen Unternehmen gewährleisten. Insbesondere ist Folgendes vorzusehen:<\/p><ol style=\"list-style-type:lower-alpha;\"><li><strong>Spätestens bis Ende 2027 muss eine nationale Migrationsstrategie – d. h. eine Strategie zur schrittweisen Ablösung anfälliger Algorithmen – auf der Grundlage einer Risikobewertung erarbeitet werden,&nbsp;<\/strong>einschliesslich einer Bestandsaufnahme kritischer kryptografischer Anwendungen, einer Kartografie der Abhängigkeiten, auch gegenüber ausländischen Anbietern, sowie der Lancierung von Pilotprojekten für Anwendungsfälle mit hohem Risiko oder langer Vertraulichkeitsdauer.<\/li><li><strong>Es müssen Meilensteine festgelegt werden, die auf die einschlägigen internationalen Zeitpläne abgestimmt sind,&nbsp;<\/strong>insbesondere die vorrangige Umstellung für Anwendungsfälle mit hohem Risiko bis Ende 2030 und die schrittweise Umstellung der übrigen kritischen oder sensitiven Systeme bis Ende 2035; dies unter Berücksichtigung der Ausgereiftheit der Standards, der Interoperabilität und der Verhältnismässigkeit der Massnahmen.<\/li><li><strong>Es müssen die Zuständigkeiten für die Steuerung und Koordination innerhalb der Bundesverwaltung festgelegt werden,<\/strong> insbesondere unter Einbezug des Bundesamts für Cybersicherheit (BACS, ehemals NCSC), des Bundesamts für Informatik und Telekommunikation (BIT) sowie der spezifisch zuständigen Behörden. Redundante Strukturen müssen vermieden werden. Dem Parlament ist alle zwei Jahre ein Bericht über den Stand der Umsetzung vorzulegen.<\/li><li><strong>Es müssen Mindestanforderungen für kritische Infrastrukturen, Informationssysteme des Bundes und Anbieter kritischer digitaler Dienste festgelegt werden,&nbsp;<\/strong>insbesondere betreffend ein standardisiertes und interoperables kryptografisches Inventar – das, soweit angemessen, auf anerkannten Formaten wie der Cryptographic Bill of Materials (CBOM) basiert –, Krypto-Agilität, Aktualisierbarkeit sowie die gesicherte Verwaltung von Lieferantenabhängigkeiten. Diese Inventare müssen als sensitive Sicherheitsinformationen mit eingeschränktem Zugriff behandelt werden und dürfen nicht detailliert veröffentlicht werden.<\/li><li><strong>Anforderungen zur Vorbereitung auf die Post-Quanten-Kryptografie müssen in öffentliche Ausschreibungen des Bundes und in Lieferantenverträgen<\/strong>für digitale Produkte und Dienstleistungen, deren Lebensdauer, Kritikalität oder erwartete Vertraulichkeitsdauer über das Jahr 2030 hinausgeht, aufgenommen werden.<\/li><li><strong>Die Quantenresilienz der elektronischen Signatur und der Langzeitarchivierung ist zu gewährleisten,<\/strong> um die dauerhafte Gültigkeit von Signaturen, Zertifikaten, Zeitstempeln, öffentlichen Urkunden, Patientendossier, öffentlichen Registern und Archiven in Übereinstimmung mit den Arbeiten der Swiss Government PKI sicherzustellen.<\/li><li><strong>Die Übereinstimmung mit den geltenden internationalen Rahmenwerken ist sicherzustellen,&nbsp;<\/strong>insbesondere diejenige mit der koordinierten Roadmap, die am 11. Juni 2025 von der NIS-Kooperationsgruppe der Europäischen Union verabschiedet wurde, sowie diejenige mit den Anforderungen der Cyberresilienz-Verordnung, die ab dem 11. Dezember 2027 für Produkte gelten, die auf den europäischen Markt gebracht werden.<\/li><li><strong>Der rechtlich und reglementarisch erforderliche Anpassungsbedarf ist zu prüfen,<\/strong> insbesondere betreffend die Gesetzgebung zur Informationssicherheit, die Cybersicherheitsverordnung, die Vorschriften für das öffentliche Beschaffungswesen und die geltenden bereichsspezifischen Regelungen.<\/li><li><strong>Für die Kantone, KMU, Hochschulen und Schweizer Unternehmen sind angemessene Unterstützungsmassnahmen vorzusehen,<\/strong> insbesondere in Form von Leitlinien, Inventarvorlagen, Pilotprojekten, Interoperabilitätstests und durch die Mobilisierung nationaler Kompetenzen im Sinne einer technologischen Souveränität, die mit dem Ziel der Motion 24.3209 übereinstimmt.<\/li><\/ol><p>Die Roadmap berücksichtigt die Grundsätze der Technologieneutralität, der Offenheit der Standards, der Sicherheit durch Design und der wirtschaftlichen Verhältnismässigkeit – wobei die Verpflichtungen je nach Risiko, Kritikalität, Dauer der Vertraulichkeit der Daten und Lebensdauer der Systeme unterschiedlich ausgestaltet sind. Entsprechend der Schweizer Tradition, die eher auf günstige Rahmenbedingungen als auf eine selektive Industriepolitik setzt, zielt sie nicht darauf ab, einen bestimmten Anbieter oder eine bestimmte Technologie zu begünstigen, sondern die Sicherheitsanforderungen für staatliche Infrastrukturen festzulegen. Die in den kryptografischen Bestandesverzeichnissen enthaltenen sensitiven Informationen sind geschützt.<\/p>",
+      "text_de": "<p>Der Bundesrat wird beauftragt, in Zusammenarbeit mit den Kantonen, den Hochschulen, den Forschungsinstituten, den branchenspezifischen Aufsichtsbehörden und der Privatwirtschaft eine nationale Roadmap für den Übergang der Schweiz zur Post-Quanten-Kryptografie auszuarbeiten. Diese Roadmap soll den nachhaltigen Schutz besonders schützenswerter Daten und sensitiver Kommunikation, die Widerstandsfähigkeit kritischer Infrastrukturen, die langfristige Gültigkeit elektronischer Signaturen und Dokumente, die internationale Interoperabilität der Schweizer Systeme und die Wettbewerbsfähigkeit der im internationalen Markt tätigen Unternehmen gewährleisten. Insbesondere ist Folgendes vorzusehen:<\/p><ol style=\"list-style-type:lower-latin;\"><li><strong>Spätestens bis Ende 2027 muss eine nationale Migrationsstrategie – d. h. eine Strategie zur schrittweisen Ablösung anfälliger Algorithmen – auf der Grundlage einer Risikobewertung erarbeitet werden,&nbsp;<\/strong>einschliesslich einer Bestandsaufnahme kritischer kryptografischer Anwendungen, einer Kartografie der Abhängigkeiten, auch gegenüber ausländischen Anbietern, sowie der Lancierung von Pilotprojekten für Anwendungsfälle mit hohem Risiko oder langer Vertraulichkeitsdauer.<\/li><li><strong>Es müssen Meilensteine festgelegt werden, die auf die einschlägigen internationalen Zeitpläne abgestimmt sind,&nbsp;<\/strong>insbesondere die vorrangige Umstellung für Anwendungsfälle mit hohem Risiko bis Ende 2030 und die schrittweise Umstellung der übrigen kritischen oder sensitiven Systeme bis Ende 2035; dies unter Berücksichtigung der Ausgereiftheit der Standards, der Interoperabilität und der Verhältnismässigkeit der Massnahmen.<\/li><li><strong>Es müssen die Zuständigkeiten für die Steuerung und Koordination innerhalb der Bundesverwaltung festgelegt werden,<\/strong> insbesondere unter Einbezug des Bundesamts für Cybersicherheit (BACS, ehemals NCSC), des Bundesamts für Informatik und Telekommunikation (BIT) sowie der spezifisch zuständigen Behörden. Redundante Strukturen müssen vermieden werden. Dem Parlament ist alle zwei Jahre ein Bericht über den Stand der Umsetzung vorzulegen.<\/li><li><strong>Es müssen Mindestanforderungen für kritische Infrastrukturen, Informationssysteme des Bundes und Anbieter kritischer digitaler Dienste festgelegt werden,&nbsp;<\/strong>insbesondere betreffend ein standardisiertes und interoperables kryptografisches Inventar – das, soweit angemessen, auf anerkannten Formaten wie der Cryptographic Bill of Materials (CBOM) basiert –, Krypto-Agilität, Aktualisierbarkeit sowie die gesicherte Verwaltung von Lieferantenabhängigkeiten. Diese Inventare müssen als sensitive Sicherheitsinformationen mit eingeschränktem Zugriff behandelt werden und dürfen nicht detailliert veröffentlicht werden.<\/li><li><strong>Anforderungen zur Vorbereitung auf die Post-Quanten-Kryptografie müssen in öffentliche Ausschreibungen des Bundes und in Lieferantenverträgen <\/strong>für digitale Produkte und Dienstleistungen, deren Lebensdauer, Kritikalität oder erwartete Vertraulichkeitsdauer über das Jahr 2030 hinausgeht, aufgenommen werden.<\/li><li><strong>Die Quantenresilienz der elektronischen Signatur und der Langzeitarchivierung ist zu gewährleisten,<\/strong> um die dauerhafte Gültigkeit von Signaturen, Zertifikaten, Zeitstempeln, öffentlichen Urkunden, Patientendossier, öffentlichen Registern und Archiven in Übereinstimmung mit den Arbeiten der Swiss Government PKI sicherzustellen.<\/li><li><strong>Die Übereinstimmung mit den geltenden internationalen Rahmenwerken ist sicherzustellen,&nbsp;<\/strong>insbesondere diejenige mit der koordinierten Roadmap, die am 11. Juni 2025 von der NIS-Kooperationsgruppe der Europäischen Union verabschiedet wurde, sowie diejenige mit den Anforderungen der Cyberresilienz-Verordnung, die ab dem 11. Dezember 2027 für Produkte gelten, die auf den europäischen Markt gebracht werden.<\/li><li><strong>Der rechtlich und reglementarisch erforderliche Anpassungsbedarf ist zu prüfen,<\/strong> insbesondere betreffend die Gesetzgebung zur Informationssicherheit, die Cybersicherheitsverordnung, die Vorschriften für das öffentliche Beschaffungswesen und die geltenden bereichsspezifischen Regelungen.<\/li><li><strong>Für die Kantone, KMU, Hochschulen und Schweizer Unternehmen sind angemessene Unterstützungsmassnahmen vorzusehen,<\/strong> insbesondere in Form von Leitlinien, Inventarvorlagen, Pilotprojekten, Interoperabilitätstests und durch die Mobilisierung nationaler Kompetenzen im Sinne einer technologischen Souveränität, die mit dem Ziel der Motion 24.3209 übereinstimmt.<\/li><\/ol><p>Die Roadmap berücksichtigt die Grundsätze der Technologieneutralität, der Offenheit der Standards, der Sicherheit durch Design und der wirtschaftlichen Verhältnismässigkeit – wobei die Verpflichtungen je nach Risiko, Kritikalität, Dauer der Vertraulichkeit der Daten und Lebensdauer der Systeme unterschiedlich ausgestaltet sind. Entsprechend der Schweizer Tradition, die eher auf günstige Rahmenbedingungen als auf eine selektive Industriepolitik setzt, zielt sie nicht darauf ab, einen bestimmten Anbieter oder eine bestimmte Technologie zu begünstigen, sondern die Sicherheitsanforderungen für staatliche Infrastrukturen festzulegen. Die in den kryptografischen Bestandesverzeichnissen enthaltenen sensitiven Informationen sind geschützt.<\/p>",
       "tags": "Politique de sécurité|Médias et communication",
       "tags_de": "Sicherheitspolitik|Medien und Kommunikation",
       "tags_it": "Politica di sicurezza|Media e comunicazione"
