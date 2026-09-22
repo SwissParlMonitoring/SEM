@@ -1,10 +1,10 @@
 {
   "meta": {
-    "updated": "2026-09-21T23:46:57",
-    "total_count": 3938,
+    "updated": "2026-09-22T15:57:59",
+    "total_count": 3942,
     "source": "Swiss Parliament API",
     "legislature": 52,
-    "new_ids": ["26.4172", "26.4173", "26.7847", "26.067", "26.4184", "26.4190", "26.7883", "26.7885", "26.7887", "26.7735", "26.7794", "26.7796", "26.7798", "26.7799", "26.7816"]
+    "new_ids": ["26.067", "26.4184", "26.4190", "26.7883", "26.7885", "26.7887", "26.7735", "26.7794", "26.7796", "26.7798", "26.7799", "26.7816", "26.1037", "26.4209", "26.7894", "26.7923"]
   },
   "session_summary": {
     "session_id": "2026-ete",
@@ -44,6 +44,72 @@
   },
   "items": [
     {
+      "shortId": "26.1037",
+      "title": "Madame Della Valle ou Monsieur Abunimah, faite votre choix…",
+      "title_de": "Titel folgt",
+      "author": "Calame Didier",
+      "party": "UDC",
+      "type": "Fra.",
+      "status": "Eingereicht / Déposé",
+      "council": "NR",
+      "date": "2026-09-22",
+      "date_maj": "2026-09-22",
+      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20261037",
+      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20261037",
+      "mention": "Élu",
+      "text": "<p>Nous avons pu lire dans la presse (NZZ du 07/07/2026 ) que le DFJP a autorisé le Ministère public de la Confédération à enquêter sur l’ancienne directrice de Fed Pol, Nicoletta Della Valle, pour abus de pouvoir présumé. Cette décision fait suite à une plainte pénale déposée par le journaliste palestino américain Ali Abunimah &nbsp;, fondateur de la plateforme «Electronic Intifada». Cette plainte faisait suite à l’interdiction d’entrée sur le territoire prononcée par Mme Della Valle à l’encontre d’Ali Abunimah.&nbsp;<\/p><p>Je souhaite savoir pourquoi le Conseil fédéral désavoue une ancienne directrice de Fed Pol qui, à la demande du canton de Zurich, a empêché la venue en Suisse d’un antisémite avoué et prêcheur de haine en recourant à l’instrument de l’interdiction d’entrée prévu à l’article 67 de la loi sur l’entrée et le séjour des étrangers&nbsp; ?<\/p><p>Pour rappel : l’article 67 autorise l’Office fédéral de la police (Fed Pol) à prononcer une interdiction d’entrée à l’encontre d’étrangers afin de préserver la sécurité intérieure ou extérieure de la Suisse ; il consulte au préalable le SRC. Fed Pol peut prononcer des interdictions d’entrée pour une durée supérieure à cinq ans et, dans les cas graves, pour une durée indéterminée.<\/p><p>Le Conseil fédéral se souvient-il de sa réponse à la motion Fässler (16.3864 Obligation d'autorisation pour les orateurs étrangers lors de manifestations politiques) ? &nbsp;«…Même sans obligation d’autorisation telle que la réclame l’auteur de la motion, la Confédération dispose aujourd’hui de moyens pour empêcher, au cas par cas, la participation d’un orateur étranger à un événement politique. Ainsi, l’Office fédéral de la police (Fed Pol) peut, en vertu de l’article 67, alinéa 4, de la loi fédérale sur les étrangers (LEtr ; RS 142.20), prononcer une interdiction d’entrée à l’encontre de personnes dont la participation à une manifestation mettrait directement en danger la sécurité intérieure ou extérieure de la Suisse. Il consulte au préalable le Service de renseignement de la Confédération (SRC). De telles mesures ont été prises à plusieurs reprises par le passé. Ainsi, Fed Pol a prononcé l’année dernière dix interdictions d’entrée à l’encontre de soi-disant prêcheurs de haine. «<\/p><p>Comment le Conseil fédéral compte-t-il empêcher à l’avenir les interventions de prêcheurs de haine étrangers, quelle que soit leur tendance ?<\/p>"
+    },
+    {
+      "shortId": "26.4209",
+      "title": "Obtention des documents de voyages et durée de la détention administrative pour les requérants d'asile déboutés en provenance du Maghreb",
+      "title_de": "Titel folgt",
+      "title_it": "Titolo segue",
+      "author": "de Quattro Jacqueline",
+      "party": "PLR",
+      "type": "Ip.",
+      "status": "Eingereicht / Déposé",
+      "council": "NR",
+      "date": "2026-09-22",
+      "date_maj": "2026-09-22",
+      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20264209",
+      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20264209",
+      "mention": "Élu",
+      "text": "<p>Le Conseil fédéral affirme que la collaboration dans le domaine des renvois vers les pays du Maghreb, notamment l'Algérie est \"<i>excellente<\/i>\". Or dans sa réponse à la question&nbsp;26.7674, il a répondu qu'\"<i>il n’a pas été possible de fournir ces chiffres dans les délais impartis pour l’heure des questions<\/i>\". Ainsi, on apprend que l'administration ne suit pas la durée moyenne de la détention administrative de ces ressortissants.<\/p><p>&nbsp;<\/p><p>Cette coopération \"excellente\" devrait se vérifier sur la durée de l'obtention des documents de voyage et sur la durée moyenne de la détention administrative pour les trois pays du Maghreb les plus problématiques. D'autant plus que, selon le SEM lui-même, 80,5 % des demandeurs d'asile originaires d'Algérie, du Maroc et de Tunisie ont été mis en cause pour au moins une infraction pénale en 2024, soit pendant leur procédure d'asile, soit après une décision négative. En outre, le SEM a mis en place une procédure d'asile rapide (24 heures) pour ces ressortissants. qui durent en réalité en moyenne 22 jours, selon des données du SEM relayées par le&nbsp;<i>SonntagsBlick<\/i>.<\/p><p>&nbsp;<\/p><p>Ainsi, le Conseil fédéral est prié de répondre aux questions suivantes:<\/p><p>&nbsp;<\/p><ol><li>Combien de temps, en moyenne, dure l'obtention des documents de voyage pour les pays suivants: Algérie, Maroc et Tunisie? La durée moyenne doit être comprise de la date de la demande de document de voyage pour le requérant d'asile débouté à sa représentation consulaire respective jusqu'à la date effective de l'obtention d'un document de voyage permettant le renvoi.<\/li><li>Pour ces trois pays, avant l'obtention d'un document de voyage, est-ce que des entretiens consulaires doivent avoir lieu avec les représentants consulaires de leur pays? Si oui, quelle est la durée moyenne de l'attente pour obtenir un tel entretien? A partir de la date de la demande jusqu'à la réalisation effective de cet entretien consulaire qui permettra d'obtenir un document de voyage. Y a-t-il des listes d'attente?<\/li><li>Quelle est la durée moyenne de la détention administrative en vue du renvoi ou de l'expulsion (art. 76 LEI) pour ces trois pays pour les années 2024 à 2026?<\/li><li>Quelle est la durée moyenne de la détention pour insoumission (Art. 78 LEI) pour ces trois pays pour les années 2024 à 2026?<\/li><li>Combien de vols spéciaux ont été effectués à destination de ces trois pays entre 2024 et 2026 et combien de ressortissants ont été renvoyés par vols spéciaux?<\/li><\/ol>"
+    },
+    {
+      "shortId": "26.7894",
+      "title": "Scolarisation des enfants de familles itinérantes  ou/ en séjour précaire",
+      "title_de": "Titel folgt",
+      "author": "Sormanni Daniel",
+      "party": "MCG",
+      "type": "Fra.",
+      "status": "Eingereicht / Déposé",
+      "council": "NR",
+      "date": "2026-09-22",
+      "date_maj": "2026-09-22",
+      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267894",
+      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267894",
+      "mention": "Élu",
+      "text": "<p>À Genève, des situations d’enfants issus notamment de familles roms itinérantes qui ne fréquentent pas régulièrement l’école sont signalées.&nbsp;<\/p><p>- Combien de mineurs étrangers en séjour précaire ne sont pas scolarisés en Suisse, en particulier à Genève?&nbsp;<br>- Quelles mesures la Confédération peut-elle prendre avec les cantons pour garantir leur scolarisation et, en cas de séjour irrégulier, appliquer les procédures de renvoi ou de réadmission prévues par le droit, notamment avec la France?<\/p>"
+    },
+    {
+      "shortId": "26.7923",
+      "title": "Un préexamen des demandes d’asile serait-il juridiquement admissible et matériellement réalisable ?",
+      "title_de": "Vorgelagertes Asylverfahren: rechtlich haltbar und durchführbar?",
+      "author": "Theiler Heinz",
+      "party": "PLR",
+      "type": "Fra.",
+      "status": "Eingereicht / Déposé",
+      "council": "NR",
+      "date": "2026-09-22",
+      "date_maj": "2026-09-22",
+      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267923",
+      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267923",
+      "mention": "Élu",
+      "text": "<p>On peut en principe saluer l’accélération des procédures d’asile et l’allègement de la charge que les demandes manifestement infondées font peser sur le système.&nbsp;<br>Le directeur du SEM a annoncé qu’un préexamen permettrait d’éviter que ces demandes soient soumises à la procédure ordinaire.&nbsp;<br>Une telle mesure serait-elle juridiquement admissible et matériellement réalisable, notamment au regard de la Convention de Genève relative au statut des réfugiés (examen individuel, principe de non-refoulement)&nbsp;?<br>Si oui, sur quelle base légale se fonderait-elle&nbsp;?<\/p>",
+      "text_de": "<p>Die Beschleunigung der Asylverfahren und die Entlastung des Systems von offensichtlich unbegründeten Gesuchen sind grundsätzlich zu begrüssen.&nbsp;<br>Der SEM-Direktor hat angekündigt, mit einem vorgelagerten Verfahren solche Gesuche gar nicht erst ins ordentliche Verfahren gelangen zu lassen.&nbsp;<br>Ist diese Ankündigung rechtlich haltbar und praktisch durchführbar, namentlich mit Blick auf die Genfer Flüchtlingskonvention (individuelle Prüfung, Non-Refoulement)?<br>Falls ja, auf welcher gesetzlichen Grundlage?<\/p>"
+    },
+    {
       "shortId": "26.4184",
       "title": "Titre suit",
       "title_de": "Demografische Alterung: Auswirkungen auf Wohlstand, Wettbewerbsfähigkeit und die langfristige Zukunftsfähigkeit der Schweiz ",
@@ -79,7 +145,7 @@
     },
     {
       "shortId": "26.7883",
-      "title": "Titre suit",
+      "title": "LAsi. Que cherche-t-on à examiner lorsqu’un cas paraît évident ?",
       "title_de": "Asylgesetz - was gibt es in klaren Fällen noch zu prüfen?",
       "author": "Bregy Philipp Matthias",
       "party": "Le Centre",
@@ -91,11 +157,15 @@
       "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267883",
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267883",
       "mention": "Élu",
-      "text_de": "<p>Angeblich eröffnet das SEM bei Nichteintretensentscheiden i.S.v. Art. 31a AsylG jeweils ein Verfahren und führt eine Einzelprüfung durch, was zu erheblichen zeitlichen Verzögerungen im Verfahren und zu Mehraufwand führt. Warum erlässt das SEM beim Vorliegen einer der Voraussetzungen gemäss Art. 31a Abs.1 Bst. a bis f AsylG nicht einfach unmittelbar einen Nichteintretensentscheid? Und wie hoch sind der dadurch verursachte Mehraufwand und die dadurch verursachten zusätzlichen Kosten?<\/p>"
+      "text": "<p>Il semblerait que, lorsqu’il entend ne pas entrer en matière au sens de l’art. 31a LAsi, le SEM ouvre quand même à chaque fois une procédure et mène un examen individuel, ce qui entraîne des retards considérables dans la procédure et une charge de travail supplémentaire.&nbsp;<br>Pourquoi le SEM ne rend-il pas tout simplement d’emblée une décision de non-entrée en matière lorsque l’une des conditions prévues à l’art.&nbsp;31a, al. 1, let. a à f, LAsi est remplie&nbsp;? À combien s’élèvent la charge de travail et les coûts supplémentaires qui en découlent&nbsp;?<\/p>",
+      "text_de": "<p>Angeblich eröffnet das SEM bei Nichteintretensentscheiden i.S.v. Art. 31a AsylG jeweils ein Verfahren und führt eine Einzelprüfung durch, was zu erheblichen zeitlichen Verzögerungen im Verfahren und zu Mehraufwand führt.&nbsp;<br>Warum erlässt das SEM beim Vorliegen einer der Voraussetzungen gemäss Art. 31a Abs.1 Bst. a bis f AsylG nicht einfach unmittelbar einen Nichteintretensentscheid? Und wie hoch sind der dadurch verursachte Mehraufwand und die dadurch verursachten zusätzlichen Kosten?<\/p>",
+      "tags": "Politique migratoire",
+      "tags_de": "Migration",
+      "tags_it": "Migrazione"
     },
     {
       "shortId": "26.7885",
-      "title": "Titre suit",
+      "title": "Initiative pour la protection des frontières. Réadmissions depuis l’entrée en vigueur des accords de Schengen/Dublin et contrôles des véhicules",
       "title_de": "Grenzschutz-Initiative - Rückübernahmen seit Schengen/ Dublin und Fahrzeugkontrollen",
       "author": "Fehr Düsel Nina",
       "party": "UDC",
@@ -107,7 +177,11 @@
       "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267885",
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267885",
       "mention": "Élu",
-      "text_de": "<p>An der Medienkonferenz hat der Bundesrat behauptet, dass Fahrzeugkolonnen bei systematischen Kontrollen an der Grenze stark wachsen würden und dass Schengen/ Dublin nicht mehr funktionieren würde.&nbsp;<\/p><p>Wie viele Rückübernahmen von Asylbewerbern durch Nachbarstaaten sind seit Inkrafttreten von Schengen/ Dublin effektiv erfolgt? Gibt es hierzu Zahlen nach Jahren/ Nachbarstaaten?<\/p><p>Teilt der Bundesrat die Auffassung, dass nicht jedes Fahrzeug kontrolliert werden muss, sondern nach einem tauglichen System?<\/p>"
+      "text": "<p>En conférence de presse, le Conseil fédéral a affirmé que les files de véhicules augmenteraient considérablement en cas de contrôles systématiques aux frontières et que les accords de Schengen/Dublin ne fonctionneraient plus.&nbsp;<\/p><p>Combien de requérants d’asile les pays voisins ont-ils effectivement réadmis depuis l’entrée en vigueur des accords de Schengen/Dublin&nbsp;? Dispose-t-on de chiffres ventilés par année et par pays&nbsp;?<\/p><p>Le Conseil fédéral conçoit-il qu’il ne serait pas nécessaire de contrôler chaque véhicule et qu’un système efficace pourrait être mis en place&nbsp;?<\/p>",
+      "text_de": "<p>An der Medienkonferenz hat der Bundesrat behauptet, dass Fahrzeugkolonnen bei systematischen Kontrollen an der Grenze stark wachsen würden und dass Schengen/ Dublin nicht mehr funktionieren würde.&nbsp;<\/p><p>Wie viele Rückübernahmen von Asylbewerbern durch Nachbarstaaten sind seit Inkrafttreten von Schengen/ Dublin effektiv erfolgt? Gibt es hierzu Zahlen nach Jahren/ Nachbarstaaten?<\/p><p>Teilt der Bundesrat die Auffassung, dass nicht jedes Fahrzeug kontrolliert werden muss, sondern nach einem tauglichen System?<\/p>",
+      "tags": "Politique européenne|Politique migratoire",
+      "tags_de": "Europapolitik|Migration",
+      "tags_it": "Politica europea|Migrazione"
     },
     {
       "shortId": "26.7887",
@@ -123,7 +197,10 @@
       "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267887",
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267887",
       "mention": "Élu",
-      "text_de": "<p>Gemäss dem Bericht zum Stand der Umsetzung Schengen/Dublin 2025/2026 sparte die Schweiz dank Frontex ca. CHF 3 Mio. Das von Frontex finanzierte Rückkehrhilfeprogramm EURP nutzte das SEM jedoch nur für 464 Fälle aus Syrien und Türkei, obwohl 2025 2'768 Rückkehrhilfegesuche bewilligt wurden und EURP knapp 40 Länder abdeckt.<\/p><p>&nbsp;<\/p><p>Weshalb nutzt das SEM EURP bei freiwilligen Rückkehrern nicht standardmässig für alle abgedeckten Länder, und welches finanzielle Einsparpotenzial lässt der Bund dadurch liegen?<\/p>"
+      "text_de": "<p>Gemäss dem Bericht zum Stand der Umsetzung Schengen/Dublin 2025/2026 sparte die Schweiz dank Frontex ca. CHF 3 Mio. Das von Frontex finanzierte Rückkehrhilfeprogramm EURP nutzte das SEM jedoch nur für 464 Fälle aus Syrien und Türkei, obwohl 2025 2'768 Rückkehrhilfegesuche bewilligt wurden und EURP knapp 40 Länder abdeckt.<\/p><p>&nbsp;<\/p><p>Weshalb nutzt das SEM EURP bei freiwilligen Rückkehrern nicht standardmässig für alle abgedeckten Länder, und welches finanzielle Einsparpotenzial lässt der Bund dadurch liegen?<\/p>",
+      "tags": "Politique migratoire",
+      "tags_de": "Migration",
+      "tags_it": "Migrazione"
     },
     {
       "shortId": "26.7735",
@@ -183,7 +260,10 @@
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267794",
       "mention": "Conseil fédéral",
       "text": "<p>Lors des précédentes sessions (notamment en réponse à la question 26.7128), le Conseil fédéral a systématiquement qualifié les pannes de SIPAC 2.0 d'imprévus et de simples « bugs de jeunesse ».&nbsp;<br>Au vu des documents obtenus par voie de LTrans prouvant que ces anomalies structurelles étaient chiffrées et documentées huit mois avant le lancement, le chef du DEFR reconnaît-il avoir minimisé la réalité et induit le Parlement en erreur ?<\/p>",
-      "text_de": "<p>In den vergangenen Sessionen (insbesondere in der Antwort auf Frage 26.7128) bezeichnete der Bundesrat die Pannen von Asal&nbsp;2.0 durchwegs als unvorhergesehene Ereignisse und als blosse «Anlaufschwierigkeiten». Die Dokumente, die mithilfe des Öffentlichkeitsgesetzes zur Einsicht gelangten, belegen, dass diese strukturellen Mängel bereits acht Monate vor der Inbetriebnahme von Asal&nbsp;2.0 beziffert und dokumentiert worden waren.&nbsp;<br>Räumt der Vorsteher des Eidgenössischen Departements für Wirtschaft, Bildung und Forschung (WBF) ein, dass er die Realität verharmlost und dem Parlament ein falsches Bild vermittelt hat?<\/p>"
+      "text_de": "<p>In den vergangenen Sessionen (insbesondere in der Antwort auf Frage 26.7128) bezeichnete der Bundesrat die Pannen von Asal&nbsp;2.0 durchwegs als unvorhergesehene Ereignisse und als blosse «Anlaufschwierigkeiten». Die Dokumente, die mithilfe des Öffentlichkeitsgesetzes zur Einsicht gelangten, belegen, dass diese strukturellen Mängel bereits acht Monate vor der Inbetriebnahme von Asal&nbsp;2.0 beziffert und dokumentiert worden waren.&nbsp;<br>Räumt der Vorsteher des Eidgenössischen Departements für Wirtschaft, Bildung und Forschung (WBF) ein, dass er die Realität verharmlost und dem Parlament ein falsches Bild vermittelt hat?<\/p>",
+      "tags": "Politique d'Etat|Médias et communication|Protection sociale",
+      "tags_de": "Staatspolitik|Medien und Kommunikation|Sozialer Schutz",
+      "tags_it": "Politica nazionale|Media e comunicazione|Protezione sociale"
     },
     {
       "shortId": "26.7796",
@@ -201,7 +281,10 @@
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267796",
       "mention": "Conseil fédéral",
       "text": "<p>Suite aux révélations démontrant que le crash de SIPAC 2.0 était prévisible et évitable, des dizaines de milliers d'assurés ont subi des retards d'indemnisation massifs ayant entraîné des frais de rappel, des intérêts moratoires, voire des poursuites injustifiées.&nbsp;<br>Le chef du DEFR et la Confédération entendent-ils assumer leurs responsabilités en prévoyant un mécanisme d'indemnisation financière pour les préjudices concrets subis par ces&nbsp;<br>ménages ?<\/p>",
-      "text_de": "<p>Die Bauchlandung von Asal&nbsp;2.0 war bekannterweise vorhersehbar und vermeidbar. Zehntausende von Versicherten mussten massive Auszahlungsverzögerungen hinnehmen, die Mahnkosten, Verzugszinsen und sogar ungerechtfertigte Betreibungen zur Folge hatten.&nbsp;<br>Beabsichtigen der Vorsteher des Eidgenössischen Departements für Wirtschaft, Bildung und Forschung und der Bund, ihre Verantwortung wahrzunehmen und einen Mechanismus zur finanziellen Entschädigung für die konkreten Schäden vorzusehen, die diesen Versicherten entstanden sind?<\/p>"
+      "text_de": "<p>Die Bauchlandung von Asal&nbsp;2.0 war bekannterweise vorhersehbar und vermeidbar. Zehntausende von Versicherten mussten massive Auszahlungsverzögerungen hinnehmen, die Mahnkosten, Verzugszinsen und sogar ungerechtfertigte Betreibungen zur Folge hatten.&nbsp;<br>Beabsichtigen der Vorsteher des Eidgenössischen Departements für Wirtschaft, Bildung und Forschung und der Bund, ihre Verantwortung wahrzunehmen und einen Mechanismus zur finanziellen Entschädigung für die konkreten Schäden vorzusehen, die diesen Versicherten entstanden sind?<\/p>",
+      "tags": "Protection sociale",
+      "tags_de": "Sozialer Schutz",
+      "tags_it": "Protezione sociale"
     },
     {
       "shortId": "26.7798",
@@ -219,7 +302,10 @@
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267798",
       "mention": "Conseil fédéral",
       "text": "<p>Suite aux révélations de presse documentées par des pièces officielles obtenues en vertu de la LTrans, l'opérateur sortant IBM s'était contractuellement engagé à maintenir l'ancien système de paiement jusqu'à la fin de l'année 2026. Sachant qu'un report de la mise en service était techniquement et juridiquement assuré, pourquoi le chef du DEFR et ses services ont-ils pris le risque délibéré d'imposer la bascule au 6 janvier 2026 au détriment des bénéficiaires de l'assurance-chômage?<\/p>",
-      "text_de": "<p>Medienberichten zufolge, die auf amtliche Dokumente abstützen, die mithilfe des Öffentlichkeitsgesetzes zur Einsicht gelangten, hatte sich der bisherige Betreiber IBM vertraglich dazu verpflichtet, das alte Zahlungssystem bis Ende&nbsp;2026 aufrechtzuerhalten. Die Verschiebung der Inbetriebnahme von Asal&nbsp;2.0 war technisch und rechtlich abgesichert.&nbsp;<br>Warum sind der Vorsteher des Eidgenössischen Departements für Wirtschaft, Bildung und Forschung und seine Dienststellen bewusst das Risiko eingegangen, die Umstellung auf den 6.&nbsp;Januar 2026 durchzusetzen, und dies zum Nachteil der Bezügerinnen und Bezüger von Arbeitslosenentschädigung?<\/p>"
+      "text_de": "<p>Medienberichten zufolge, die auf amtliche Dokumente abstützen, die mithilfe des Öffentlichkeitsgesetzes zur Einsicht gelangten, hatte sich der bisherige Betreiber IBM vertraglich dazu verpflichtet, das alte Zahlungssystem bis Ende&nbsp;2026 aufrechtzuerhalten. Die Verschiebung der Inbetriebnahme von Asal&nbsp;2.0 war technisch und rechtlich abgesichert.&nbsp;<br>Warum sind der Vorsteher des Eidgenössischen Departements für Wirtschaft, Bildung und Forschung und seine Dienststellen bewusst das Risiko eingegangen, die Umstellung auf den 6.&nbsp;Januar 2026 durchzusetzen, und dies zum Nachteil der Bezügerinnen und Bezüger von Arbeitslosenentschädigung?<\/p>",
+      "tags": "Politique d'Etat|Médias et communication|Protection sociale",
+      "tags_de": "Staatspolitik|Medien und Kommunikation|Sozialer Schutz",
+      "tags_it": "Politica nazionale|Media e comunicazione|Protezione sociale"
     },
     {
       "shortId": "26.7799",
@@ -237,7 +323,10 @@
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267799",
       "mention": "Conseil fédéral",
       "text": "<p>Suite aux récentes révélations de presse documentées par des pièces officielles obtenues en vertu de la loi sur la transparence (LTrans), il apparaît qu'un audit avait formellement identifié 71 failles de sécurité (dont 27 critiques) dès mai 2025 sur le système SIPAC 2.0. À quelle date exacte le chef du DEFR a-t-il été personnellement informé de ces alertes majeures, et comment justifie-t-il qu'aucun report ni mesure corrective préalable n'aient été exigés avant le déploiement du 6 janvier 2026?<\/p>",
-      "text_de": "<p>Den jüngsten Medienberichten zufolge, die sich auf offizielle Dokumente stützen, die mithilfe des Öffentlichkeitsgesetzes zur Einsicht gelangten, wurden bereits bei einer Prüfung im Mai&nbsp;2025 71&nbsp;Sicherheitsmängel (davon 27 kritische) im System Asal&nbsp;2.0 festgestellt. Wann genau wurde der Vorsteher des Eidgenössischen Departements für Wirtschaft, Bildung und Forschung (WBF) über diese schwerwiegenden Mängel informiert?&nbsp;<br>Und wie begründet er, dass bis zur Inbetriebnahme am 6.&nbsp;Januar 2026 weder eine Verschiebung der Inbetriebnahme noch Korrekturmassnahmen verlangt wurden?<\/p>"
+      "text_de": "<p>Den jüngsten Medienberichten zufolge, die sich auf offizielle Dokumente stützen, die mithilfe des Öffentlichkeitsgesetzes zur Einsicht gelangten, wurden bereits bei einer Prüfung im Mai&nbsp;2025 71&nbsp;Sicherheitsmängel (davon 27 kritische) im System Asal&nbsp;2.0 festgestellt. Wann genau wurde der Vorsteher des Eidgenössischen Departements für Wirtschaft, Bildung und Forschung (WBF) über diese schwerwiegenden Mängel informiert?&nbsp;<br>Und wie begründet er, dass bis zur Inbetriebnahme am 6.&nbsp;Januar 2026 weder eine Verschiebung der Inbetriebnahme noch Korrekturmassnahmen verlangt wurden?<\/p>",
+      "tags": "Politique d'Etat|Médias et communication|Protection sociale",
+      "tags_de": "Staatspolitik|Medien und Kommunikation|Sozialer Schutz",
+      "tags_it": "Politica nazionale|Media e comunicazione|Protezione sociale"
     },
     {
       "shortId": "26.7816",
@@ -255,7 +344,10 @@
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267816",
       "mention": "Conseil fédéral",
       "text": "<p>En juillet 2026, une conférence organisée par Résistance helvétique, initialement prévue à La Chaux-sur-Cossonay, a été déplacée vers un refuge à Saint-Cierges après l’intervention des autorités locales. La police, informée tardivement, est arrivée après la fin du rassemblement.<br>Le Conseil fédéral estime-t-il que les instruments actuels permettent aux autorités d’identifier suffisamment tôt ce type de rassemblement ?<\/p>",
-      "text_de": "<p>Im Juli 2026 fand vor einer Berghütte in Saint-Cierges eine von der «Résistance helvétique» organisierte Veranstaltung statt. Am ursprünglich geplanten Ort in der Gemeinde La Chaux-sur-Cossonay verhinderten die lokalen Behörden die Veranstaltung. Die Polizei erfuhr spät von der Versammlung und traf erst nach deren Ende ein.<br>Erachtet der Bundesrat die bestehenden Instrumente als ausreichend, um solche Versammlungen frühzeitig zu erkennen?<\/p>"
+      "text_de": "<p>Im Juli 2026 fand vor einer Berghütte in Saint-Cierges eine von der «Résistance helvétique» organisierte Veranstaltung statt. Am ursprünglich geplanten Ort in der Gemeinde La Chaux-sur-Cossonay verhinderten die lokalen Behörden die Veranstaltung. Die Polizei erfuhr spät von der Versammlung und traf erst nach deren Ende ein.<br>Erachtet der Bundesrat die bestehenden Instrumente als ausreichend, um solche Versammlungen frühzeitig zu erkennen?<\/p>",
+      "tags": "Politique d'Etat|Questions sociales",
+      "tags_de": "Staatspolitik|Soziale Fragen",
+      "tags_it": "Politica nazionale|Questioni sociali"
     },
     {
       "shortId": "26.7689",
@@ -541,7 +633,10 @@
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267847",
       "mention": "Élu & Conseil fédéral",
       "text": "<p>L’initiative sur le renvoi (<a href=\"https://che01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.parlament.ch%2Fde%2Fratsbetrieb%2Fsuche-curia-vista%2Fgeschaeft%3FAffairId%3D20090060&amp;data=05%7C02%7Czs.kanzlei%40parl.admin.ch%7Cf169402eaac5443e121408df13cd2889%7C0cf3ddc638a5480885f1cae22925a1b0%7C0%7C0%7C639251444006285412%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=I%2BNcO8oWYtdLiSlCt3DcQD4d3EPdwzcLWwB64EN5zhs%3D&amp;reserved=0\">09.060<\/a>) a été acceptée le 28&nbsp;novembre&nbsp;2010. Des chiffres sont disponibles depuis 2023.<br>- Combien d’expulsions ont été prononcées et effectivement exécutées en 2023 ?<br>- Combien d’expulsions ont été prononcées et effectivement exécutées en 2024 ?<br>- Combien d’expulsions ont été prononcées et effectivement exécutées en 2025 ?<br>- Ces chiffres ne sont-ils pas très faibles si on les compare aux plus de 500&nbsp;000&nbsp;infractions commises chaque année en Suisse (58&nbsp;% des prévenus sont des étrangers)&nbsp;?<\/p>",
-      "text_de": "<p>Am 28. November 2010 wurde die Ausschaffungs-Initiative (<a href=\"https://che01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.parlament.ch%2Fde%2Fratsbetrieb%2Fsuche-curia-vista%2Fgeschaeft%3FAffairId%3D20090060&amp;data=05%7C02%7Czs.kanzlei%40parl.admin.ch%7Cf169402eaac5443e121408df13cd2889%7C0cf3ddc638a5480885f1cae22925a1b0%7C0%7C0%7C639251444006285412%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=I%2BNcO8oWYtdLiSlCt3DcQD4d3EPdwzcLWwB64EN5zhs%3D&amp;reserved=0\">09.060<\/a>) angenommen. Seit 2023 liegen Zahlen vor.<br>- Wie viele Landesverweise wurden 2023 ausgesprochenen und tatsächlich vollzogen?<br>- Wie viele Landesverweise wurden 2024 ausgesprochenen und tatsächlich vollzogen?<br>- Wie viele Landesverweise wurden 2025 ausgesprochenen und tatsächlich vollzogen?<br>- Sind diese Zahlen angesichts der jährlich mehr als 500'000 Straftaten in der Schweiz (58% der beschuldigten Personen sind Ausländer) nicht sehr tief?<\/p>"
+      "text_de": "<p>Am 28. November 2010 wurde die Ausschaffungs-Initiative (<a href=\"https://che01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.parlament.ch%2Fde%2Fratsbetrieb%2Fsuche-curia-vista%2Fgeschaeft%3FAffairId%3D20090060&amp;data=05%7C02%7Czs.kanzlei%40parl.admin.ch%7Cf169402eaac5443e121408df13cd2889%7C0cf3ddc638a5480885f1cae22925a1b0%7C0%7C0%7C639251444006285412%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=I%2BNcO8oWYtdLiSlCt3DcQD4d3EPdwzcLWwB64EN5zhs%3D&amp;reserved=0\">09.060<\/a>) angenommen. Seit 2023 liegen Zahlen vor.<br>- Wie viele Landesverweise wurden 2023 ausgesprochenen und tatsächlich vollzogen?<br>- Wie viele Landesverweise wurden 2024 ausgesprochenen und tatsächlich vollzogen?<br>- Wie viele Landesverweise wurden 2025 ausgesprochenen und tatsächlich vollzogen?<br>- Sind diese Zahlen angesichts der jährlich mehr als 500'000 Straftaten in der Schweiz (58% der beschuldigten Personen sind Ausländer) nicht sehr tief?<\/p>",
+      "tags": "Droit pénal|Politique migratoire",
+      "tags_de": "Strafrecht|Migration",
+      "tags_it": "Diritto penale|Migrazione"
     },
     {
       "shortId": "26.3668",
@@ -645,7 +740,10 @@
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267734",
       "mention": "Élu & Conseil fédéral",
       "text": "<p>Selon le SEM, une procédure d’asile sur cinq dure plus de six mois. Ce ne sont dès lors que quelques requérants qui font grimper la durée moyenne des procédures. Toujours selon le SEM, il n’est toutefois pas possible de déterminer de quels pays proviennent ces requérants. Pourtant, les statistiques sur l’asile indiquent clairement les pays d’origine.&nbsp;<br>–&nbsp;D’ici quand le Conseil fédéral prévoit-il de saisir les pays d’origine dans les statistiques sur la durée des procédures d’asile&nbsp;?&nbsp;<br>–&nbsp;Pourquoi ne l’a-t-on pas encore fait&nbsp;?<\/p>",
-      "text_de": "<p>Gemäss SEM dauert jedes fünfte Asylverfahren länger als sechs Monate. Somit treiben vergleichsweise wenige Fälle die durchschnittliche Verfahrensdauer in die Höhe. Gemäss SEM könne man allerdings nicht sagen, aus welchen Ländern die betreffenden Asylbewerber stammen, obwohl die Asylstatistik die Herkunftsländer klar ausweist.&nbsp;<br>- Bis wann gedenkt der Bundesrat auch bei der Statistik über die Dauer von Asylverfahren die Herkunftsländer zu erfassen?&nbsp;<br>- Wieso wurde bislang darauf verzichtet?<\/p>"
+      "text_de": "<p>Gemäss SEM dauert jedes fünfte Asylverfahren länger als sechs Monate. Somit treiben vergleichsweise wenige Fälle die durchschnittliche Verfahrensdauer in die Höhe. Gemäss SEM könne man allerdings nicht sagen, aus welchen Ländern die betreffenden Asylbewerber stammen, obwohl die Asylstatistik die Herkunftsländer klar ausweist.&nbsp;<br>- Bis wann gedenkt der Bundesrat auch bei der Statistik über die Dauer von Asylverfahren die Herkunftsländer zu erfassen?&nbsp;<br>- Wieso wurde bislang darauf verzichtet?<\/p>",
+      "tags": "Politique migratoire",
+      "tags_de": "Migration",
+      "tags_it": "Migrazione"
     },
     {
       "shortId": "26.7744",
@@ -663,7 +761,10 @@
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267744",
       "mention": "Élu & Conseil fédéral",
       "text": "<p>- Le droit en vigueur permet-il à la Suisse de retirer leur titre de séjour aux citoyens de l’UE qui sont venus en Suisse dans le cadre de la libre circulation des personnes et qui ont perdu leur emploi ou perçoivent des allocations de chômage ?&nbsp;<br>- Si oui, quelle est la base juridique qui le permet ?&nbsp;<br>- Combien de fois cela a-t-il été fait l’année dernière&nbsp;? Et depuis 2022&nbsp;?<\/p>",
-      "text_de": "<p>- Ist es nach geltender Rechtslage möglich, dass die Schweiz EU-Bürgern, die via PFZ hierherkamen und die Stelle verloren haben und/oder Arbeitslosengelder erhalten, die Aufenthaltsbewilligung zu entziehen?&nbsp;<br>- Wenn ja, welches ist die rechtliche Grundlage?&nbsp;<br>- Wie oft wurde dies letztes Jahr gemacht und wie oft seit 2022?<\/p>"
+      "text_de": "<p>- Ist es nach geltender Rechtslage möglich, dass die Schweiz EU-Bürgern, die via PFZ hierherkamen und die Stelle verloren haben und/oder Arbeitslosengelder erhalten, die Aufenthaltsbewilligung zu entziehen?&nbsp;<br>- Wenn ja, welches ist die rechtliche Grundlage?&nbsp;<br>- Wie oft wurde dies letztes Jahr gemacht und wie oft seit 2022?<\/p>",
+      "tags": "Politique européenne|Emploi et travail|Politique migratoire",
+      "tags_de": "Europapolitik|Beschäftigung und Arbeit|Migration",
+      "tags_it": "Politica europea|Occupazione e lavoro|Migrazione"
     },
     {
       "shortId": "26.7761",
@@ -681,7 +782,10 @@
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267761",
       "mention": "Élu & Conseil fédéral",
       "text": "<p>–&nbsp;Pourquoi la Confédération accorde-t-elle à Caritas une enveloppe de 18,9&nbsp;millions de francs pour couvrir les frais de procédure des requérants d’asile&nbsp;?&nbsp;<\/p><p>–&nbsp;En quoi y voit-elle une valeur ajoutée pour les contribuables suisses&nbsp;?<\/p><p>–&nbsp;La Confédération ne fait-elle pas ainsi les choux gras des passeurs&nbsp;?<\/p><p>–&nbsp;Estime-t-elle toujours approprié de considérer Caritas comme une ONG, étant donné l’importance des subventions qui lui sont accordées&nbsp;?<\/p><p>–&nbsp;Ne serait-il pas plus correct de parler d’«&nbsp;organisation soutenue par le gouvernement&nbsp;» dans le cas d’espèce&nbsp;?<\/p><p>&nbsp;<\/p>",
-      "text_de": "<p>- Weshalb unterstützt der Bund die Caritas mit Fr. 18,9 Mio. für Verfahrenskosten für Asylsuchende?&nbsp;<\/p><p>- Worin sieht er den Mehrwert für die steuerzahlende Schweizer Bevölkerung?<\/p><p>- Schafft der Bund damit nicht Anreize für das 'Schleusergeschäft'?<\/p><p>- Findet der Bund die Bezeichnung der Caritas als NGO trotz der hohen Unterstützung noch angebracht?<\/p><p>- Wäre der Begriff 'Regierungsnterstützte Organisation' für die Caritas nicht treffender?<\/p><p>&nbsp;<\/p>"
+      "text_de": "<p>- Weshalb unterstützt der Bund die Caritas mit Fr. 18,9 Mio. für Verfahrenskosten für Asylsuchende?&nbsp;<\/p><p>- Worin sieht er den Mehrwert für die steuerzahlende Schweizer Bevölkerung?<\/p><p>- Schafft der Bund damit nicht Anreize für das 'Schleusergeschäft'?<\/p><p>- Findet der Bund die Bezeichnung der Caritas als NGO trotz der hohen Unterstützung noch angebracht?<\/p><p>- Wäre der Begriff 'Regierungsnterstützte Organisation' für die Caritas nicht treffender?<\/p><p>&nbsp;<\/p>",
+      "tags": "Politique internationale|Finances|Politique migratoire",
+      "tags_de": "Internationale Politik|Finanzwesen|Migration",
+      "tags_it": "Politica internazionale|Finanze|Migrazione"
     },
     {
       "shortId": "26.7772",
@@ -699,7 +803,10 @@
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267772",
       "mention": "Élu & Conseil fédéral",
       "text": "<p>Dans ses réponses aux interpellations 26.3557 et 26.3867, le Conseil fédéral affirme qu'en vertu du principe de souveraineté, la compétence suisse « prend fin à l'aéroport ». Or l'ODM indiquait pouvoir mener des « missions de clarification dans les États de provenance » (<a href=\"https://che01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.parlament.ch%2Ffr%2Fratsbetrieb%2Fsuche-curia-vista%2Fgeschaeft%3FAffairId%3D20133793&amp;data=05%7C02%7Cjean.tschopp%40parl.ch%7C381343f386314bfecfb308df1334df16%7C0cf3ddc638a5480885f1cae22925a1b0%7C0%7C0%7C639250789967968120%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=53fFwEvsDQI52H5rsgLhJOAm86RvA2VWfWFy76lHbMo%3D&amp;reserved=0\">13.3793<\/a>) et avait chargé l'Ambassade suisse à Colombo d'enquêter sur deux personnes renvoyées (<a href=\"https://che01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.tagesanzeiger.ch%2Fschweiz-schafft-vorlaeufig-keine-tamilen-aus-845989585630&amp;data=05%7C02%7Cjean.tschopp%40parl.ch%7C381343f386314bfecfb308df1334df16%7C0cf3ddc638a5480885f1cae22925a1b0%7C0%7C0%7C639250789968023159%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=FA1po%2FxpoZk1tPQwVcyhbHHzZke%2BLHy7%2B1PlGXtnzhM%3D&amp;reserved=0\">Tages-Anzeiger, 2.9.2013<\/a>).<br>En quoi ce principe empêche-t-il aujourd'hui le SEM de recueillir de telles informations au Burundi ?<\/p>",
-      "text_de": "<p>In seinen Stellungnahmen zu den Interpellationen 26.3557 und 26.3867 führt der Bundesrat aus, dass gemäss dem Grundsatz der staatlichen Souveränität die Zuständigkeit der Schweiz «am Flughafen» endet. Gemäss dem ehemaligen Bundesamt für Migration können jedoch «Abklärungsmissionen in den Herkunftsstaaten» durchgeführt werden (<a href=\"https://che01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.parlament.ch%2Ffr%2Fratsbetrieb%2Fsuche-curia-vista%2Fgeschaeft%3FAffairId%3D20133793&amp;data=05%7C02%7Cjean.tschopp%40parl.ch%7C381343f386314bfecfb308df1334df16%7C0cf3ddc638a5480885f1cae22925a1b0%7C0%7C0%7C639250789967968120%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=53fFwEvsDQI52H5rsgLhJOAm86RvA2VWfWFy76lHbMo%3D&amp;reserved=0\">13.3793<\/a>). Es hatte die Schweizer Botschaft in Colombo mit Abklärungen zum Fall von zwei weggewiesenen Personen beauftragt (<a href=\"https://che01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.tagesanzeiger.ch%2Fschweiz-schafft-vorlaeufig-keine-tamilen-aus-845989585630&amp;data=05%7C02%7Cjean.tschopp%40parl.ch%7C381343f386314bfecfb308df1334df16%7C0cf3ddc638a5480885f1cae22925a1b0%7C0%7C0%7C639250789968023159%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=FA1po%2FxpoZk1tPQwVcyhbHHzZke%2BLHy7%2B1PlGXtnzhM%3D&amp;reserved=0\">Tages-Anzeiger, 2.9.2013<\/a>).&nbsp;<br>Inwiefern verhindert der Grundsatz der staatlichen Souveränität heute, dass das Staatssekretariat für Migration in Burundi solche Abklärungen durchführt?<\/p>"
+      "text_de": "<p>In seinen Stellungnahmen zu den Interpellationen 26.3557 und 26.3867 führt der Bundesrat aus, dass gemäss dem Grundsatz der staatlichen Souveränität die Zuständigkeit der Schweiz «am Flughafen» endet. Gemäss dem ehemaligen Bundesamt für Migration können jedoch «Abklärungsmissionen in den Herkunftsstaaten» durchgeführt werden (<a href=\"https://che01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.parlament.ch%2Ffr%2Fratsbetrieb%2Fsuche-curia-vista%2Fgeschaeft%3FAffairId%3D20133793&amp;data=05%7C02%7Cjean.tschopp%40parl.ch%7C381343f386314bfecfb308df1334df16%7C0cf3ddc638a5480885f1cae22925a1b0%7C0%7C0%7C639250789967968120%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=53fFwEvsDQI52H5rsgLhJOAm86RvA2VWfWFy76lHbMo%3D&amp;reserved=0\">13.3793<\/a>). Es hatte die Schweizer Botschaft in Colombo mit Abklärungen zum Fall von zwei weggewiesenen Personen beauftragt (<a href=\"https://che01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.tagesanzeiger.ch%2Fschweiz-schafft-vorlaeufig-keine-tamilen-aus-845989585630&amp;data=05%7C02%7Cjean.tschopp%40parl.ch%7C381343f386314bfecfb308df1334df16%7C0cf3ddc638a5480885f1cae22925a1b0%7C0%7C0%7C639250789968023159%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=FA1po%2FxpoZk1tPQwVcyhbHHzZke%2BLHy7%2B1PlGXtnzhM%3D&amp;reserved=0\">Tages-Anzeiger, 2.9.2013<\/a>).&nbsp;<br>Inwiefern verhindert der Grundsatz der staatlichen Souveränität heute, dass das Staatssekretariat für Migration in Burundi solche Abklärungen durchführt?<\/p>",
+      "tags": "Politique internationale|Politique migratoire",
+      "tags_de": "Internationale Politik|Migration",
+      "tags_it": "Politica internazionale|Migrazione"
     },
     {
       "shortId": "26.7776",
@@ -717,7 +824,10 @@
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267776",
       "mention": "Élu & Conseil fédéral",
       "text": "<p>En réponse à l'objet 26.7538, le Conseil fédéral indique un nombre peu important de pays à exécuter des renvois forcés de ressortissants burundais. Ainsi, quelle différence d'appréciation vis-à-vis de la situation politique, des risques encourus en cas de renvois, ou des rapports dénonçant des violations de droits humains au Burundi, fait la Suisse vis-à-vis de la France et des pays n'ayant pas de telles pratiques ?<\/p>",
-      "text_de": "<p>Gemäss der Antwort des Bundesrates auf die Frage 26.7538 schaffen nur wenige Länder burundische Staatsangehörige aus.&nbsp;<br>Inwiefern unterscheidet sich also die Einschätzung der Schweiz hinsichtlich der politischen Lage, der mit einer Ausschaffung verbundenen Risiken oder der Berichte über Menschenrechtsverletzungen in Burundi von derjenigen Frankreichs und der Länder, die keine solchen Ausschaffungen durchführen?<\/p>"
+      "text_de": "<p>Gemäss der Antwort des Bundesrates auf die Frage 26.7538 schaffen nur wenige Länder burundische Staatsangehörige aus.&nbsp;<br>Inwiefern unterscheidet sich also die Einschätzung der Schweiz hinsichtlich der politischen Lage, der mit einer Ausschaffung verbundenen Risiken oder der Berichte über Menschenrechtsverletzungen in Burundi von derjenigen Frankreichs und der Länder, die keine solchen Ausschaffungen durchführen?<\/p>",
+      "tags": "Politique migratoire",
+      "tags_de": "Migration",
+      "tags_it": "Migrazione"
     },
     {
       "shortId": "26.7778",
@@ -735,7 +845,10 @@
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267778",
       "mention": "Élu & Conseil fédéral",
       "text": "<p>Depuis 2023, la dégradation politique et sécuritaire au Soudan entraîne une hausse des arrivées de personnes soudanaises en quête de protection dans notamment plusieurs pays européens.<br>- La Suisse a-t-elle constaté une évolution des demandes d'asile depuis 2023 ?<br>- Quels sont les chiffres à disposition ?<br>- Si cette évolution est moindre qu'en France ou d’autres pays européens, comment l'expliquer ?<br>- Quels sont les taux d'octroi de l’asile et d'admission provisoire accordés aux personnes soudanaises ?<\/p>",
-      "text_de": "<p>Seit 2023 führt die Verschlechterung der politischen Lage und der Sicherheit im Sudan dazu, dass immer mehr schutzsuchende Personen aus dem Sudan insbesondere in verschiedenen europäischen Ländern ankommen.<br>– Hat die Schweiz seit 2023 eine Zunahme von Asylgesuchen festgestellt?<br>– Die Zahlen, die zur Verfügung stehen, wie sehen sie aus?<br>– Wenn die Zunahme geringer ist als in Frankreich oder in anderen europäischen Ländern, wie lässt sich dies erklären?<br>– Wie hoch sind die Quoten der Asylgewährung und der vorläufigen Aufnahme für Personen aus dem Sudan?<\/p>"
+      "text_de": "<p>Seit 2023 führt die Verschlechterung der politischen Lage und der Sicherheit im Sudan dazu, dass immer mehr schutzsuchende Personen aus dem Sudan insbesondere in verschiedenen europäischen Ländern ankommen.<br>– Hat die Schweiz seit 2023 eine Zunahme von Asylgesuchen festgestellt?<br>– Die Zahlen, die zur Verfügung stehen, wie sehen sie aus?<br>– Wenn die Zunahme geringer ist als in Frankreich oder in anderen europäischen Ländern, wie lässt sich dies erklären?<br>– Wie hoch sind die Quoten der Asylgewährung und der vorläufigen Aufnahme für Personen aus dem Sudan?<\/p>",
+      "tags": "Politique migratoire",
+      "tags_de": "Migration",
+      "tags_it": "Migrazione"
     },
     {
       "shortId": "26.7810",
@@ -753,7 +866,10 @@
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267810",
       "mention": "Élu & Conseil fédéral",
       "text": "<p>En 2013, après deux arrestations suivant des renvois au Sri Lanka, l'ODM avait suspendu les renvois et réexaminé les dossiers concernés. Les experts avaient ensuite conclu à une « évaluation erronée du risque individuel » (<a href=\"https://che01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.admin.ch%2Ffr%2Fnsb%3Fid%3D53120%26&amp;data=05%7C02%7Cdelphine.klopfenstein%40parl.ch%7C0dc39992b17245ae830008df1334dd4d%7C0cf3ddc638a5480885f1cae22925a1b0%7C0%7C0%7C639250789932164635%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=bmXWLIhU6%2BpbmDplLiVuh6qIpuBS7DitazGSkpFRRbg%3D&amp;reserved=0\">ODM, 26.5.2014<\/a>). Au Burundi, des arrestations, détentions et violences après renvoi ont été signalées au SEM. Selon des organisations en contact avec les intéressés, 11 des 16 personnes renvoyées ont quitté le pays.&nbsp;<br>Pourquoi aucun réexamen comparable ?<\/p>",
-      "text_de": "<p>Im Jahr 2013 hatte das BFM nach zwei Festnahmen im Anschluss an Wegweisungen nach Sri Lanka die Wegweisungen in dieses Land gestoppt und die betreffenden Fälle erneut geprüft. Die Fachpersonen waren daraufhin zum Schluss gekommen, dass «das individuelle Risiko einer Gefährdung falsch eingeschätzt» wurde (<a href=\"https://che01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.admin.ch%2Ffr%2Fnsb%3Fid%3D53120%26&amp;data=05%7C02%7Cdelphine.klopfenstein%40parl.ch%7C0dc39992b17245ae830008df1334dd4d%7C0cf3ddc638a5480885f1cae22925a1b0%7C0%7C0%7C639250789932164635%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=bmXWLIhU6%2BpbmDplLiVuh6qIpuBS7DitazGSkpFRRbg%3D&amp;reserved=0\">BFM, 26.5.2014<\/a>). Dem SEM wurde gemeldet, dass es in Burundi nach Wegweisungen zu Festnahmen, Inhaftierungen und Gewalttaten gekommen ist. Nach Angaben von Organisationen, die mit den Betroffenen in Kontakt stehen, haben 11 der 16 weggewiesenen Personen das Land verlassen.&nbsp;<br>Warum wird hier keine vergleichbare Überprüfung vorgenommen?<\/p>"
+      "text_de": "<p>Im Jahr 2013 hatte das BFM nach zwei Festnahmen im Anschluss an Wegweisungen nach Sri Lanka die Wegweisungen in dieses Land gestoppt und die betreffenden Fälle erneut geprüft. Die Fachpersonen waren daraufhin zum Schluss gekommen, dass «das individuelle Risiko einer Gefährdung falsch eingeschätzt» wurde (<a href=\"https://che01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.admin.ch%2Ffr%2Fnsb%3Fid%3D53120%26&amp;data=05%7C02%7Cdelphine.klopfenstein%40parl.ch%7C0dc39992b17245ae830008df1334dd4d%7C0cf3ddc638a5480885f1cae22925a1b0%7C0%7C0%7C639250789932164635%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=bmXWLIhU6%2BpbmDplLiVuh6qIpuBS7DitazGSkpFRRbg%3D&amp;reserved=0\">BFM, 26.5.2014<\/a>). Dem SEM wurde gemeldet, dass es in Burundi nach Wegweisungen zu Festnahmen, Inhaftierungen und Gewalttaten gekommen ist. Nach Angaben von Organisationen, die mit den Betroffenen in Kontakt stehen, haben 11 der 16 weggewiesenen Personen das Land verlassen.&nbsp;<br>Warum wird hier keine vergleichbare Überprüfung vorgenommen?<\/p>",
+      "tags": "Politique migratoire",
+      "tags_de": "Migration",
+      "tags_it": "Migrazione"
     },
     {
       "shortId": "26.7813",
@@ -771,7 +887,10 @@
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267813",
       "mention": "Élu",
       "text": "<p>En août 2026, le Mouvement identitaire allemand a organisé durant une semaine son « camp fédéral » au Simplon, avec notamment des exercices de combat rapproché et des exercices nocturnes. Le propriétaire du gîte affirme avoir été interrogé par la police, tandis que la police valaisanne dit ne pas avoir eu connaissance de la présence du groupe.&nbsp;<br>Le Conseil fédéral peut-il nous dire si le SRC, le SEM et fedpol étaient informés de la tenue de ce «&nbsp;camp fédéral&nbsp;»&nbsp;?<\/p>",
-      "text_de": "<p>Im August 2026 war die «Identitäre Bewegung Deutschland» eine Woche lang im Simplongebiet im «Bundeslager», wo sie insbesondere Nahkampfübungen und Nachtübungen durchführte. Der Vermieter der Unterkunft bestätigt, von der Polizei befragt worden zu sein, während die Walliser Polizei angibt, nichts von der Anwesenheit der Gruppierung gewusst zu haben.&nbsp;<br>Kann der Bundesrat darüber Auskunft geben, ob der NDB, das SEM und fedpol von der Durchführung dieses «Bundeslagers» wussten?<\/p>"
+      "text_de": "<p>Im August 2026 war die «Identitäre Bewegung Deutschland» eine Woche lang im Simplongebiet im «Bundeslager», wo sie insbesondere Nahkampfübungen und Nachtübungen durchführte. Der Vermieter der Unterkunft bestätigt, von der Polizei befragt worden zu sein, während die Walliser Polizei angibt, nichts von der Anwesenheit der Gruppierung gewusst zu haben.&nbsp;<br>Kann der Bundesrat darüber Auskunft geben, ob der NDB, das SEM und fedpol von der Durchführung dieses «Bundeslagers» wussten?<\/p>",
+      "tags": "Politique d'Etat|Politique de sécurité|Questions sociales",
+      "tags_de": "Staatspolitik|Sicherheitspolitik|Soziale Fragen",
+      "tags_it": "Politica nazionale|Politica di sicurezza|Questioni sociali"
     },
     {
       "shortId": "26.7818",
@@ -789,7 +908,10 @@
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267818",
       "mention": "Élu",
       "text": "<p>La détection précoce de la radicalisation et de l’extrémisme violent implique le Service de renseignement de la Confédération, les polices cantonales, fedpol et le SEM.&nbsp;<br>- Dans le cas du rassemblement du Simplon, comment cette coopération a-t-elle fonctionné ?&nbsp;<br>- Le Conseil fédéral identifie-t-il des lacunes dans la circulation de l’information entre ces autorités ?<\/p>",
-      "text_de": "<p>Der Nachrichtendienst des Bundes, die Kantonspolizeien, fedpol und das Staatsekretariat für Migration arbeiten gemeinsam an der Früherkennung&nbsp;von&nbsp;Radikalisierung&nbsp;und&nbsp;gewalttätigem&nbsp;Extremismus.&nbsp;<br>- Wie funktionierte diese Zusammenarbeit im Fall des Lagers im Simplongebiet?&nbsp;<br>- Stellt der Bundesrat Lücken im Informationsfluss zwischen den erwähnten Beteiligten fest?<\/p>"
+      "text_de": "<p>Der Nachrichtendienst des Bundes, die Kantonspolizeien, fedpol und das Staatsekretariat für Migration arbeiten gemeinsam an der Früherkennung&nbsp;von&nbsp;Radikalisierung&nbsp;und&nbsp;gewalttätigem&nbsp;Extremismus.&nbsp;<br>- Wie funktionierte diese Zusammenarbeit im Fall des Lagers im Simplongebiet?&nbsp;<br>- Stellt der Bundesrat Lücken im Informationsfluss zwischen den erwähnten Beteiligten fest?<\/p>",
+      "tags": "Politique d'Etat|Politique de sécurité|Questions sociales",
+      "tags_de": "Staatspolitik|Sicherheitspolitik|Soziale Fragen",
+      "tags_it": "Politica nazionale|Politica di sicurezza|Questioni sociali"
     },
     {
       "shortId": "26.7819",
@@ -807,7 +929,10 @@
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267819",
       "mention": "Élu & Conseil fédéral",
       "text": "<p>Des personnalités étrangères liées à des milieux d’extrême droite ont déjà fait l’objet de mesures d’interdiction d’entrée en Suisse.&nbsp;<br>Le Conseil fédéral entend-il demander à fedpol et au SEM d’examiner systématiquement, pour les principaux organisateurs et participants étrangers de rassemblements d’extrême droite, identifiés en Suisse, si les conditions légales d’une interdiction d’entrée sont réunies ?<\/p>",
-      "text_de": "<p>Gegen Personen aus dem Ausland mit Verbindungen zu rechtsextremen Kreisen wurden bereits Einreiseverbote in die Schweiz verhängt.&nbsp;<br>Wird der Bundesrat von fedpol und dem Staatssekretariat für Migration verlangen, systematisch zu prüfen, ob die wichtigsten, von der Schweiz identifizierten ausländischen Veranstaltenden und Teilnehmenden von rechtsextremen Treffen die Voraussetzungen für ein Einreiseverbot erfüllen?<\/p>"
+      "text_de": "<p>Gegen Personen aus dem Ausland mit Verbindungen zu rechtsextremen Kreisen wurden bereits Einreiseverbote in die Schweiz verhängt.&nbsp;<br>Wird der Bundesrat von fedpol und dem Staatssekretariat für Migration verlangen, systematisch zu prüfen, ob die wichtigsten, von der Schweiz identifizierten ausländischen Veranstaltenden und Teilnehmenden von rechtsextremen Treffen die Voraussetzungen für ein Einreiseverbot erfüllen?<\/p>",
+      "tags": "Politique d'Etat|Questions sociales|Politique migratoire",
+      "tags_de": "Staatspolitik|Soziale Fragen|Migration",
+      "tags_it": "Politica nazionale|Questioni sociali|Migrazione"
     },
     {
       "shortId": "26.7823",
@@ -825,7 +950,10 @@
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267823",
       "mention": "Élu & Conseil fédéral",
       "text": "<p>Dans le cadre des procédures d’asile, le SEM charge des organismes de réaliser différentes expertises, forensiques ou autres, pour déterminer l’âge des requérants qui ne sont vraisemblablement pas mineurs.&nbsp;<br>–&nbsp;Combien de requérants ont fait l’objet d’une telle expertise l’année dernière&nbsp;?&nbsp;<br>–&nbsp;Combien d’entre eux ont été effectivement reconnus mineurs&nbsp;?<br>–&nbsp;Combien ces expertises ont-elles coûté au total en 2025&nbsp;?<\/p>",
-      "text_de": "<p>Das SEM beauftragt während des Asylprozesses Einrichtungen mit der Durchführung von forensischen und anderen Lebensaltersschätzungen, wenn die behauptete Minderjährigkeit von Asylbewerbern nicht glaubwürdig ist.&nbsp;<br>- Für wie viele Asylantragsteller wurde im letzten Jahr eine solche Abklärung für eine Alterseinschätzung in Auftrag gegeben?&nbsp;<br>- Wie viele davon wurden wie behauptet für minderjährig befunden?<br>- Wie hoch waren 2025 die Gesamtkosten für solche Gutachten?<\/p>"
+      "text_de": "<p>Das SEM beauftragt während des Asylprozesses Einrichtungen mit der Durchführung von forensischen und anderen Lebensaltersschätzungen, wenn die behauptete Minderjährigkeit von Asylbewerbern nicht glaubwürdig ist.&nbsp;<br>- Für wie viele Asylantragsteller wurde im letzten Jahr eine solche Abklärung für eine Alterseinschätzung in Auftrag gegeben?&nbsp;<br>- Wie viele davon wurden wie behauptet für minderjährig befunden?<br>- Wie hoch waren 2025 die Gesamtkosten für solche Gutachten?<\/p>",
+      "tags": "Questions sociales|Politique migratoire",
+      "tags_de": "Soziale Fragen|Migration",
+      "tags_it": "Questioni sociali|Migrazione"
     },
     {
       "shortId": "26.7838",
@@ -843,7 +971,10 @@
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267838",
       "mention": "Élu & Conseil fédéral",
       "text": "<p>Entre début&nbsp;2023 et mi-décembre&nbsp;2023, pour vérifier s’il représentait un risque pour la sécurité, le SEM a cherché 23&nbsp;000&nbsp;requérants d’asile dans le système de recherches RIPOL, dans les systèmes européens comme le Système d’information Schengen et Eurodac, ainsi que via Interpol. Bilan&nbsp;: 5200 résultats positifs.<br>–&nbsp;Combien de résultats positifs, toujours en matière de sécurité, ont été obtenus en 2024 et en 2025&nbsp;?&nbsp;<br>–&nbsp;Que penser de ces chiffres en matière de sécurité et de lutte contre la criminalité&nbsp;?<\/p>",
-      "text_de": "<p>Von Anfang 2023 bis Mitte Dezember 2023 hat das SEM 23 000 Asylbewerber auf die Sicherheit mit Fahndungsdatenbank Ripol, mit den europäischen Systemen wie dem Schengener Informationssystem oder Eurodac sowie mittels Interpol überprüft und dabei 5200 Treffer festgestellt.<br>- Wie viele Treffer ergaben die Sicherheitsabklärungen im Jahr 2024, wie viele im Jahr 2025?&nbsp;<br>- Wie sind diese Treffer bezüglich Sicherheit und bezüglich Kriminalitätsbekämpfung einzuordnen?<\/p>"
+      "text_de": "<p>Von Anfang 2023 bis Mitte Dezember 2023 hat das SEM 23 000 Asylbewerber auf die Sicherheit mit Fahndungsdatenbank Ripol, mit den europäischen Systemen wie dem Schengener Informationssystem oder Eurodac sowie mittels Interpol überprüft und dabei 5200 Treffer festgestellt.<br>- Wie viele Treffer ergaben die Sicherheitsabklärungen im Jahr 2024, wie viele im Jahr 2025?&nbsp;<br>- Wie sind diese Treffer bezüglich Sicherheit und bezüglich Kriminalitätsbekämpfung einzuordnen?<\/p>",
+      "tags": "Politique de sécurité|Politique migratoire",
+      "tags_de": "Sicherheitspolitik|Migration",
+      "tags_it": "Politica di sicurezza|Migrazione"
     },
     {
       "shortId": "26.7843",
@@ -861,7 +992,10 @@
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267843",
       "mention": "Élu & Conseil fédéral",
       "text": "<p>La révision de l’art. 50 LEI (21.504), entrée en vigueur début 2025,&nbsp;<\/p><p>permet aux personnes qui accusent leur partenaire de violences de demander une autorisation de séjour autonome.&nbsp;<br>- Combien de personnes l’ont fait depuis l’entrée en vigueur de la révision&nbsp;? Combien de demandes ont été acceptées&nbsp;?<br>- Dans combien de cas l’octroi d’une autorisation pour cas de rigueur repose-t-il sur une simple accusation portée à l’encontre du partenaire ?<br>- Dans combien de cas une plainte pénale a-t-elle été déposée&nbsp;?<br>- Quelles sont les catégories de titres de séjour concernées&nbsp;?<\/p>",
-      "text_de": "<p>Mit Vorlage 21.504 wurde Art. 50 AIG geändert, die Revision ist seit Anfang 2025 in Kraft.&nbsp;<\/p><p>Seither können Personen, die ihren Partner der Gewalt beschuldigen, ein eigenständiges Aufenthaltsrecht beantragten.&nbsp;<br>- Wie viele haben dies seither gemacht? Wie viele Gesuche wurden positiv beschieden?<br>- In wie vielen Fällen beruht die Gewährung des Härtefalles auf der blossen Beschuldigung des Partners?<br>- In wie vielen Fällen wurden Strafanzeigen eingereicht?<br>- Welche Aufenthaltskategorien sind davon betroffen?<\/p>"
+      "text_de": "<p>Mit Vorlage 21.504 wurde Art. 50 AIG geändert, die Revision ist seit Anfang 2025 in Kraft.&nbsp;<\/p><p>Seither können Personen, die ihren Partner der Gewalt beschuldigen, ein eigenständiges Aufenthaltsrecht beantragten.&nbsp;<br>- Wie viele haben dies seither gemacht? Wie viele Gesuche wurden positiv beschieden?<br>- In wie vielen Fällen beruht die Gewährung des Härtefalles auf der blossen Beschuldigung des Partners?<br>- In wie vielen Fällen wurden Strafanzeigen eingereicht?<br>- Welche Aufenthaltskategorien sind davon betroffen?<\/p>",
+      "tags": "Questions sociales|Politique migratoire",
+      "tags_de": "Soziale Fragen|Migration",
+      "tags_it": "Questioni sociali|Migrazione"
     },
     {
       "shortId": "26.7846",
@@ -879,7 +1013,10 @@
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267846",
       "mention": "Élu & Conseil fédéral",
       "text": "<p>–&nbsp;À combien s’élèvent les primes d’assurance-maladie que la Confédération prend en charge au niveau national pour les requérants d’asile, les personnes admises à titre provisoire et les personnes bénéficiant du statut S&nbsp;?<br>–&nbsp;Quels autres frais de santé la Confédération prend-elle en charge pour ces trois groupes de personnes&nbsp;?<\/p>",
-      "text_de": "<p>- Wie hoch sind die Krankenkassenprämien, die die Eidgenossenschaft auf Bundesebene für Asylsuchende, vorläufig Aufgenommene und Status S Personen übernimmt?<br>- Welche zusätzlichen Kosten im Gesundheitsbereich übernimmt die Eidgenossenschaft für Asylsuchende, vorläufig Aufgenommene und Status S Personen?<\/p>"
+      "text_de": "<p>- Wie hoch sind die Krankenkassenprämien, die die Eidgenossenschaft auf Bundesebene für Asylsuchende, vorläufig Aufgenommene und Status S Personen übernimmt?<br>- Welche zusätzlichen Kosten im Gesundheitsbereich übernimmt die Eidgenossenschaft für Asylsuchende, vorläufig Aufgenommene und Status S Personen?<\/p>",
+      "tags": "Finances|Politique migratoire|Santé",
+      "tags_de": "Finanzwesen|Migration|Gesundheit",
+      "tags_it": "Finanze|Migrazione|Salute"
     },
     {
       "shortId": "26.3831",
