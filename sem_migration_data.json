@@ -1,10 +1,10 @@
 {
   "meta": {
-    "updated": "2026-09-22T23:24:27",
-    "total_count": 3942,
+    "updated": "2026-09-23T15:47:43",
+    "total_count": 3947,
     "source": "Swiss Parliament API",
     "legislature": 52,
-    "new_ids": ["26.067", "26.4184", "26.4190", "26.7883", "26.7885", "26.7887", "26.7735", "26.7794", "26.7796", "26.7798", "26.7799", "26.7816", "26.1037", "26.4209", "26.7894", "26.7923"]
+    "new_ids": ["26.4184", "26.4190", "26.7883", "26.7885", "26.7887", "26.7735", "26.7794", "26.7796", "26.7798", "26.7799", "26.7816", "26.1037", "26.4209", "26.7894", "26.7923", "26.7958", "26.7960", "26.7990", "26.8025", "26.8032"]
   },
   "session_summary": {
     "session_id": "2026-ete",
@@ -44,6 +44,86 @@
   },
   "items": [
     {
+      "shortId": "26.7958",
+      "title": "Titre suit",
+      "title_de": "Asylgesuche: Was bedeutet die lange Landesgrenze für den Grenzschutz?",
+      "author": "Vontobel Erich",
+      "party": "EDU",
+      "type": "Fra.",
+      "status": "Eingereicht / Déposé",
+      "council": "NR",
+      "date": "2026-09-23",
+      "date_maj": "2026-09-23",
+      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267958",
+      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267958",
+      "mention": "Élu",
+      "text_de": "<p>In seiner Stellungnahme zur Motion 26.3639 «Schutz ja – aber temporär» führt der Bundesrat die im Vergleich zu Dänemark höheren Asylzahlen u. a. auf die rund 2000 km lange Schweizer Landesgrenze zurück. Das SEM hält zugleich fest, dass die Mehrheit der Asylsuchenden Grenzkontrollen umgeht und illegal einreist.&nbsp;<br>- Bedeutet die Argumentation des Bundesrates, dass die Länge der Grenze den Grenzschutz wesentlich erschwert?&nbsp;<br>- Welche Schlussfolgerungen zieht er daraus für Kontrolldichte und Grenzschutz?<\/p>"
+    },
+    {
+      "shortId": "26.7960",
+      "title": "Titre suit",
+      "title_de": "Zusammenarbeit mit Nepal",
+      "author": "Badertscher Christine",
+      "party": "VERT-E-S",
+      "type": "Fra.",
+      "status": "Eingereicht / Déposé",
+      "council": "NR",
+      "date": "2026-09-23",
+      "date_maj": "2026-09-23",
+      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267960",
+      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267960",
+      "mention": "Élu",
+      "text_de": "<p>Die DEZA will ab 2029 die langfristige Zusammenarbeit mit Nepal beenden und die freiwerdenden Mittel in die humanitäre Hilfe umschichten.&nbsp;<br>- Wie begründet das EDA den Entscheid, eine langjährige, gegenseitig lehrreiche und wirkungsvolle Partnerschaft (Strassen-/Hängebrückenbau, Berufsbildung/Migration, Gemeindeentwicklung) mit einem der ärmsten Länder der Welt abzubrechen?&nbsp;<br>- Wie will DEZA die zusätzlichen humanitären Gelder sinnvoll einsetzen?<\/p>"
+    },
+    {
+      "shortId": "26.7990",
+      "title": "Des statistiques plus détaillées sur l'expulsion des étrangers criminels",
+      "title_de": "Titel folgt",
+      "author": "Addor Jean-Luc",
+      "party": "UDC",
+      "type": "Fra.",
+      "status": "Eingereicht / Déposé",
+      "council": "NR",
+      "date": "2026-09-23",
+      "date_maj": "2026-09-23",
+      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267990",
+      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267990",
+      "mention": "Élu",
+      "text": "<p>En l'état, semble-t-il par manque de ressources et en l'absence de toute demande formelle, le SEM n'inclut pas dans sa publication des statistiques de l'expulsion des étrangers criminels le croisement de l'ensemble des données fournies par les cantons (manque notamment la nationalité en lien avec le canton ayant prononcé l'expulsion).&nbsp;<br>Pour garantir un meilleur suivi de la rigueur du travail des cantons, le Conseil fédéral va-t-il prendre les dispositions nécessaires dans ce sens ?<\/p>"
+    },
+    {
+      "shortId": "26.8025",
+      "title": "Titre suit",
+      "title_de": "Entwicklung der minderjährigen Asylbewerber ohne Identifikationsdokumente",
+      "author": "Steinemann Barbara",
+      "party": "UDC",
+      "type": "Fra.",
+      "status": "Eingereicht / Déposé",
+      "council": "NR",
+      "date": "2026-09-23",
+      "date_maj": "2026-09-23",
+      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20268025",
+      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20268025",
+      "mention": "Élu",
+      "text_de": "<p>Mit 17.3274 hat der Bundesrat die Zahlen von 2007 bis April 2017 transparent gemacht. Im Sinne einer Aktualisierung:&nbsp;<br>- Wie viele selbstdeklarierte unbegleitete Minderjährige haben in den Jahren 2017 bis 2025 im Asylverfahren keine gültigen und rechtsgenügenden Ausweise vorgelegt?<br>- Bei wie vielen unbegleiteten minderjährigen Asylsuchenden zwischen 2017 und 2025 stand die Identität zweifelsfrei fest?<\/p>"
+    },
+    {
+      "shortId": "26.8032",
+      "title": "Titre suit",
+      "title_de": "Gefährdet das Justizdepartement mit dem Resettlement-Programm die innere Sicherheit der Schweiz? (Teil 1)",
+      "author": "Schmid Pascal",
+      "party": "UDC",
+      "type": "Fra.",
+      "status": "Eingereicht / Déposé",
+      "council": "NR",
+      "date": "2026-09-23",
+      "date_maj": "2026-09-23",
+      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20268032",
+      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20268032",
+      "mention": "Élu",
+      "text_de": "<p>In 26.7702 gab der Bundesrat auf die Frage, ob er bei allen Resettlement-Aufgenommenen einen terroristisch-extremistischen Hintergrund mit Sicherheit ausschliessen könne, keine Antwort.&nbsp;<\/p><p>Laut Medien (WW/19.08.26) setzte sich das SEM bei einem Sudanesen über die negative Risikoeinschätzung der Auslandsvertretung («Verdacht auf dschihadistische oder terroristische Absichten/Aktivitäten/Gefährdungspotenzial in der Schweiz»!) hinweg - was NDB-Mitarbeiter zurecht als grobfahrlässig einstufen.&nbsp;<br>Wieso?<\/p>"
+    },
+    {
       "shortId": "26.1037",
       "title": "Madame Della Valle ou Monsieur Abunimah, faite votre choix…",
       "title_de": "Titel folgt",
@@ -57,7 +137,10 @@
       "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20261037",
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20261037",
       "mention": "Élu",
-      "text": "<p>Nous avons pu lire dans la presse (NZZ du 07/07/2026 ) que le DFJP a autorisé le Ministère public de la Confédération à enquêter sur l’ancienne directrice de Fed Pol, Nicoletta Della Valle, pour abus de pouvoir présumé. Cette décision fait suite à une plainte pénale déposée par le journaliste palestino américain Ali Abunimah &nbsp;, fondateur de la plateforme «Electronic Intifada». Cette plainte faisait suite à l’interdiction d’entrée sur le territoire prononcée par Mme Della Valle à l’encontre d’Ali Abunimah.&nbsp;<\/p><p>Je souhaite savoir pourquoi le Conseil fédéral désavoue une ancienne directrice de Fed Pol qui, à la demande du canton de Zurich, a empêché la venue en Suisse d’un antisémite avoué et prêcheur de haine en recourant à l’instrument de l’interdiction d’entrée prévu à l’article 67 de la loi sur l’entrée et le séjour des étrangers&nbsp; ?<\/p><p>Pour rappel : l’article 67 autorise l’Office fédéral de la police (Fed Pol) à prononcer une interdiction d’entrée à l’encontre d’étrangers afin de préserver la sécurité intérieure ou extérieure de la Suisse ; il consulte au préalable le SRC. Fed Pol peut prononcer des interdictions d’entrée pour une durée supérieure à cinq ans et, dans les cas graves, pour une durée indéterminée.<\/p><p>Le Conseil fédéral se souvient-il de sa réponse à la motion Fässler (16.3864 Obligation d'autorisation pour les orateurs étrangers lors de manifestations politiques) ? &nbsp;«…Même sans obligation d’autorisation telle que la réclame l’auteur de la motion, la Confédération dispose aujourd’hui de moyens pour empêcher, au cas par cas, la participation d’un orateur étranger à un événement politique. Ainsi, l’Office fédéral de la police (Fed Pol) peut, en vertu de l’article 67, alinéa 4, de la loi fédérale sur les étrangers (LEtr ; RS 142.20), prononcer une interdiction d’entrée à l’encontre de personnes dont la participation à une manifestation mettrait directement en danger la sécurité intérieure ou extérieure de la Suisse. Il consulte au préalable le Service de renseignement de la Confédération (SRC). De telles mesures ont été prises à plusieurs reprises par le passé. Ainsi, Fed Pol a prononcé l’année dernière dix interdictions d’entrée à l’encontre de soi-disant prêcheurs de haine. «<\/p><p>Comment le Conseil fédéral compte-t-il empêcher à l’avenir les interventions de prêcheurs de haine étrangers, quelle que soit leur tendance ?<\/p>"
+      "text": "<p>Nous avons pu lire dans la presse (NZZ du 07/07/2026 ) que le DFJP a autorisé le Ministère public de la Confédération à enquêter sur l’ancienne directrice de Fed Pol, Nicoletta Della Valle, pour abus de pouvoir présumé. Cette décision fait suite à une plainte pénale déposée par le journaliste palestino américain Ali Abunimah &nbsp;, fondateur de la plateforme «Electronic Intifada». Cette plainte faisait suite à l’interdiction d’entrée sur le territoire prononcée par Mme Della Valle à l’encontre d’Ali Abunimah.&nbsp;<\/p><p>Je souhaite savoir pourquoi le Conseil fédéral désavoue une ancienne directrice de Fed Pol qui, à la demande du canton de Zurich, a empêché la venue en Suisse d’un antisémite avoué et prêcheur de haine en recourant à l’instrument de l’interdiction d’entrée prévu à l’article 67 de la loi sur l’entrée et le séjour des étrangers&nbsp; ?<\/p><p>Pour rappel : l’article 67 autorise l’Office fédéral de la police (Fed Pol) à prononcer une interdiction d’entrée à l’encontre d’étrangers afin de préserver la sécurité intérieure ou extérieure de la Suisse ; il consulte au préalable le SRC. Fed Pol peut prononcer des interdictions d’entrée pour une durée supérieure à cinq ans et, dans les cas graves, pour une durée indéterminée.<\/p><p>Le Conseil fédéral se souvient-il de sa réponse à la motion Fässler (16.3864 Obligation d'autorisation pour les orateurs étrangers lors de manifestations politiques) ? &nbsp;«…Même sans obligation d’autorisation telle que la réclame l’auteur de la motion, la Confédération dispose aujourd’hui de moyens pour empêcher, au cas par cas, la participation d’un orateur étranger à un événement politique. Ainsi, l’Office fédéral de la police (Fed Pol) peut, en vertu de l’article 67, alinéa 4, de la loi fédérale sur les étrangers (LEtr ; RS 142.20), prononcer une interdiction d’entrée à l’encontre de personnes dont la participation à une manifestation mettrait directement en danger la sécurité intérieure ou extérieure de la Suisse. Il consulte au préalable le Service de renseignement de la Confédération (SRC). De telles mesures ont été prises à plusieurs reprises par le passé. Ainsi, Fed Pol a prononcé l’année dernière dix interdictions d’entrée à l’encontre de soi-disant prêcheurs de haine. «<\/p><p>Comment le Conseil fédéral compte-t-il empêcher à l’avenir les interventions de prêcheurs de haine étrangers, quelle que soit leur tendance ?<\/p>",
+      "tags": "Politique d'Etat|Politique de sécurité|Droit pénal|Politique migratoire",
+      "tags_de": "Staatspolitik|Sicherheitspolitik|Strafrecht|Migration",
+      "tags_it": "Politica nazionale|Politica di sicurezza|Diritto penale|Migrazione"
     },
     {
       "shortId": "26.4209",
@@ -74,7 +157,10 @@
       "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20264209",
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20264209",
       "mention": "Élu",
-      "text": "<p>Le Conseil fédéral affirme que la collaboration dans le domaine des renvois vers les pays du Maghreb, notamment l'Algérie est \"<i>excellente<\/i>\". Or dans sa réponse à la question&nbsp;26.7674, il a répondu qu'\"<i>il n’a pas été possible de fournir ces chiffres dans les délais impartis pour l’heure des questions<\/i>\". Ainsi, on apprend que l'administration ne suit pas la durée moyenne de la détention administrative de ces ressortissants.<\/p><p>&nbsp;<\/p><p>Cette coopération \"excellente\" devrait se vérifier sur la durée de l'obtention des documents de voyage et sur la durée moyenne de la détention administrative pour les trois pays du Maghreb les plus problématiques. D'autant plus que, selon le SEM lui-même, 80,5 % des demandeurs d'asile originaires d'Algérie, du Maroc et de Tunisie ont été mis en cause pour au moins une infraction pénale en 2024, soit pendant leur procédure d'asile, soit après une décision négative. En outre, le SEM a mis en place une procédure d'asile rapide (24 heures) pour ces ressortissants. qui durent en réalité en moyenne 22 jours, selon des données du SEM relayées par le&nbsp;<i>SonntagsBlick<\/i>.<\/p><p>&nbsp;<\/p><p>Ainsi, le Conseil fédéral est prié de répondre aux questions suivantes:<\/p><p>&nbsp;<\/p><ol><li>Combien de temps, en moyenne, dure l'obtention des documents de voyage pour les pays suivants: Algérie, Maroc et Tunisie? La durée moyenne doit être comprise de la date de la demande de document de voyage pour le requérant d'asile débouté à sa représentation consulaire respective jusqu'à la date effective de l'obtention d'un document de voyage permettant le renvoi.<\/li><li>Pour ces trois pays, avant l'obtention d'un document de voyage, est-ce que des entretiens consulaires doivent avoir lieu avec les représentants consulaires de leur pays? Si oui, quelle est la durée moyenne de l'attente pour obtenir un tel entretien? A partir de la date de la demande jusqu'à la réalisation effective de cet entretien consulaire qui permettra d'obtenir un document de voyage. Y a-t-il des listes d'attente?<\/li><li>Quelle est la durée moyenne de la détention administrative en vue du renvoi ou de l'expulsion (art. 76 LEI) pour ces trois pays pour les années 2024 à 2026?<\/li><li>Quelle est la durée moyenne de la détention pour insoumission (Art. 78 LEI) pour ces trois pays pour les années 2024 à 2026?<\/li><li>Combien de vols spéciaux ont été effectués à destination de ces trois pays entre 2024 et 2026 et combien de ressortissants ont été renvoyés par vols spéciaux?<\/li><\/ol>"
+      "text": "<p>Le Conseil fédéral affirme que la collaboration dans le domaine des renvois vers les pays du Maghreb, notamment l'Algérie est \"<i>excellente<\/i>\". Or dans sa réponse à la question&nbsp;26.7674, il a répondu qu'\"<i>il n’a pas été possible de fournir ces chiffres dans les délais impartis pour l’heure des questions<\/i>\". Ainsi, on apprend que l'administration ne suit pas la durée moyenne de la détention administrative de ces ressortissants.<\/p><p>&nbsp;<\/p><p>Cette coopération \"excellente\" devrait se vérifier sur la durée de l'obtention des documents de voyage et sur la durée moyenne de la détention administrative pour les trois pays du Maghreb les plus problématiques. D'autant plus que, selon le SEM lui-même, 80,5 % des demandeurs d'asile originaires d'Algérie, du Maroc et de Tunisie ont été mis en cause pour au moins une infraction pénale en 2024, soit pendant leur procédure d'asile, soit après une décision négative. En outre, le SEM a mis en place une procédure d'asile rapide (24 heures) pour ces ressortissants. qui durent en réalité en moyenne 22 jours, selon des données du SEM relayées par le&nbsp;<i>SonntagsBlick<\/i>.<\/p><p>&nbsp;<\/p><p>Ainsi, le Conseil fédéral est prié de répondre aux questions suivantes:<\/p><p>&nbsp;<\/p><ol><li>Combien de temps, en moyenne, dure l'obtention des documents de voyage pour les pays suivants: Algérie, Maroc et Tunisie? La durée moyenne doit être comprise de la date de la demande de document de voyage pour le requérant d'asile débouté à sa représentation consulaire respective jusqu'à la date effective de l'obtention d'un document de voyage permettant le renvoi.<\/li><li>Pour ces trois pays, avant l'obtention d'un document de voyage, est-ce que des entretiens consulaires doivent avoir lieu avec les représentants consulaires de leur pays? Si oui, quelle est la durée moyenne de l'attente pour obtenir un tel entretien? A partir de la date de la demande jusqu'à la réalisation effective de cet entretien consulaire qui permettra d'obtenir un document de voyage. Y a-t-il des listes d'attente?<\/li><li>Quelle est la durée moyenne de la détention administrative en vue du renvoi ou de l'expulsion (art. 76 LEI) pour ces trois pays pour les années 2024 à 2026?<\/li><li>Quelle est la durée moyenne de la détention pour insoumission (Art. 78 LEI) pour ces trois pays pour les années 2024 à 2026?<\/li><li>Combien de vols spéciaux ont été effectués à destination de ces trois pays entre 2024 et 2026 et combien de ressortissants ont été renvoyés par vols spéciaux?<\/li><\/ol>",
+      "tags": "Politique internationale|Politique de sécurité|Politique migratoire",
+      "tags_de": "Internationale Politik|Sicherheitspolitik|Migration",
+      "tags_it": "Politica internazionale|Politica di sicurezza|Migrazione"
     },
     {
       "shortId": "26.7894",
@@ -90,7 +176,10 @@
       "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267894",
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267894",
       "mention": "Élu",
-      "text": "<p>À Genève, des situations d’enfants issus notamment de familles roms itinérantes qui ne fréquentent pas régulièrement l’école sont signalées.&nbsp;<\/p><p>- Combien de mineurs étrangers en séjour précaire ne sont pas scolarisés en Suisse, en particulier à Genève?&nbsp;<br>- Quelles mesures la Confédération peut-elle prendre avec les cantons pour garantir leur scolarisation et, en cas de séjour irrégulier, appliquer les procédures de renvoi ou de réadmission prévues par le droit, notamment avec la France?<\/p>"
+      "text": "<p>À Genève, des situations d’enfants issus notamment de familles roms itinérantes qui ne fréquentent pas régulièrement l’école sont signalées.&nbsp;<\/p><p>- Combien de mineurs étrangers en séjour précaire ne sont pas scolarisés en Suisse, en particulier à Genève?&nbsp;<br>- Quelles mesures la Confédération peut-elle prendre avec les cantons pour garantir leur scolarisation et, en cas de séjour irrégulier, appliquer les procédures de renvoi ou de réadmission prévues par le droit, notamment avec la France?<\/p>",
+      "tags": "Questions sociales|Éducation",
+      "tags_de": "Soziale Fragen|Bildung",
+      "tags_it": "Questioni sociali|Formazione"
     },
     {
       "shortId": "26.7923",
@@ -107,7 +196,10 @@
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267923",
       "mention": "Élu",
       "text": "<p>On peut en principe saluer l’accélération des procédures d’asile et l’allègement de la charge que les demandes manifestement infondées font peser sur le système.&nbsp;<br>Le directeur du SEM a annoncé qu’un préexamen permettrait d’éviter que ces demandes soient soumises à la procédure ordinaire.&nbsp;<br>Une telle mesure serait-elle juridiquement admissible et matériellement réalisable, notamment au regard de la Convention de Genève relative au statut des réfugiés (examen individuel, principe de non-refoulement)&nbsp;?<br>Si oui, sur quelle base légale se fonderait-elle&nbsp;?<\/p>",
-      "text_de": "<p>Die Beschleunigung der Asylverfahren und die Entlastung des Systems von offensichtlich unbegründeten Gesuchen sind grundsätzlich zu begrüssen.&nbsp;<br>Der SEM-Direktor hat angekündigt, mit einem vorgelagerten Verfahren solche Gesuche gar nicht erst ins ordentliche Verfahren gelangen zu lassen.&nbsp;<br>Ist diese Ankündigung rechtlich haltbar und praktisch durchführbar, namentlich mit Blick auf die Genfer Flüchtlingskonvention (individuelle Prüfung, Non-Refoulement)?<br>Falls ja, auf welcher gesetzlichen Grundlage?<\/p>"
+      "text_de": "<p>Die Beschleunigung der Asylverfahren und die Entlastung des Systems von offensichtlich unbegründeten Gesuchen sind grundsätzlich zu begrüssen.&nbsp;<br>Der SEM-Direktor hat angekündigt, mit einem vorgelagerten Verfahren solche Gesuche gar nicht erst ins ordentliche Verfahren gelangen zu lassen.&nbsp;<br>Ist diese Ankündigung rechtlich haltbar und praktisch durchführbar, namentlich mit Blick auf die Genfer Flüchtlingskonvention (individuelle Prüfung, Non-Refoulement)?<br>Falls ja, auf welcher gesetzlichen Grundlage?<\/p>",
+      "tags": "Politique migratoire",
+      "tags_de": "Migration",
+      "tags_it": "Migrazione"
     },
     {
       "shortId": "26.4184",
@@ -124,7 +216,10 @@
       "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20264184",
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20264184",
       "mention": "Élu",
-      "text_de": "<p>Der Bundesrat wird beauftragt, in einem interdepartemental erarbeiteten Bericht die mittel- und langfristigen Auswirkungen der demografischen Alterung auf die Schweiz bis 2040 und 2050 umfassend zu analysieren sowie konkrete Handlungsoptionen aufzuzeigen.<br><br>Gestützt auf die Bevölkerungsszenarien des Bundes soll der Bericht insbesondere:<\/p><ol style=\"list-style-type:decimal;\"><li>die demografische Alterung der Schweiz darstellen und international einordnen. Dabei sind insbesondere die Entwicklung der Altersstruktur, der Geburtenentwicklung, des Arbeitskräftepotenzials, des Verhältnisses zwischen Personen im Erwerbsalter und jenen im Rentenalter, der Hochaltrigkeit sowie des altersbedingten Leistungsbedarfs zu berücksichtigen;&nbsp;<\/li><li>den zusätzlichen Finanzierungsbedarf sowie die daraus resultierenden finanziellen Auswirkungen auf Bund, Kantone, Gemeinden, die Sozial- und Vorsorgewerke, das Gesundheits- und Pflegewesen und private Haushalte aufzeigen;&nbsp;<\/li><li>die direkten und indirekten Auswirkungen der demografischen Alterung und auf Arbeitsmarkt, Fachkräfteangebot, auf Produktivität, Wirtschaftswachstum, Steuerbasis, Konsum, Investitionen, Wettbewerbsfähigkeit, Standortattraktivität, Migration und Wohlstand analysieren;&nbsp;<\/li><li>die Wechselwirkungen und Rückkopplungseffekte zwischen diesen Bereichen sowie deren kumulative Auswirkungen auf die langfristige Entwicklung der Schweiz als Gesamtsystem darstellen;&nbsp;<\/li><li>die Auswirkungen verschiedener Finanzierungsoptionen – insbesondere über Steuern, Sozialversicherungsbeiträge, Krankenkassenprämien und weitere obligatorische Abgaben – auf Haushalte, Unternehmen und die Volkswirtschaft untersuchen und dabei insbesondere die Entwicklung der Gesamtbelastung im Sinne einer erweiterten Fiskalquote sowie deren Auswirkungen auf Konsum, Investitionen, Arbeitsanreize, Standortattraktivität und Wohlstand berücksichtigen;&nbsp;<\/li><li>anhand eines Status-quo-Szenarios sowie verschiedener Reform- und Entwicklungsszenarien – insbesondere bezüglich Referenzalter, Erwerbsbeteiligung, Migration, Produktivität, Digitalisierung und künstlicher Intelligenz – die Auswirkungen auf die öffentlichen Finanzen, die wirtschaftliche Leistungsfähigkeit, die Wettbewerbsfähigkeit und den Wohlstand der Schweiz vergleichen.<\/li><\/ol>"
+      "text_de": "<p>Der Bundesrat wird beauftragt, in einem interdepartemental erarbeiteten Bericht die mittel- und langfristigen Auswirkungen der demografischen Alterung auf die Schweiz bis 2040 und 2050 umfassend zu analysieren sowie konkrete Handlungsoptionen aufzuzeigen.<br><br>Gestützt auf die Bevölkerungsszenarien des Bundes soll der Bericht insbesondere:<\/p><ol style=\"list-style-type:decimal;\"><li>die demografische Alterung der Schweiz darstellen und international einordnen. Dabei sind insbesondere die Entwicklung der Altersstruktur, der Geburtenentwicklung, des Arbeitskräftepotenzials, des Verhältnisses zwischen Personen im Erwerbsalter und jenen im Rentenalter, der Hochaltrigkeit sowie des altersbedingten Leistungsbedarfs zu berücksichtigen;&nbsp;<\/li><li>den zusätzlichen Finanzierungsbedarf sowie die daraus resultierenden finanziellen Auswirkungen auf Bund, Kantone, Gemeinden, die Sozial- und Vorsorgewerke, das Gesundheits- und Pflegewesen und private Haushalte aufzeigen;&nbsp;<\/li><li>die direkten und indirekten Auswirkungen der demografischen Alterung und auf Arbeitsmarkt, Fachkräfteangebot, auf Produktivität, Wirtschaftswachstum, Steuerbasis, Konsum, Investitionen, Wettbewerbsfähigkeit, Standortattraktivität, Migration und Wohlstand analysieren;&nbsp;<\/li><li>die Wechselwirkungen und Rückkopplungseffekte zwischen diesen Bereichen sowie deren kumulative Auswirkungen auf die langfristige Entwicklung der Schweiz als Gesamtsystem darstellen;&nbsp;<\/li><li>die Auswirkungen verschiedener Finanzierungsoptionen – insbesondere über Steuern, Sozialversicherungsbeiträge, Krankenkassenprämien und weitere obligatorische Abgaben – auf Haushalte, Unternehmen und die Volkswirtschaft untersuchen und dabei insbesondere die Entwicklung der Gesamtbelastung im Sinne einer erweiterten Fiskalquote sowie deren Auswirkungen auf Konsum, Investitionen, Arbeitsanreize, Standortattraktivität und Wohlstand berücksichtigen;&nbsp;<\/li><li>anhand eines Status-quo-Szenarios sowie verschiedener Reform- und Entwicklungsszenarien – insbesondere bezüglich Referenzalter, Erwerbsbeteiligung, Migration, Produktivität, Digitalisierung und künstlicher Intelligenz – die Auswirkungen auf die öffentlichen Finanzen, die wirtschaftliche Leistungsfähigkeit, die Wettbewerbsfähigkeit und den Wohlstand der Schweiz vergleichen.<\/li><\/ol>",
+      "tags": "Économie|Questions sociales|Emploi et travail|Politique migratoire|Protection sociale|Santé",
+      "tags_de": "Wirtschaft|Soziale Fragen|Beschäftigung und Arbeit|Migration|Sozialer Schutz|Gesundheit",
+      "tags_it": "Economia|Questioni sociali|Occupazione e lavoro|Migrazione|Protezione sociale|Salute"
     },
     {
       "shortId": "26.4190",
@@ -141,7 +236,10 @@
       "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20264190",
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20264190",
       "mention": "Élu",
-      "text_de": "<p>Der Bundesrat wird gebeten, folgende Fragen zu beantworten:<\/p><ol style=\"list-style-type:decimal;\"><li>Wie beurteilt der BR den Zusammenhang zwischen den Leistungen der Schweiz im Bereich der IZA und der Entwicklung der Migration beziehungsweise der Zahl der Asylgesuche aus den jeweiligen Empfängerländern?<\/li><li>Verfügt der Bund über eine nach Herkunftsländern aufgeschlüsselte Analyse, welche für die letzten 10 Jahre Ausgaben und Wirkung gegenüberstellt?<\/li><li>Bei welchen Empfängerländern der IZA haben die Asylgesuche und die migrationsbedingten Kosten in der Schweiz trotz langjähriger Unterstützungsleistungen zugenommen? Wie erklärt der Bundesrat diese Entwicklung?<\/li><li>Anhand welcher messbaren Kriterien beurteilt der BR, ob die IZA dazu beiträgt, Flucht- und Migrationsursachen zu vermindern und den Menschen Perspektiven in ihren Herkunftsländern zu eröffnen?<\/li><li>Wie stellt der BR sicher, dass die IZA, die Migrationspolitik sowie die Ausgaben für Asyl, Integration, Sozialhilfe und Nothilfe nicht isoliert, sondern als Bestandteile einer finanz- und migrationspolitischen Gesamtstrategie geplant und beurteilt werden?<\/li><li>Wie beurteilt der BR eine Strategie, wonach die Schweiz gegenüber einem Herkunftsland grundsätzlich entweder substanzielle Leistungen der nicht humanitären Entwicklungszusammenarbeit erbringt oder die Unterstützung der aus diesem Land in die Schweiz migrierten Personen finanziert, nicht jedoch dauerhaft beide Ausgabenkategorien ohne eine gemeinsame Wirkungs- und Kostenkontrolle trägt?<\/li><\/ol>"
+      "text_de": "<p>Der Bundesrat wird gebeten, folgende Fragen zu beantworten:<\/p><ol style=\"list-style-type:decimal;\"><li>Wie beurteilt der BR den Zusammenhang zwischen den Leistungen der Schweiz im Bereich der IZA und der Entwicklung der Migration beziehungsweise der Zahl der Asylgesuche aus den jeweiligen Empfängerländern?<\/li><li>Verfügt der Bund über eine nach Herkunftsländern aufgeschlüsselte Analyse, welche für die letzten 10 Jahre Ausgaben und Wirkung gegenüberstellt?<\/li><li>Bei welchen Empfängerländern der IZA haben die Asylgesuche und die migrationsbedingten Kosten in der Schweiz trotz langjähriger Unterstützungsleistungen zugenommen? Wie erklärt der Bundesrat diese Entwicklung?<\/li><li>Anhand welcher messbaren Kriterien beurteilt der BR, ob die IZA dazu beiträgt, Flucht- und Migrationsursachen zu vermindern und den Menschen Perspektiven in ihren Herkunftsländern zu eröffnen?<\/li><li>Wie stellt der BR sicher, dass die IZA, die Migrationspolitik sowie die Ausgaben für Asyl, Integration, Sozialhilfe und Nothilfe nicht isoliert, sondern als Bestandteile einer finanz- und migrationspolitischen Gesamtstrategie geplant und beurteilt werden?<\/li><li>Wie beurteilt der BR eine Strategie, wonach die Schweiz gegenüber einem Herkunftsland grundsätzlich entweder substanzielle Leistungen der nicht humanitären Entwicklungszusammenarbeit erbringt oder die Unterstützung der aus diesem Land in die Schweiz migrierten Personen finanziert, nicht jedoch dauerhaft beide Ausgabenkategorien ohne eine gemeinsame Wirkungs- und Kostenkontrolle trägt?<\/li><\/ol>",
+      "tags": "Politique internationale|Finances|Politique migratoire|Protection sociale",
+      "tags_de": "Internationale Politik|Finanzwesen|Migration|Sozialer Schutz",
+      "tags_it": "Politica internazionale|Finanze|Migrazione|Protezione sociale"
     },
     {
       "shortId": "26.7883",
@@ -185,7 +283,7 @@
     },
     {
       "shortId": "26.7887",
-      "title": "Titre suit",
+      "title": "Le programme d’aide au retour EURP financé par Frontex est-il suffisamment mis à profit?",
       "title_de": "Wird das von Frontex finanzierte Rückkehrhilfeprogramm EURP genügend ausgeschöpft?",
       "author": "Gianini Simone",
       "party": "PLR",
@@ -197,6 +295,7 @@
       "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267887",
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20267887",
       "mention": "Élu",
+      "text": "<p>Selon le rapport concernant l’état de la mise en œuvre de Schengen/Dublin 2025/2026, la Suisse a réalisé des économies de quelque 3&nbsp;millions de francs grâce à Frontex. Toutefois, le SEM n’a eu recours au programme d’aide au retour EURP (financé par Frontex) que pour 464&nbsp;personnes retournant en Syrie et en Turquie, alors que 2768 demandes d’aide au retour ont été approuvées en 2025 et que le programme EURP s’étend à près de 40&nbsp;pays.<\/p><p>&nbsp;<\/p><p>Pourquoi le SEM ne recourt-il pas systématiquement au programme EURP pour les retours volontaires vers les pays couverts par le programme, et quelles sont les économies financières qui lui échappent ainsi&nbsp;?<\/p>",
       "text_de": "<p>Gemäss dem Bericht zum Stand der Umsetzung Schengen/Dublin 2025/2026 sparte die Schweiz dank Frontex ca. CHF 3 Mio. Das von Frontex finanzierte Rückkehrhilfeprogramm EURP nutzte das SEM jedoch nur für 464 Fälle aus Syrien und Türkei, obwohl 2025 2'768 Rückkehrhilfegesuche bewilligt wurden und EURP knapp 40 Länder abdeckt.<\/p><p>&nbsp;<\/p><p>Weshalb nutzt das SEM EURP bei freiwilligen Rückkehrern nicht standardmässig für alle abgedeckten Länder, und welches finanzielle Einsparpotenzial lässt der Bund dadurch liegen?<\/p>",
       "tags": "Politique migratoire",
       "tags_de": "Migration",
@@ -1178,7 +1277,7 @@
     },
     {
       "shortId": "26.4062",
-      "title": "Plus de sécurité, plus d'intégration. Révision de la loi sur l'asile et de la loi fédérale sur les étranger et l'intégration",
+      "title": "Plus de sécurité, plus d'intégration. Révision de la loi sur l'asile et de la loi fédérale sur les étrangers et l'intégration",
       "title_de": "Mehr Sicherheit, mehr Integration. Revision des Asyl- und Ausländergesetzes",
       "title_it": "Più sicurezza, più integrazione. Revisione della legge sull'asilo e della legge federale sugli stranieri e la loro integrazione",
       "author": "CIP-N",
@@ -4538,11 +4637,12 @@
       "author": "CAJ-E",
       "party": "Commissions",
       "type": "Pa. Iv.",
-      "status": "In Kommission des Ständerats / En commission du Conseil des Etats",
+      "status": "In Kommission des Nationalrats / En commission du Conseil national",
       "council": "SR",
       "department": "EFD",
       "date": "2026-03-29",
-      "date_maj": "2026-06-09",
+      "date_maj": "2026-09-23",
+      "statut_change_date": "2026-09-23",
       "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20260424",
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20260424",
       "mention": "Élu",
