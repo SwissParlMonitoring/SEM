@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-09-23T15:47:43",
+    "updated": "2026-09-23T23:20:42",
     "total_count": 3947,
     "source": "Swiss Parliament API",
     "legislature": 52,
@@ -122,6 +122,28 @@
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20268032",
       "mention": "Élu",
       "text_de": "<p>In 26.7702 gab der Bundesrat auf die Frage, ob er bei allen Resettlement-Aufgenommenen einen terroristisch-extremistischen Hintergrund mit Sicherheit ausschliessen könne, keine Antwort.&nbsp;<\/p><p>Laut Medien (WW/19.08.26) setzte sich das SEM bei einem Sudanesen über die negative Risikoeinschätzung der Auslandsvertretung («Verdacht auf dschihadistische oder terroristische Absichten/Aktivitäten/Gefährdungspotenzial in der Schweiz»!) hinweg - was NDB-Mitarbeiter zurecht als grobfahrlässig einstufen.&nbsp;<br>Wieso?<\/p>"
+    },
+    {
+      "shortId": "26.424",
+      "title": "Adaptation des dispositions salariales relatives aux personnes élues par l'Assemblée fédérale",
+      "title_de": "Anpassung der Lohnbestimmungen für von der Vereinigten Bundesversammlung gewählte Personen",
+      "title_it": "Adeguamento delle disposizioni salariali concernenti le persone elette dall'Assemblea federale ",
+      "author": "CAJ-E",
+      "party": "Commissions",
+      "type": "Pa. Iv.",
+      "status": "In Kommission des Nationalrats / En commission du Conseil national",
+      "council": "SR",
+      "department": "EFD",
+      "date": "2026-03-29",
+      "date_maj": "2026-09-23",
+      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20260424",
+      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20260424",
+      "mention": "Élu",
+      "text": "<p>Les ordonnances relatives aux rapports de travail des juges des tribunaux fédéraux de première instance, du procureur général de la Confédération et de ses adjoints ainsi que du préposé fédéral à la protection des données sont adaptées pour tenir compte de la suppression de l'indemnité de résidence et de l'introduction d'un salaire cible au 1er janvier 2017. Le renvoi au système de classes de salaire de l'administration fédérale est supprimé ; les salaires sont fixés et indexés au renchérissement, à l’instar du traitement des juges fédéraux.<\/p>",
+      "text_de": "<p>Die Verordnungen, welche das Arbeitsverhältnis der Richter und Richterinnen der eidgenössischen Gerichte, des Bundesanwalts oder der Bundesanwältin und der stellvertretenden Bundesanwälte oder Bundesanwältinnen sowie der oder des Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten regeln, sind so anzupassen, dass den Änderungen per 1.&nbsp;Januar&nbsp;2027 – sprich der Aufhebung des Ortszuschlags und der Einführung eines Ziellohnes – Rechnung getragen wird. Der Verweis auf das Lohnklassensystem der Bundesverwaltung wird gestrichen; die Löhne werden festgelegt und unterstehen dem Teuerungsausgleich, wie bei den Bundesrichterinnen und Bundesrichtern.<\/p>",
+      "tags": "Politique d'Etat|Finances|Emploi et travail|Justice",
+      "tags_de": "Staatspolitik|Finanzwesen|Beschäftigung und Arbeit|Gerichtswesen",
+      "tags_it": "Politica nazionale|Finanze|Occupazione e lavoro|Giustizia"
     },
     {
       "shortId": "26.1037",
@@ -4628,29 +4650,6 @@
       "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20262016",
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20262016",
       "mention": "Titre uniquement"
-    },
-    {
-      "shortId": "26.424",
-      "title": "Adaptation des dispositions salariales relatives aux personnes élues par l'Assemblée fédérale",
-      "title_de": "Anpassung der Lohnbestimmungen für von der Vereinigten Bundesversammlung gewählte Personen",
-      "title_it": "Adeguamento delle disposizioni salariali concernenti le persone elette dall'Assemblea federale ",
-      "author": "CAJ-E",
-      "party": "Commissions",
-      "type": "Pa. Iv.",
-      "status": "In Kommission des Nationalrats / En commission du Conseil national",
-      "council": "SR",
-      "department": "EFD",
-      "date": "2026-03-29",
-      "date_maj": "2026-09-23",
-      "statut_change_date": "2026-09-23",
-      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20260424",
-      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20260424",
-      "mention": "Élu",
-      "text": "<p>Les ordonnances relatives aux rapports de travail des juges des tribunaux fédéraux de première instance, du procureur général de la Confédération et de ses adjoints ainsi que du préposé fédéral à la protection des données sont adaptées pour tenir compte de la suppression de l'indemnité de résidence et de l'introduction d'un salaire cible au 1er janvier 2017. Le renvoi au système de classes de salaire de l'administration fédérale est supprimé ; les salaires sont fixés et indexés au renchérissement, à l’instar du traitement des juges fédéraux.<\/p>",
-      "text_de": "<p>Die Verordnungen, welche das Arbeitsverhältnis der Richter und Richterinnen der eidgenössischen Gerichte, des Bundesanwalts oder der Bundesanwältin und der stellvertretenden Bundesanwälte oder Bundesanwältinnen sowie der oder des Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten regeln, sind so anzupassen, dass den Änderungen per 1.&nbsp;Januar&nbsp;2027 – sprich der Aufhebung des Ortszuschlags und der Einführung eines Ziellohnes – Rechnung getragen wird. Der Verweis auf das Lohnklassensystem der Bundesverwaltung wird gestrichen; die Löhne werden festgelegt und unterstehen dem Teuerungsausgleich, wie bei den Bundesrichterinnen und Bundesrichtern.<\/p>",
-      "tags": "Politique d'Etat|Finances|Emploi et travail|Justice",
-      "tags_de": "Staatspolitik|Finanzwesen|Beschäftigung und Arbeit|Gerichtswesen",
-      "tags_it": "Politica nazionale|Finanze|Occupazione e lavoro|Giustizia"
     },
     {
       "shortId": "26.3509",
