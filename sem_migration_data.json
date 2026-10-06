@@ -1,10 +1,10 @@
 {
   "meta": {
-    "updated": "2026-10-04T23:45:48",
+    "updated": "2026-10-06T01:40:37",
     "total_count": 3985,
     "source": "Swiss Parliament API",
     "legislature": 52,
-    "new_ids": ["26.4357", "26.4366", "26.4367", "26.4371", "26.4375", "26.465", "26.1046", "26.4406", "26.4418", "26.4426", "26.4431", "26.4440", "26.4452", "26.4474", "26.4495", "26.4601", "26.4618", "26.4627", "26.4664"]
+    "new_ids": ["26.4601", "26.4618", "26.4627", "26.4664"]
   },
   "session_summary": {
     "session_id": "2026-automne",
@@ -518,6 +518,7 @@
       "type": "Pa. Iv.",
       "status": "Eingereicht / Déposé",
       "council": "NR",
+      "department": "Parl",
       "date": "2026-10-01",
       "date_maj": "2026-10-01",
       "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20260465",
@@ -759,7 +760,10 @@
       "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20264367",
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20264367",
       "mention": "Élu",
-      "text_de": "<p>Der Bundesrat wird beauftragt, im Rahmen der Arbeiten zum vorgelagerten Zuständigkeitsverfahren gemäss Asylstrategie 2027 zu prüfen und Bericht zu erstatten, wie dieses Verfahren mit der Liste der verfolgungssicheren Heimat- oder Herkunftsstaaten nach Artikel 6a Absatz 2 Buchstabe a des Asylgesetzes verknüpft werden kann. Ziel ist ein Mechanismus, mit dem Personen aus einem dieser Staaten, die ein Asylgesuch stellen wollen, direkt dem vorgelagerten Zuständigkeitsverfahren zugewiesen werden.<\/p><p>Der Bericht soll insbesondere aufzeigen:<\/p><ol style=\"list-style-type:decimal;\"><li>wie die Zuweisung gestützt auf die Safe Country Liste geregelt werden kann;<\/li><li>ob und wie Staatsangehörige von Ländern mit sehr tiefer Schutzquote, die sich (noch) nicht auf der Safe Country Liste befinden, erfasst werden können (z.B. Maghreb-Staaten);<\/li><li>welche Gesetzes- und Verordnungsänderungen dafür nötig sind;<\/li><li>wie der Mechanismus mit dem Verfassungs- und Völkerrecht vereinbar ist, insbesondere mit dem Non-Refoulement-Gebot und dem Anspruch auf wirksame Beschwerde;<\/li><li>welche Auswirkungen er auf die Verfahrensdauer, die Bundesasylzentren, den Wegweisungsvollzug und die Kantone hätte.<\/li><\/ol>"
+      "text_de": "<p>Der Bundesrat wird beauftragt, im Rahmen der Arbeiten zum vorgelagerten Zuständigkeitsverfahren gemäss Asylstrategie 2027 zu prüfen und Bericht zu erstatten, wie dieses Verfahren mit der Liste der verfolgungssicheren Heimat- oder Herkunftsstaaten nach Artikel 6a Absatz 2 Buchstabe a des Asylgesetzes verknüpft werden kann. Ziel ist ein Mechanismus, mit dem Personen aus einem dieser Staaten, die ein Asylgesuch stellen wollen, direkt dem vorgelagerten Zuständigkeitsverfahren zugewiesen werden.<\/p><p>Der Bericht soll insbesondere aufzeigen:<\/p><ol style=\"list-style-type:decimal;\"><li>wie die Zuweisung gestützt auf die Safe Country Liste geregelt werden kann;<\/li><li>ob und wie Staatsangehörige von Ländern mit sehr tiefer Schutzquote, die sich (noch) nicht auf der Safe Country Liste befinden, erfasst werden können (z.B. Maghreb-Staaten);<\/li><li>welche Gesetzes- und Verordnungsänderungen dafür nötig sind;<\/li><li>wie der Mechanismus mit dem Verfassungs- und Völkerrecht vereinbar ist, insbesondere mit dem Non-Refoulement-Gebot und dem Anspruch auf wirksame Beschwerde;<\/li><li>welche Auswirkungen er auf die Verfahrensdauer, die Bundesasylzentren, den Wegweisungsvollzug und die Kantone hätte.<\/li><\/ol>",
+      "tags": "Droit|Droit international|Droits de l'homme|Politique migratoire",
+      "tags_de": "Recht Allgemein|Internationales Recht|Menschenrechte|Migration",
+      "tags_it": "Diritto generale|Diritto internazionale|Diritti umani|Migrazione"
     },
     {
       "shortId": "26.4371",
@@ -796,7 +800,10 @@
       "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20264375",
       "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20264375",
       "mention": "Élu",
-      "text_de": "<p>Der Bundesrat wird beauftragt, zu prüfen und Bericht zu erstatten, ob die Asylabteilungen des Bundesverwaltungsgericht neu zu organisieren sind. Es ist zu prüfen, ob die Bildung zusätzlicher Asylabteilungen oder die Neuorganisation der Asylabteilungen in regionalen Gerichtskreisen nach dem Vorbild kantonaler Gerichtsorganisationen zur Verbesserung der Verfahrensführung, der Effizienz und der organisatorischen Steuerbarkeit beitragen kann.<\/p><h2>&nbsp;<\/h2>"
+      "text_de": "<p>Der Bundesrat wird beauftragt, zu prüfen und Bericht zu erstatten, ob die Asylabteilungen des Bundesverwaltungsgericht neu zu organisieren sind. Es ist zu prüfen, ob die Bildung zusätzlicher Asylabteilungen oder die Neuorganisation der Asylabteilungen in regionalen Gerichtskreisen nach dem Vorbild kantonaler Gerichtsorganisationen zur Verbesserung der Verfahrensführung, der Effizienz und der organisatorischen Steuerbarkeit beitragen kann.<\/p><h2>&nbsp;<\/h2>",
+      "tags": "Politique d'Etat|Droit|Justice|Politique migratoire",
+      "tags_de": "Staatspolitik|Recht Allgemein|Gerichtswesen|Migration",
+      "tags_it": "Politica nazionale|Diritto generale|Giustizia|Migrazione"
     },
     {
       "shortId": "26.4291",
@@ -2423,7 +2430,7 @@
       "title_it": "Sessione straordinaria «Asilo»",
       "party": "Commissions",
       "type": "PAG",
-      "status": "Eingereicht / Déposé",
+      "status": "Erledigt / Liquidé",
       "department": "Parl",
       "date": "2026-09-09",
       "date_maj": "2026-09-14",
@@ -2441,7 +2448,7 @@
       "title_it": "Sessione straordinaria «UE e asilio»",
       "party": "Commissions",
       "type": "PAG",
-      "status": "Eingereicht / Déposé",
+      "status": "Erledigt / Liquidé",
       "date": "2026-08-28",
       "date_maj": "2026-09-14",
       "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20269020",
@@ -2912,8 +2919,8 @@
     },
     {
       "shortId": "26.3923",
-      "title": "Vagues de chaleur fluviales et \"monde à +3°C\". Le Conseil fédéral parviendra-t-il à sauver les eaux et les poissons ?",
-      "title_de": "Kann der Bundesrat die Gewässer und Fische noch rechtzeitig vor der 3-Grad-Welt und vor Flusshitzewellen retten?",
+      "title": "Vagues de chaleur des eaux fluviales et \"monde à plus 3 degrés Celsius\". Le Conseil fédéral parviendra-t-il à sauver les eaux et les poissons ?",
+      "title_de": "Kann der Bundesrat die Gewässer und Fische noch rechtzeitig vor der Plus-3-Grad-Welt und vor Flusshitzewellen retten?",
       "title_it": "Il Consiglio federale è ancora in tempo per salvaguardare le acque e la popolazione ittica dalle ondate di calore in un mondo a +3 °C?",
       "author": "Candan Hasan",
       "party": "PS",
@@ -3351,7 +3358,7 @@
     },
     {
       "shortId": "26.3919",
-      "title": "Modification de l'article 80 LEI (décision et examen de la détention). Faire des économies en renonçant aux procédures inutiles (nouveau dépôt de la motion 24.3831)",
+      "title": "Modification de l'article 80 LEI (Décision et examen de la détention). Faire des économies en renonçant aux procédures inutiles (nouveau dépôt de la motion 24.3831)",
       "title_de": "Teilrevision Ausländer- und Integrationsgesetz, Artikel 80 (Haftanordnung und Haftüberprüfung). Verzicht auf unnötige Gerichtsverhandlungen, Kosten und Bürokratie (Neueinreichung der Motion 24.3831)",
       "title_it": "Ordine di carcerazione ed esame della carcerazione. Rinuncia a inutili udienze giudiziarie, costi e burocrazia (revisione dell'art. 80 della legge federale sugli stranieri e la loro integrazione) (mozione 24.3831 riproposta)",
       "author": "Reimann Lukas",
