@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-12T00:08:14",
+    "updated": "2026-10-12T20:37:14",
     "total_count": 3987,
     "source": "Swiss Parliament API",
     "legislature": 52,
@@ -3216,7 +3216,7 @@
     },
     {
       "shortId": "26.3820",
-      "title": "Renvoi des criminels étrangers. Garantir l'application effective de l'article 121 Cst. et de l'article 66a CP pour les ressortissants bénéficiant de l'ALCP",
+      "title": "Renvoi des criminels étrangers. Garantir l'application effective de l'article 121 Cst. et de l'article 66a CP pour les personnes bénéficiant de l'ALCP",
       "title_de": "Ausschaffung krimineller Ausländerinnen und Ausländer. Die wirksame Durchsetzung von Artikel 121 der Bundesverfassung und Artikel 66a des Strafgesetzbuchs für FZA-berechtigte Personen sicherstellen",
       "title_it": "Espulsione dei criminali stranieri. Garantire l'effettiva applicazione degli articoli 121 Cost. e 66a CP ai cittadini che beneficiano dell'ALC",
       "author": "Kolly Nicolas",
@@ -3283,7 +3283,7 @@
     {
       "shortId": "26.3853",
       "title": "Persécution des Baha'is dans plusieurs pays. Comment la Suisse peut-elle soutenir cette communauté ?",
-      "title_de": "Verfolgung der Bahá'í in mehreren Ländern. Wie kann die Schweiz diese Gemeinschaft unterstützen?",
+      "title_de": "Verfolgung der Bahai in mehreren Ländern. Wie kann die Schweiz diese Gemeinschaft unterstützen?",
       "title_it": "Persecuzione dei Bahá'í in diversi Paesi. In che modo la Svizzera può sostenere questa comunità?",
       "author": "Fehlmann Rielle Laurence",
       "party": "PS",
@@ -3567,8 +3567,8 @@
     },
     {
       "shortId": "26.3806",
-      "title": "Initiative \"pas de suisse à 10 millions\". Au conseil fédéral de comprendre le message de la forte minorité",
-      "title_de": "Keine 10-Millionen-Schweiz! (Nachhaltigkeitsinitiative). Der Bundesrat sollte das Anliegen der starken Minderheit ernst nehmen",
+      "title": "Initiative \"Pas de Suisse à 10 millions ! (initiative pour la durabilité)\". Au Conseil fédéral de comprendre le message de la forte minorité",
+      "title_de": "Keine 10-Millionen-Schweiz! (Nachhaltigkeits-Initiative). Der Bundesrat sollte das Anliegen der starken Minderheit ernst nehmen",
       "title_it": "Iniziativa \"No a una Svizzera da 10 milioni!\". Al Consiglio federale comprendere il messaggio della forte minoranza",
       "author": "Golay Roger",
       "party": "MCG",
@@ -4228,8 +4228,8 @@
     {
       "shortId": "26.440",
       "title": "5000 procédures d'asile en moins par an. Pour l'accueil des personnes à protéger, et non plus des personnes qui n'ont pas besoin de protection",
-      "title_de": "5'000 Asylverfahren weniger pro Jahr. Schutz für Schutzbedürftige, aber kein Schutz mehr für nicht Schutzbedürftige",
-      "title_it": "5 000 procedure d'asilo in meno ogni anno. Accogliamo solo le persone che hanno davvero bisogno di protezione",
+      "title_de": "5000 Asylverfahren weniger pro Jahr. Schutz für Schutzbedürftige, aber kein Schutz mehr für nicht Schutzbedürftige",
+      "title_it": "5000 procedure d'asilo in meno ogni anno. Accogliamo solo le persone che hanno davvero bisogno di protezione",
       "author": "Bischof Pirmin",
       "party": "Le Centre",
       "type": "Pa. Iv.",
