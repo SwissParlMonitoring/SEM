@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-16T15:48:16",
+    "updated": "2026-10-16T23:10:27",
     "total_count": 3998,
     "source": "Swiss Parliament API",
     "legislature": 52,
@@ -65,6 +65,28 @@
       "tags": "Politique internationale|Politique de sécurité|Finances|Droit pénal|Droits de l'homme|Politique migratoire|Protection sociale",
       "tags_de": "Internationale Politik|Sicherheitspolitik|Finanzwesen|Strafrecht|Menschenrechte|Migration|Sozialer Schutz",
       "tags_it": "Politica internazionale|Politica di sicurezza|Finanze|Diritto penale|Diritti umani|Migrazione|Protezione sociale"
+    },
+    {
+      "shortId": "26.3928",
+      "title": "Prise en charge par la Confédération des frais de santé des requérants d'asile et des personnes bénéficiant du statut S ou d'une admission provisoire",
+      "title_de": "Gesundheitskosten von Asylbewerbern, Personen mit Schutzstatus S sowie Personen mit einer vorläufigen Aufnahme werden vom Bund übernommen",
+      "title_it": "Assunzione da parte della Confederazione dei costi sanitari dei richiedenti l'asilo, delle persone con statuto S e delle persone ammesse provvisoriamente",
+      "author": "Bürgi Roman",
+      "party": "UDC",
+      "type": "Mo.",
+      "status": "Erledigt / Liquidé",
+      "council": "NR",
+      "department": "EJPD",
+      "date": "2026-06-19",
+      "date_maj": "2026-10-16",
+      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20263928",
+      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20263928",
+      "mention": "Élu & Conseil fédéral",
+      "text": "<p>Le Conseil fédéral est chargé d’adapter la loi et de prendre les mesures nécessaires pour que l’ensemble des frais de santé des requérants d’asile et des personnes bénéficiant du statut S ou d’une admission provisoire soient pris en charge par la Confédération en dehors de l’assurance obligatoire des soins. Il veillera à ce que cette reprise n’ait pas d’incidence sur les coûts.&nbsp;<\/p>",
+      "text_de": "<p>Der Bundesrat wird beauftragt, die gesetzlichen Grundlagen anzupassen und notwendige Massnahmen zu ergreifen, damit die gesamten Gesundheitskosten von Asylbewerbern, Personen mit Schutzstatus S sowie vorläufig Aufgenommenen kostenneutral ausserhalb der ordentlichen Krankenkassen durch den Bund getragen werden.&nbsp;<\/p>",
+      "tags": "Politique migratoire|Santé",
+      "tags_de": "Migration|Gesundheit",
+      "tags_it": "Migrazione|Salute"
     },
     {
       "shortId": "26.4550",
@@ -4019,29 +4041,6 @@
       "tags": "Politique internationale|Politique de sécurité|Politique migratoire",
       "tags_de": "Internationale Politik|Sicherheitspolitik|Migration",
       "tags_it": "Politica internazionale|Politica di sicurezza|Migrazione"
-    },
-    {
-      "shortId": "26.3928",
-      "title": "Prise en charge par la Confédération des frais de santé des requérants d'asile et des personnes bénéficiant du statut S ou d'une admission provisoire",
-      "title_de": "Gesundheitskosten von Asylbewerbern, Personen mit Schutzstatus S sowie Personen mit einer vorläufigen Aufnahme werden vom Bund übernommen",
-      "title_it": "Assunzione da parte della Confederazione dei costi sanitari dei richiedenti l'asilo, delle persone con statuto S e delle persone ammesse provvisoriamente",
-      "author": "Bürgi Roman",
-      "party": "UDC",
-      "type": "Mo.",
-      "status": "Erledigt / Liquidé",
-      "council": "NR",
-      "department": "EJPD",
-      "date": "2026-06-19",
-      "date_maj": "2026-10-16",
-      "statut_change_date": "2026-10-16",
-      "url_fr": "https://www.parlament.ch/fr/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20263928",
-      "url_de": "https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20263928",
-      "mention": "Élu & Conseil fédéral",
-      "text": "<p>Le Conseil fédéral est chargé d’adapter la loi et de prendre les mesures nécessaires pour que l’ensemble des frais de santé des requérants d’asile et des personnes bénéficiant du statut S ou d’une admission provisoire soient pris en charge par la Confédération en dehors de l’assurance obligatoire des soins. Il veillera à ce que cette reprise n’ait pas d’incidence sur les coûts.&nbsp;<\/p>",
-      "text_de": "<p>Der Bundesrat wird beauftragt, die gesetzlichen Grundlagen anzupassen und notwendige Massnahmen zu ergreifen, damit die gesamten Gesundheitskosten von Asylbewerbern, Personen mit Schutzstatus S sowie vorläufig Aufgenommenen kostenneutral ausserhalb der ordentlichen Krankenkassen durch den Bund getragen werden.&nbsp;<\/p>",
-      "tags": "Politique migratoire|Santé",
-      "tags_de": "Migration|Gesundheit",
-      "tags_it": "Migrazione|Salute"
     },
     {
       "shortId": "26.3946",
