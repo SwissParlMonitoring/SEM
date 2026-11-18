@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-11-17T20:17:19",
+    "updated": "2026-11-18T02:42:50",
     "total_count": 4008,
     "source": "Swiss Parliament API",
     "legislature": 52,
@@ -808,9 +808,9 @@
       "mention": "Élu & Conseil fédéral",
       "text": "<p>Le Conseil fédéral est prié de répondre aux questions qui suivent.<\/p><ol style=\"list-style-type:decimal;\"><li>Que sait-il des agissements constatés à l’office des migrations de Bâle-Campagne concernant l’application du droit fédéral&nbsp;?<\/li><li>Par quels moyens garantit-il que les autorités migratoires cantonales rendent systématiquement des décisions formelles et susceptibles de recours en matière de droits ou d’autorisations de séjour&nbsp;?<\/li><li>A-t-il connaissance de carences systématiques quant à l’accès aux voies de recours dans l’exécution du droit des migrations par les cantons&nbsp;?<\/li><li>De quels instruments le Secrétariat d’État aux migrations dispose-t-il pour surveiller la bonne exécution, par les cantons, de la loi fédérale sur les étrangers et l’intégration et de l’accord sur la libre circulation des personnes&nbsp;?<\/li><li>Comment la Confédération s’assure-t-elle que les ressortissants des États de l’UE et de l’AELE sont traités selon des critères uniformes dans toute la Suisse&nbsp;?<\/li><li>Quelles sont les mesures en place pour lutter contre les pratiques discriminatoires des autorités migratoires, notamment celles fondées sur l’origine, la religion ou l’apparence&nbsp;?<\/li><li>Quelles sont les mesures en place contre ce genre de pratiques dans le domaine de l’assurance-invalidité ou à l’autorité de protection de l’enfant et de l’adulte&nbsp;?<\/li><li>Le Conseil fédéral est-il disposé à examiner l’instauration de normes minimales de documentation et de contrôle de la qualité s’agissant de l’exécution du droit des migrations par les cantons&nbsp;?<\/li><li>De quels moyens les intéressés disposent-ils pour faire vérifier des décisions antérieures illicites&nbsp;? Le Conseil fédéral considère-t-il que des mesures s’imposent&nbsp;?<\/li><\/ol>",
       "text_de": "<p>Der Bundesrat wird um die Beantwortung folgender Fragen gebeten:<\/p><ol style=\"list-style-type:decimal;\"><li>Welche Erkenntnisse hat der Bundesrat zu den Vorgängen im Baselbieter Migrationsamt, soweit sie den Vollzug von Bundesrecht betreffen?<\/li><li>Wie stellt der Bund sicher, dass kantonale Migrationsbehörden stets formelle, anfechtbare Verfügungen erlassen, wenn Rechte oder Aufenthaltsansprüche betroffen sind?<\/li><li>Welche Hinweise auf systematische Defizite beim Zugang zu Rechtsmitteln im kantonalen Migrationsvollzug sieht der Bundesrat?<\/li><li>Welche Instrumente stehen dem SEM zur Verfügung, um die rechtskonforme Anwendung des Ausländer- und Integrationsgesetzes sowie des Freizügigkeitsabkommens durch die Kantone zu überwachen?<\/li><li>Wie überprüft der Bund, ob EU/EFTA-Angehörige schweizweit nach einheitlichen Kriterien behandelt werden?<\/li><li>Welche Massnahmen bestehen gegen diskriminierende Praktiken in Migrationsbehörden, insbesondere aufgrund von Herkunft, Religion oder Erscheinungsbild?<\/li><li>Welche Massnahmen gibt es gegen vergleichbare Diskriminierungen durch IV oder KESB?<\/li><li>Ist der Bundesrat bereit, Mindeststandards für Dokumentation und Qualitätssicherung im kantonalen Migrationsvollzug zu prüfen?<\/li><li>Welche Möglichkeiten haben Betroffene, rechtswidrige frühere Entscheide überprüfen zu lassen, und sieht der Bundesrat hier zusätzlichen Handlungsbedarf?<\/li><\/ol>",
-      "tags": "Politique d'Etat|Politique européenne|Droit|Droits de l'homme|Politique migratoire",
-      "tags_de": "Staatspolitik|Europapolitik|Recht Allgemein|Menschenrechte|Migration",
-      "tags_it": "Politica nazionale|Politica europea|Diritto generale|Diritti umani|Migrazione"
+      "tags": "Politique d'Etat|Politique européenne|Droits de l'homme|Politique migratoire",
+      "tags_de": "Staatspolitik|Europapolitik|Menschenrechte|Migration",
+      "tags_it": "Politica nazionale|Politica europea|Diritti umani|Migrazione"
     },
     {
       "shortId": "26.4311",
